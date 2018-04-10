@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Нияз Гарипов](https://up.htmlacademy.ru/adaptive/14/user/617897).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://up.htmlacademy.ru/htmlcss/20/user/41580).
 
 ---
 
