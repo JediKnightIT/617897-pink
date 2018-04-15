@@ -43,11 +43,11 @@
             <ul class="form__list data__list">
               <li class="data__item">
                 <label class="data__label" for="user-surname">Фамилия:</label>
-                <input class="data__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+                <input class="data__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="data__item">
                 <label class="data__label" for="user-name">Имя:</label>
-                <input class="data__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+                <input class="data__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="data__item">
                 <label class="data__label" for="user-patronymic">Отчество</label>
@@ -93,7 +93,7 @@
               </li>
               <li class="data__item">
                 <label class="data__label" for="user-email">Адрес почты</label>
-                <input class="data__input" id="user-email" type="email" name="email" placeholder="Введите почту *">
+                <input class="data__input" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -119,6 +119,7 @@
             <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
             <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
+          <button class="form__button button" type="submit">Отправить форму</button>
         </form>
         <footer class="form__footer">
           <p class="form__description"><sup class="simbol simbol--color">*</sup> — обязательные поля</p>
