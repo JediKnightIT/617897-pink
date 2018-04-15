@@ -39,7 +39,7 @@
             <p class="photo-content__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </header>
           <div class="photo-content__list">
-            <article class="photo-content__item post">
+            <article class="photo-content__item post post--device-width">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
               <picture class="post__source-photo">
                 <!-- <source media="()" srcset="">
@@ -142,6 +142,16 @@
             <p class="photo-content__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
           </footer>
         </div>
+      </section>
+      <section class="photo-editor">
+        <h2 class="visually-hidden">Фоторедактор с возможностью запостить свою фотографию</h2>
+        <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="POST">
+          <picture class="photo-editor__source-photo">
+            <!-- <source media="()" srcset="">
+            <source media="()" srcset=""> -->
+            <img class="photo-editor__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Зимний пейзаж">
+          </picture>
+        </form>
       </section>
     </main>
     <footer class="footer">
