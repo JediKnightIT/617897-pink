@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт мобильного приложения Pink</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+  <body class="page">
+    <header class="header">
+      <img class="header__logo logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип мобильного приложения Pink">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка показа и скрытия выпадающего меню"></button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item menu-list__item--active">
+            <a class="menu-list__link" href="#">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Главная страница мобильного приложения Pink</h1>
+      <section class="intro">
+        <h2 class="visually-hidden">Где скачать приложение?</h2>
+        <article class="intro__download app">
+          <h3 class="visually-hidden">Способы скачать приложение</h3>
+          <a class="app__link link" href="#">Скачать приложение</a>
+          <ul class="app__list store-list">
+            <li class="store-list__item">
+              <a class="store-list__link" href="#" aria-label="iTunes"></a>
+            </li>
+            <li class="store-list__item">
+              <a class="store-list__link" href="#" aria-label="Google Play"></a>
+            </li>
+            <li class="store-list__item">
+              <a class="store-list__link" href="#" aria-label="Microsoft Store"></a>
+            </li>
+          </ul>
+          <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </article>
+      </section>
+      <section class="information">
+        <h2 class="visually-hidden">Информация о приложении</h2>
+        <header class="information__header">
+          <p class="information__text">Устали от серости мегаполиса?</p>
+          <p class="information__text">Нам есть, что вам предложить!</p>
+        </header>
+        <ul class="information__list">
+          <li class="information__item">
+            <h3 class="information__title">Поднимает настроение</h3>
+            <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Меняет мир вокруг</h3>
+            <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Заводит новых друзей</h3>
+            <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button" aria-label="Первый переключатель"></button>
+            <button class="slider__toggle" type="button" aria-label="Второй переключатель"></button>
+            <button class="slider__toggle" type="button" aria-label="Третий переключатель"></button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы и стоимость приложения Pink</h2>
+        <div class="price__wrapper slider">
+          <table class="price__list">
+            <caption class="visually-hidden">Тарифы и стоимость</caption>
+            <tr class="price__item">
+              <th class="price__cell-header">
+                <b class="price__cell-tariff">База</b>
+                <p class="price__cell-cost">1,99 usd</p>
+              </th>
+              <th class="price__cell-header">
+                <b class="price__cell-tariff">Стандарт</b>
+                <p class="price__cell-cost">3,99 usd</p>
+              </th>
+              <th class="price__cell-header">
+                <b class="price__cell-tariff">Анлим</b>
+                <p class="price__cell-cost">9,99 usd</p>
+              </th>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell">Розовый фильтр</td>
+              <td class="price__cell">Розовый фильтр</td>
+              <td class="price__cell">Розовый фильтр</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell">Смайлики</td>
+              <td class="price__cell">Смайлики</td>
+              <td class="price__cell">Смайлики</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell">Комментарии</td>
+              <td class="price__cell">Комментарии</td>
+              <td class="price__cell">Комментарии</td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button" aria-label="Первый переключатель"></button>
+            <button class="slider__toggle" type="button" aria-label="Второй переключатель"></button>
+            <button class="slider__toggle" type="button" aria-label="Третий переключатель"></button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__title">Звоните:</h3>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Пишите:</h3>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <address class="contacts__link">ул. Большая Конюшенная, 19/8</address>
+          </li>
+        </ul>
+      </section>
+      <article class="map">
+        <h2 class="visually-hidden">Карта проезда</h2>
+        <div class="map__interactive" id="map"></div>
+        <img class="map__img" src="http://placehold.it/150x100" width="150" height="100" alt="Наш офис находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8 ">
+      </article>
+    </main>
+    <footer class="footer">
+      <img class="footer__logo logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип мобильного приложения Pink">
+      <ul class="footer__list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мы в твиттере"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Мы в фэйсбуке"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#" aria-label="Мы в ютюбе"></a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
