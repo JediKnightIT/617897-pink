@@ -1,3 +1,5 @@
-body {
-  background: green;
-}
+// config
+@import "config/variables.scss";
+@import "config/mixins.scss";
+
+// blocks
