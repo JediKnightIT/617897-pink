@@ -1,0 +1,34 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  border-bottom: 1px solid #000000;
+}
+
+.menu-list__item {
+  padding: 16px 0;
+
+  border-top: 1px solid #485461;
+  box-shadow: 0 -1px 0 0 #000000;
+}
+
+.menu-list__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  font-family: "Opensans", "Arial", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3%);
+  }
+}
