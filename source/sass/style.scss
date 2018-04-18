@@ -3,10 +3,15 @@
 @import "config/mixins.scss";
 @import "config/fonts.scss";
 
-// blocks
+// blocks header
+@import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/menu-burger.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/menu-list.scss";
+
+// blocks index.html
+@import "blocks/intro.scss";
+
