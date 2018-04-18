@@ -7,4 +7,12 @@
 
 .menu-burger__icon {
   fill: #ffffff;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: rgba($pink, 0.3%);
+  }
 }

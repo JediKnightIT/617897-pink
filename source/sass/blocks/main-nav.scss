@@ -1,3 +1,22 @@
 .main-nav {
   background-color: $blue;
 }
+
+.main-nav__close {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.main-nav__close-icon {
+  fill: #ffffff;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: rgba($pink, 0.3%);
+  }
+}
