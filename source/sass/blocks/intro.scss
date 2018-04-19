@@ -1,7 +1,9 @@
 .intro {
+  min-height: 462px;
+  background: url("../../img/iphone-hand-mobile@1x.png") 0 176px no-repeat, url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
   background-color: $blue;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.intro__download {
+  padding-top: 462px;
 }
