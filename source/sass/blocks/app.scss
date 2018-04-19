@@ -5,7 +5,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  font-family: "Opensans", "Arial", sans-serif;
   text-align: center;
   color: $white;
   text-decoration: none;
@@ -23,4 +22,19 @@
   &:active {
     color: rgba($pink, 0.3%);
   }
+}
+
+.app__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.app__description {
+  margin: 0;
+
+  font-weight: 300;
+  text-align: center;
+  color: #eaeaeb;
 }
