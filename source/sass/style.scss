@@ -2,9 +2,9 @@
 @import "config/variables.scss";
 @import "config/mixins.scss";
 @import "config/fonts.scss";
+@import "config/scaffolding.scss";
 
 // blocks header
-@import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
