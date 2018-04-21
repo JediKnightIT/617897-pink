@@ -1,5 +1,5 @@
 .information {
-  background-image: linear-gradient(-5deg, #f2f2f2 77%, $white 0%);
+  background-image: linear-gradient(-5deg, $gray 77%, $white 0%);
 }
 
 .information__header {
@@ -16,11 +16,8 @@
 }
 
 .information__list {
-  margin: 0;
-  padding: 0;
+  @include list;
   padding-top: 50px;
-
-  list-style: none;
 }
 
 .information__item {

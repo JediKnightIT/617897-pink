@@ -3,12 +3,10 @@
 }
 
 .footer__list {
-  margin: 0;
-  padding: 0;
+  @include list;
   padding-top: 35px;
 
   text-align: center;
-  list-style: none;
 }
 
 .footer__copyright {

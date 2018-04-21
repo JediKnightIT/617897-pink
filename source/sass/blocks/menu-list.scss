@@ -1,6 +1,5 @@
 .menu-list {
-  margin: 0;
-  padding: 0;
+  @include list;
 
   text-align: center;
 
