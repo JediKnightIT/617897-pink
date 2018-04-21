@@ -1,4 +1,4 @@
-.intro-photo {
+.intro-inner {
   min-height: 237px;
   padding-top: 100px;
 
@@ -8,11 +8,12 @@
   background-color: $blue;
 }
 
-.intro-photo__title {
+.intro-inner__title {
   margin: 0;
 
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   color: $white;
   text-align: center;
 }
