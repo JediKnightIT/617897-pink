@@ -65,13 +65,13 @@
     outline: none;
   }
 
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue;
+  }
+
   &--active {
     border: 2px solid $pink;
   }
-}
-
-::placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: $blue;
 }

@@ -52,39 +52,3 @@
     }
   }
 }
-
-.button {
-  width: 280px;
-  padding: 15px 20px;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  color: $white;
-  text-align: center;
-  text-transform: uppercase;
-
-  background-color: $green;
-  border: none;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: #1c9b5e;
-  }
-
-  &:active {
-    color: rgba($white, 0.3%);
-
-    background-color: #1c9b5e;
-  }
-
-  &--disabled {
-    background-color: #e5e5e5;
-  }
-
-  &--margin {
-    margin-bottom: 40px;
-  }
-}
