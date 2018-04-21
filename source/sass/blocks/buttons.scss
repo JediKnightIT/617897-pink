@@ -1,0 +1,55 @@
+.buttons__item {
+  width: 280px;
+  padding: 16px 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+
+  background-color: transparent;
+  border-radius: 35px;
+
+  cursor: pointer;
+
+  &--submit {
+    margin-bottom: 12px;
+
+    color: $pink;
+
+    border: 3px solid $pink;
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3%);
+
+      background-color: $pink;
+    }
+  }
+
+  &--reset {
+    color: rgba($blue, 0.1%);
+
+    border: 3px solid rgba($blue, 0.1%);
+
+    &:hover,
+    &:focus {
+      color: rgba($blue, 0.3%);
+
+      border: 3px solid rgba($blue, 0.3%);
+    }
+
+    &:active {
+      color: rgba($white, 0.3%);
+
+      background-color: rgba($blue, 0.3%);
+    }
+  }
+}
