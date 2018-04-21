@@ -1,1 +1,45 @@
+.form__fieldset {
+  margin: 0;
+  padding: 40px 0;
 
+  border: none;
+
+  &--gray {
+    background-color: #f2f2f2;
+  }
+}
+
+.form__legend {
+  margin-bottom: 35px;
+
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__item {
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  padding-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+}

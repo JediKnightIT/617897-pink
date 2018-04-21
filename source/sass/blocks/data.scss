@@ -1,0 +1,33 @@
+.data__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.data__label {
+  padding-left: 22px;
+
+  line-height: 30px;
+  color: $pink;
+}
+
+.data__input {
+  width: 280px;
+  padding: 15px 22px;
+  box-sizing: border-box;
+
+  border: 2px solid #e5e5e5;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $blue;
+
+    outline: none;
+  }
+
+  &--active {
+    border: 2px solid $pink;
+  }
+}
