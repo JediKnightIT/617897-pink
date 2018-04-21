@@ -20,6 +20,10 @@
   &--hidden {
     display: none;
   }
+
+  &--margin {
+    margin-bottom: 18px;
+  }
 }
 
 .form__list {
@@ -42,4 +46,13 @@
 
   font-size: 18px;
   line-height: 30px;
+}
+
+.form__textarea {
+  width: 280px;
+  min-height: 200px;
+  padding: 22px;
+  box-sizing: border-box;
+
+  resize: none;
 }
