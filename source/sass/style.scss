@@ -1,7 +1,7 @@
 // config
+@import "config/fonts.scss";
 @import "config/variables.scss";
 @import "config/mixins.scss";
-@import "config/fonts.scss";
 @import "config/scaffolding.scss";
 
 // blocks header
@@ -13,13 +13,15 @@
 @import "blocks/menu-list.scss";
 
 // blocks index.html
+@import "blocks/main.scss";
 @import "blocks/intro.scss";
 @import "blocks/app.scss";
 @import "blocks/link.scss";
 @import "blocks/information.scss";
+@import "blocks/slider.scss";
 @import "blocks/reviews.scss";
 @import "blocks/price.scss";
-@import "blocks/table.scss";
+@import "blocks/tariff-selection.scss";
 @import "blocks/contacts.scss";
 
 // blocks photo.html

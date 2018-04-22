@@ -1,18 +1,21 @@
-.table {
+.tariff-selection {
+  width: 840px;
   margin-bottom: 40px;
+
+  transform: translateX(-280px);
 }
 
-.table__item {
+.tariff-selection__item {
   background-color: $white;
 }
 
-.table__cell-header {
+.tariff-selection__cell-header {
   text-align: center;
 
   background-color: $blue;
 }
 
-.table__cell {
+.tariff-selection__cell {
   line-height: 30px;
   color: $white;
   text-transform: uppercase;
@@ -30,7 +33,7 @@
   }
 }
 
-.table__cell-option {
+.tariff-selection__cell-option {
   line-height: 30px;
   text-transform: uppercase;
 }
