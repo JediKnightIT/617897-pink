@@ -3,30 +3,30 @@
 
   text-align: center;
 
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $menu-decor-color;
 }
 
 .menu-list__item {
   padding: 16px 0;
 
   border-top: 1px solid #485461;
-  box-shadow: 0 -1px 0 0 #000000;
+  box-shadow: 0 -1px 0 0 $menu-decor-color;
 }
 
 .menu-list__link {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
-  color: $white;
+  color: $menu-text-color;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: $pink;
+    color: $menu-text-action-color;
   }
 
   &:active {
-    color: rgba($pink, 0.3%);
+    color: rgba($menu-text-action-color, 0.3%);
   }
 }

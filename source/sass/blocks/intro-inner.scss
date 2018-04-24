@@ -4,7 +4,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-color: $blue;
+  background-color: $intro-background-color;
 }
 
 .intro-inner__title {
@@ -13,6 +13,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  color: $white;
+  color: $intro-text-color;
   text-align: center;
 }

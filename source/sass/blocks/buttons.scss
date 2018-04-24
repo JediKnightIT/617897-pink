@@ -15,40 +15,40 @@
   &--submit {
     margin-bottom: 12px;
 
-    color: $pink;
+    color: $submit-text-color;
 
-    border: 3px solid $pink;
+    border: 3px solid $submit-decor-color;
 
     &:hover,
     &:focus {
-      color: $white;
+      color: $submit-action-text-color;
 
-      background-color: $pink;
+      background-color: $submit-action-background-color;
     }
 
     &:active {
-      color: rgba($white, 0.3%);
+      color: rgba($submit-action-text-color, 0.3%);
 
-      background-color: $pink;
+      background-color: $submit-action-background-color;
     }
   }
 
   &--reset {
-    color: rgba($blue, 0.1%);
+    color: rgba($reset-text-color, 0.1%);
 
-    border: 3px solid rgba($blue, 0.1%);
+    border: 3px solid rgba($reset-decor-color, 0.1%);
 
     &:hover,
     &:focus {
-      color: rgba($blue, 0.3%);
+      color: rgba($reset-action-text-color, 0.3%);
 
-      border: 3px solid rgba($blue, 0.3%);
+      border: 3px solid rgba($reset-action-background-color, 0.3%);
     }
 
     &:active {
       color: rgba($white, 0.3%);
 
-      background-color: rgba($blue, 0.3%);
+      background-color: rgba($reset-action-background-color, 0.3%);
     }
   }
 }

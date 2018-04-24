@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $blue;
+  background-color: $nav-background-color;
 }
 
 .main-nav__close {
@@ -10,13 +10,13 @@
 }
 
 .main-nav__close-icon {
-  fill: $white;
+  fill: $header-icon-color;
 
   &:hover {
-    fill: $pink;
+    fill: $header-icon-action-color;
   }
 
   &:active {
-    fill: rgba($pink, 0.3%);
+    fill: rgba($header-icon-action-color, 0.3%);
   }
 }

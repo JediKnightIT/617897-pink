@@ -4,8 +4,8 @@
 
   border: none;
 
-  &--gray {
-    background-color: $gray;
+  &--background-color {
+    background-color: $fieldset-background-color;
   }
 }
 
@@ -15,7 +15,7 @@
 
   font: inherit;
   line-height: 18px;
-  color: $pink;
+  color: $legend-text-color;
   text-align: center;
   text-transform: uppercase;
 
@@ -60,18 +60,18 @@
 
   &:hover,
   &:focus {
-    border: 2px solid $blue;
+    border: 2px solid $form-element-action-color;
 
     outline: none;
+  }
+
+  &--active {
+    border: 2px solid $form-element-modify-color;
   }
 
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
-    color: $blue;
-  }
-
-  &--active {
-    border: 2px solid $pink;
+    color: $form-element-placeholder-color;
   }
 }

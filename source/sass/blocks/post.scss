@@ -6,7 +6,7 @@
   margin: 0;
   padding: 20px 18px;
 
-  background-color: $gray;
+  background-color: $post-background-color;
 }
 
 .post__author-name {
@@ -30,6 +30,6 @@
   padding-left: 32px;
 
   font-size: 12px;
-  color: $pink;
+  color: $post-like-text-color;
   text-transform: uppercase;
 }

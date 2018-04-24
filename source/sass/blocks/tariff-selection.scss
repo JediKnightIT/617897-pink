@@ -6,18 +6,18 @@
 }
 
 .tariff-selection__item {
-  background-color: $white;
+  background-color: $tariff-selection-background-color;
 }
 
 .tariff-selection__cell-header {
   text-align: center;
 
-  background-color: $blue;
+  background-color: $tariff-selection-header-background-color;
 }
 
 .tariff-selection__cell {
   line-height: 30px;
-  color: $white;
+  color: $tariff-selection-header-text-color;
   text-transform: uppercase;
 
   &--tariff {

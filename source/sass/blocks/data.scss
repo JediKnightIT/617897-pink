@@ -10,7 +10,7 @@
   padding-left: 22px;
 
   line-height: 30px;
-  color: $pink;
+  color: $form-label-text-color;
 }
 
 .data__input {
@@ -23,18 +23,18 @@
 
   &:hover,
   &:focus {
-    border: 2px solid $blue;
+    border: 2px solid $form-element-action-color;
 
     outline: none;
   }
 
   &--active {
-    border: 2px solid $pink;
+    border: 2px solid $form-element-modify-color;
   }
 
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
-    color: $blue;
+    color: $form-element-placeholder-color;
   }
 }

@@ -6,20 +6,20 @@
   font-weight: 700;
   line-height: 18px;
   text-align: center;
-  color: $white;
+  color: $link-text-color;
   text-decoration: none;
 
-  border: 3px solid $white;
+  border: 3px solid $link-decor-color;
   border-radius: 35px;
 
   &:hover,
   &:focus {
-    color: $pink;
+    color: $link-text-action-color;
 
-    background-color: $white;
+    background-color: $link-background-action-color;
   }
 
   &:active {
-    color: rgba($pink, 0.3%);
+    color: rgba($link-text-action-color, 0.3%);
   }
 }
