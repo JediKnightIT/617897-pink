@@ -1,3 +1,17 @@
+// Миксин для медиавыражений
+@mixin tablets {
+  @media screen and (min-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+// Миксин для декоративных кругов
 @mixin circle($width, $color) {
   width: $width;
   height: $width;
