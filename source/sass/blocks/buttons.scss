@@ -1,0 +1,54 @@
+.buttons__item {
+  width: 280px;
+  padding: 16px 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  background-color: transparent;
+  border-radius: 35px;
+
+  cursor: pointer;
+
+  &--submit {
+    margin-bottom: 12px;
+
+    color: $submit-text-color;
+
+    border: 3px solid $submit-decor-color;
+
+    &:hover,
+    &:focus {
+      color: $submit-action-text-color;
+
+      background-color: $submit-action-background-color;
+    }
+
+    &:active {
+      color: rgba($submit-action-text-color, 0.3%);
+
+      background-color: $submit-action-background-color;
+    }
+  }
+
+  &--reset {
+    color: rgba($reset-text-color, 0.1%);
+
+    border: 3px solid rgba($reset-decor-color, 0.1%);
+
+    &:hover,
+    &:focus {
+      color: rgba($reset-action-text-color, 0.3%);
+
+      border: 3px solid rgba($reset-action-background-color, 0.3%);
+    }
+
+    &:active {
+      color: rgba($white, 0.3%);
+
+      background-color: rgba($reset-action-background-color, 0.3%);
+    }
+  }
+}

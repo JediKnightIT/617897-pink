@@ -1,0 +1,43 @@
+// config
+@import "../../node_modules/normalize-scss/sass/normalize/_import-now.scss";
+@import "config/fonts.scss";
+@import "config/variables.scss";
+@import "config/mixins.scss";
+@import "config/scaffolding.scss";
+
+// blocks header
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu-burger.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu-list.scss";
+
+// blocks index.html
+@import "blocks/main.scss";
+@import "blocks/intro.scss";
+@import "blocks/app.scss";
+@import "blocks/link.scss";
+@import "blocks/information.scss";
+@import "blocks/slider.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/tariff-selection.scss";
+@import "blocks/contacts.scss";
+
+// blocks photo.html
+@import "blocks/intro-inner.scss";
+@import "blocks/photo-content.scss";
+@import "blocks/post.scss";
+@import "blocks/photo-editor.scss";
+@import "blocks/buttons.scss";
+
+// blocks form.html
+@import "blocks/competition.scss";
+@import "blocks/form.scss";
+@import "blocks/data.scss";
+@import "blocks/button.scss";
+@import "blocks/modal.scss";
+
+// blocks footer
+@import "blocks/footer.scss";

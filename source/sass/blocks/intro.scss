@@ -1,0 +1,12 @@
+.intro {
+  min-height: 462px;
+
+  background: url("../img/iphone-hand-mobile@1x.png") 0 176px no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background-color: $intro-background-color;
+}
+
+.intro__download {
+  margin: 0 auto;
+  padding-top: 490px;
+  padding-bottom: 30px;
+}

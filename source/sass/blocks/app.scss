@@ -1,0 +1,19 @@
+.app {
+  width: 320px;
+}
+
+.app__link {
+  margin-bottom: 30px;
+}
+
+.app__list {
+  @include list;
+}
+
+.app__description {
+  margin: 0;
+
+  font-weight: 300;
+  text-align: center;
+  color: #eaeaeb;
+}

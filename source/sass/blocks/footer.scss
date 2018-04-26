@@ -1,0 +1,16 @@
+.footer__logo {
+  padding-top: 35px;
+}
+
+.footer__list {
+  @include list;
+  padding-top: 35px;
+
+  text-align: center;
+}
+
+.footer__copyright {
+  padding-top: 35px;
+
+  text-align: center;
+}

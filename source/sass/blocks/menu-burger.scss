@@ -1,0 +1,18 @@
+.menu-burger {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.menu-burger__icon {
+  fill: $header-icon-color;
+
+  &:hover {
+    fill: $header-icon-action-color;
+  }
+
+  &:active {
+    fill: rgba($header-icon-action-color, 0.3%);
+  }
+}

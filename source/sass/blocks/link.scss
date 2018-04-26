@@ -1,0 +1,25 @@
+.link {
+  display: block;
+  padding: 20px 35px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: $link-text-color;
+  text-decoration: none;
+
+  border: 3px solid $link-decor-color;
+  border-radius: 35px;
+
+  &:hover,
+  &:focus {
+    color: $link-text-action-color;
+
+    background-color: $link-background-action-color;
+  }
+
+  &:active {
+    color: rgba($link-text-action-color, 0.3%);
+  }
+}

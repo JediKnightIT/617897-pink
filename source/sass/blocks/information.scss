@@ -1,0 +1,45 @@
+.information {
+  background-image: linear-gradient(-5deg, $gray 77%, $white 0%);
+}
+
+.information__header {
+  padding-top: 50px;
+}
+
+.information__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.information__list {
+  @include list;
+  padding-top: 50px;
+}
+
+.information__item {
+  text-align: center;
+}
+
+.information__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+}
+
+.information__description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.information__img {
+  height: 280px;
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}

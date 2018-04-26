@@ -1,0 +1,30 @@
+.contacts__text {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts__list {
+  @include list;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0;
+
+  font-size: 18px;
+}
+
+.contacts__link {
+  font-size: 24px;
+  font-weight: 300;
+  color: $contacts-link-text-color;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.button {
+  width: 280px;
+  padding: 15px 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $button-text-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $button-background-color;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $button-action-background-color;
+  }
+
+  &:active {
+    color: rgba($button-action-text-color, 0.3%);
+
+    background-color: $button-action-background-color;
+  }
+
+  &--disabled {
+    background-color: $button-disables-background-color;
+  }
+
+  &--margin {
+    margin-bottom: 40px;
+  }
+}

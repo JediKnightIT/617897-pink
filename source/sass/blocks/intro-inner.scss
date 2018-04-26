@@ -1,0 +1,18 @@
+.intro-inner {
+  min-height: 237px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $intro-background-color;
+}
+
+.intro-inner__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $intro-text-color;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+// variables for applying font
+$main-font: "Opensans", "Arial", sans-serif;
+
+// variables for colors
+$pink: #d22856;
+$blue: #283645;
+$green: #2aab6d;
+$darkgreen: #1c9b5e;
+$white: #ffffff;
+$gray: #f2f2f2;
+$darkgray: #e5e5e5;
+$black: #000000;
+
+// variables for applying colors
+$main-text-color: $blue;
+$intro-background-color: $blue;
+$intro-text-color: $white;
+
+// variables for applying colors header
+$header-background-color: $black;
+$logo-header-color: $white;
+$header-icon-color: $white;
+$header-icon-action-color: $pink;
+
+$nav-background-color: $blue;
+
+$menu-decor-color: $black;
+$menu-text-color: $white;
+$menu-text-action-color: $pink;
+
+// variables for applying colors index.html
+$link-text-color: $white;
+$link-decor-color: $white;
+$link-text-action-color: $pink;
+$link-background-action-color: $white;
+
+$tariff-selection-background-color: $white;
+$tariff-selection-header-background-color: $blue;
+$tariff-selection-header-text-color: $white;
+
+$contacts-link-text-color: $pink;
+
+// variables for applying colors photo.html
+$post-background-color: $gray;
+$post-like-text-color: $pink;
+
+$photo-editor-background-color: $gray;
+
+$submit-text-color: $pink;
+$submit-decor-color: $pink;
+$submit-action-text-color: $white;
+$submit-action-background-color: $pink;
+
+$reset-text-color: $blue;
+$reset-decor-color: $blue;
+$reset-action-text-color: $blue;
+$reset-action-background-color: $blue;
+
+// variables for applying colors form.html
+$fieldset-background-color: $gray;
+$legend-text-color: $pink;
+$form-element-action-color: $blue;
+$form-element-modify-color: $pink;
+$form-element-decor-color: $darkgray;
+$form-label-text-color: $pink;
+$form-element-placeholder-color: $blue;
+
+$button-text-color: $white;
+$button-action-text-color: $white;
+$button-background-color: $green;
+$button-action-background-color: $darkgreen;
+$button-disables-background-color: $darkgray;
+
+$modal-title-color: $black;
