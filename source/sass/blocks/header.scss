@@ -2,6 +2,30 @@
   background-color: rgba($header-background-color, 0.3%);
 }
 
-.header__logo {
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
+
+  @include tablets() {
+    padding-top: 27px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop() {
+    padding: 0;
+  }
 }
+
+.header__wrapper-desktop {
+  @include desktop() {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding: 27px 120px 43px 120px;
+  }
+}
+
