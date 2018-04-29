@@ -5,6 +5,10 @@
   border: none;
 
   cursor: pointer;
+
+  @include desktop() {
+    display: none;
+  }
 }
 
 .menu-burger__icon {

@@ -1,5 +1,9 @@
 .main-nav {
   background-color: $nav-background-color;
+
+  @include desktop() {
+    display: flex;
+  }
 }
 
 .main-nav__close {
@@ -7,6 +11,10 @@
   border: none;
 
   cursor: pointer;
+
+  @include desktop() {
+    display: none;
+  }
 }
 
 .main-nav__close-icon {

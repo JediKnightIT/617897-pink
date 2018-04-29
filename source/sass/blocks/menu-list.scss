@@ -4,6 +4,10 @@
   text-align: center;
 
   border-bottom: 1px solid $menu-decor-color;
+
+  @include desktop() {
+    display: flex;
+  }
 }
 
 .menu-list__item {
@@ -11,6 +15,10 @@
 
   border-top: 1px solid #485461;
   box-shadow: 0 -1px 0 0 $menu-decor-color;
+
+  @include desktop() {
+  padding: 0;
+  }
 }
 
 .menu-list__link {
