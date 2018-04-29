@@ -1,3 +1,15 @@
+.app {
+  width: 280px;
+
+  @include tablets() {
+    width: 620px;
+  }
+
+  @include desktop() {
+    width: 940px;
+  }
+}
+
 .app__link {
   margin-bottom: 30px;
 }

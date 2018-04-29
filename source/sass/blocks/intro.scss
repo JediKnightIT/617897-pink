@@ -6,6 +6,23 @@
 }
 
 .intro__download {
-  padding-top: 490px;
-  padding-bottom: 30px;
+  padding: 490px 20px 30px 20px;
+
+  @include tablets() {
+    padding-top: 100px;
+  }
+
+  @include desktop() {
+    margin: 0 auto;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+}
+
+.intro__wrapper {
+  width: 280px;
+
+  @include tablets() {
+    width: 300px;
+  }
 }
