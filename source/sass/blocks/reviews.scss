@@ -1,12 +1,37 @@
 .reviews__list {
   margin-bottom: 20px;
   padding-top: 45px;
+
+  @include desktop() {
+    width: 690px;
+    margin: 0 auto;
+  }
 }
 
 .reviews__item {
+  display: none;
   margin: 0;
 
   text-align: center;
+
+  &--active {
+    display: block;
+  }
+
+  @include tablets() {
+    &--active {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.reviews__author-info {
+  display: none;
+
+  @include tablets() {
+    display: block;
+  }
 }
 
 .reviews__author-name {
