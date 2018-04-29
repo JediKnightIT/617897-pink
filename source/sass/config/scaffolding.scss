@@ -23,4 +23,8 @@ input[type="radio"].visually-hidden {
   @include tablets() {
     width: 620px;
   }
+
+  @include desktop() {
+    width: 940px;
+  }
 }

@@ -1,0 +1,27 @@
+.effect {
+  display: none;
+
+  @include tablets() {
+    display: block;
+  }
+}
+
+.effect__wrapper {
+  width: 310px;
+  margin-left: auto;
+
+  @include desktop() {
+    width: 570px;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $black;
+}
+
+.effect__link {
+  color: $pink;
+}
