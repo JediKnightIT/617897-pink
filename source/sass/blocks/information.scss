@@ -15,9 +15,20 @@
   text-align: center;
 }
 
+.information__wrapper {
+  @include tablets() {
+    display: flex;
+  }
+}
+
 .information__list {
   @include list;
   padding-top: 50px;
+
+  @include tablets() {
+    flex-basis: 310px;
+    order: 1;
+  }
 }
 
 .information__item {
@@ -42,4 +53,8 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 50% 0;
   background-repeat: no-repeat;
+
+  @include tablets() {
+    flex-basis: 310px;
+  }
 }
