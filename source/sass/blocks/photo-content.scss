@@ -11,10 +11,20 @@
 }
 
 .photo-content__description {
-  margin: 0;
+  width: 252px;
+  margin: 0 auto;
 
   line-height: 30px;
   text-align: center;
+
+  @include tablets() {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  @include desktop() {
+    width: 585px;
+  }
 }
 
 .photo-content__footer {
