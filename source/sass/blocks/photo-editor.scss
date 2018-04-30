@@ -1,13 +1,56 @@
 .photo-editor {
   background-color: $photo-editor-background-color;
+
+  @include desktop() {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
-.photo-editor__form {
-  padding-top: 20px;
-  padding-bottom: 40px;
+.photo-editor__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+
+  @include tablets() {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @include desktop() {
+    width: 940px;
+    padding: 57px 60px 57px 80px;
+    box-sizing: border-box;
+  }
+}
+
+.photo-editor__source-photo {
+  @include tablets() {
+    flex-basis: 300px;
+  }
+}
+
+.photo-editor__interface {
+  @include tablets() {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px;
+  }
+
+  @include desktop() {
+    flex-basis: 410px;
+  }
 }
 
 .photo-editor__filter {
+  @include tablets() {
+    display: flex;
+  }
+}
+
+.photo-editor__controls {
   text-align: center;
 }
 

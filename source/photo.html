@@ -167,24 +167,28 @@
       <section class="photo-editor">
         <h2 class="visually-hidden">Фоторедактор с возможностью запостить свою фотографию</h2>
         <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="wrapper">
+          <div class="photo-editor__wrapper">
             <picture class="photo-editor__source-photo">
               <!-- <source media="()" srcset="">
                   <source media="()" srcset=""> -->
               <img class="photo-editor__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимний пейзаж">
             </picture>
-            <div class="photo-editor__filter">
-              <button class="photo-editor__toggle photo-editor__toggle--crop" type="button" aria-label="Обрезка фотографии"></button>
-              <button class="photo-editor__toggle photo-editor__toggle--fill" type="button" aria-label="Выбор цвета фотографии"></button>
-              <button class="photo-editor__toggle photo-editor__toggle--contrast" type="button" aria-label="Выбор контрастности фотографии"></button>
+            <div class="photo-editor__interface">
+              <div class="photo-editor__filter">
+                <div class="photo-editor__controls">
+                  <button class="photo-editor__toggle photo-editor__toggle--crop" type="button" aria-label="Обрезка фотографии"></button>
+                  <button class="photo-editor__toggle photo-editor__toggle--fill" type="button" aria-label="Выбор цвета фотографии"></button>
+                  <button class="photo-editor__toggle photo-editor__toggle--contrast" type="button" aria-label="Выбор контрастности фотографии"></button>
+                </div>
+                <div class="photo-editor__scale">
+                  <div class="photo-editor__slider"></div>
+                </div>
+              </div>
+              <p class="photo-editor__buttons buttons">
+                <button class="buttons__item buttons__item--submit" type="submit">Запостить</button>
+                <button class="buttons__item buttons__item--reset" type="reset">Отмена</button>
+              </p>
             </div>
-            <div class="photo-editor__scale">
-              <div class="photo-editor__slider"></div>
-            </div>
-            <p class="photo-editor__buttons buttons">
-              <button class="buttons__item buttons__item--submit" type="submit">Запостить</button>
-              <button class="buttons__item buttons__item--reset" type="reset">Отмена</button>
-            </p>
           </div>
         </form>
       </section>
