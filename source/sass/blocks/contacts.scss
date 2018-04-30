@@ -1,19 +1,42 @@
 .contacts__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+
+  @include tablets() {
+    width: 450px;
+
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 .contacts__list {
   @include list;
+
+  @include tablets() {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__item {
   margin-bottom: 25px;
 
   text-align: center;
+
+  @include tablets() {
+    flex-basis: 300px;
+    flex-grow: 1;
+  }
+
+  @include desktop() {
+    &--position {
+      order: 1;
+    }
+  }
 }
 
 .contacts__title {
