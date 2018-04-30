@@ -1,15 +1,31 @@
 .tariff-selection {
-  width: 840px;
+  width: 1120px;
   margin-bottom: 40px;
 
-  transform: translateX(-280px);
+  transform: translateX(-560px);
+
+  @include tablets() {
+    width: 620px;
+
+    transform: translateX(0);
+  }
+
+  @include desktop() {
+    width: 940px;
+  }
 }
 
 .tariff-selection__item {
   background-color: $tariff-selection-background-color;
 }
 
+.tariff-selection__cell-hidden {
+  background-color: #f2f2f2;
+}
+
 .tariff-selection__cell-header {
+  width: 280px;
+
   text-align: center;
 
   background-color: $tariff-selection-header-background-color;
@@ -34,6 +50,7 @@
 }
 
 .tariff-selection__cell-option {
+  width: 280px;
   padding-left: 25px;
 
   line-height: 30px;
