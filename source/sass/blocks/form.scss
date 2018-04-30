@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fieldset {
   margin: 0;
   padding: 40px 0;
@@ -6,6 +11,20 @@
 
   &--background-color {
     background-color: $fieldset-background-color;
+  }
+
+  @include tablets() {
+    &--order-first {
+      order: -3;
+    }
+
+    &--order-second {
+      order: -2;
+    }
+
+    &--order-third {
+      order: -1;
+    }
   }
 }
 

@@ -4,6 +4,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablets() {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .data__label {
@@ -11,15 +17,24 @@
 
   line-height: 30px;
   color: $form-label-text-color;
+
+  @include tablets() {
+    margin-right: 20px;
+    padding: 0;
+  }
 }
 
 .data__input {
   width: 280px;
-  padding: 14px 22px;
+  padding: 20px 22px;
   box-sizing: border-box;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
+
+  @include tablets() {
+    flex-grow: 1;
+  }
 
   &:hover,
   &:focus {
