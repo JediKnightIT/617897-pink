@@ -1,3 +1,13 @@
+.footer {
+  &--mobile-hidden {
+    display: none;
+
+    @include tablets() {
+      display: block;
+    }
+  }
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -5,10 +15,16 @@
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-}
 
-.footer__logo {
-  padding-top: 35px;
+  @include tablets() {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @include desktop() {
+    width: 940px;
+  }
 }
 
 .footer__list {
@@ -17,7 +33,6 @@
   width: 200px;
 
   @include list;
-  padding-top: 35px;
 
   text-align: center;
 }
@@ -25,7 +40,6 @@
 .footer__copyright {
   display: flex;
   align-items: center;
-  padding: 40px 0;
 
   text-align: center;
 }
