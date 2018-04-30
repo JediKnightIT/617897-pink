@@ -9,6 +9,25 @@
 
   line-height: 30px;
   text-align: center;
+
+  @include tablets() {
+    width: 545px;
+    margin: 0 auto;
+
+    font-size: 18px;
+  }
+
+  @include desktop() {
+    width: 754px;
+  }
+}
+
+.competition__mobile-hidden {
+  display: none;
+
+  @include tablets() {
+    display: inline;
+  }
 }
 
 .competition__footer {
