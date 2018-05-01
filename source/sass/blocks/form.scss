@@ -145,6 +145,10 @@
     line-height: 30px;
     color: $form-element-placeholder-color;
   }
+
+  @include desktop() {
+    min-height: 125px;
+  }
 }
 
 .form__description {
