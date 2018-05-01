@@ -8,18 +8,15 @@
 }
 
 .photo-editor__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 20px 20px 40px 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   @include tablets() {
     display: flex;
     justify-content: space-between;
-    width: 620px;
   }
 
   @include desktop() {
-    width: 940px;
     padding: 57px 60px 57px 80px;
     box-sizing: border-box;
   }
