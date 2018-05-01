@@ -36,4 +36,10 @@
   @include tablets() {
     width: 300px;
   }
+
+  @include desktop() {
+    &--show {
+      width: 460px;
+    }
+  }
 }
