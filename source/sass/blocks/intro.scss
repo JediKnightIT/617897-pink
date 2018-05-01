@@ -13,16 +13,6 @@
   }
 
   @include desktop() {
-    margin: 0 auto;
-    padding-right: 130px;
     padding-left: 130px;
-  }
-}
-
-.intro__wrapper {
-  width: 280px;
-
-  @include tablets() {
-    width: 300px;
   }
 }
