@@ -59,8 +59,8 @@
         </header>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset form__fieldset--border-none form__fieldset--order-first data">
-            <legend class="form__legend form__legend--hidden">Персональные данные</legend>
-            <ul class="form__list data__list">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <ul class="form__list">
               <li class="data__item">
                 <label class="data__label" for="user-surname">Фамилия:</label>
                 <input class="data__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
@@ -107,12 +107,12 @@
           <fieldset class="form__fieldset form__fieldset--order-third data">
             <legend class="form__legend form__legend--hidden">Контактная информация</legend>
             <ul class="form__list data__list">
-              <li class="data__item">
-                <label class="data__label" for="user-phone">Номер телефона</label>
+              <li class="data__item data__item--position">
+                <label class="data__label data__label--order" for="user-phone">Номер телефона</label>
                 <input class="data__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </li>
-              <li class="data__item">
-                <label class="data__label" for="user-email">Адрес почты</label>
+              <li class="data__item data__item--position">
+                <label class="data__label data__label--order" for="user-email">Адрес почты</label>
                 <input class="data__input" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
@@ -139,14 +139,11 @@
             <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
             <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <p class="wrapper">
+          <div class="competition__footer">
             <button class="form__button button" type="submit">Отправить форму</button>
-          </p>
+            <p class="form__description"> <span class="form__description-simbol">*</span> — обязательные поля</p>
+          </div>
         </form>
-        <footer class="competition__footer">
-          <p class="competition__description">
-            <span class="competition__description-simbol">*</span> — обязательные поля</p>
-        </footer>
       </section>
     </main>
     <footer class="footer page__footer">

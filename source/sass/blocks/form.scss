@@ -18,6 +18,7 @@
 
   @include tablets() {
     margin-bottom: 50px;
+    padding: 40px 60px;
 
     border: 2px solid $fieldset-border-color;
 
@@ -35,6 +36,8 @@
   }
 
   &--border-none {
+    padding-right: 0;
+    padding-left: 0;
     border: none;
   }
 }
@@ -79,14 +82,10 @@
 
   font-size: 18px;
   line-height: 30px;
-
-  @include tablets() {
-    padding-left: 120px;
-  }
 }
 
 .form__textarea {
-  width: 280px;
+  width: 100%;
   min-height: 200px;
   padding: 18px;
   box-sizing: border-box;
@@ -112,4 +111,16 @@
     line-height: 30px;
     color: $form-element-placeholder-color;
   }
+}
+
+.form__description {
+  margin: 0;
+
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__description-simbol {
+  color: $pink;
 }

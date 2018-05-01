@@ -32,4 +32,8 @@
   &--margin {
     margin-bottom: 40px;
   }
+
+  @include tablets() {
+    width: 300px;
+  }
 }
