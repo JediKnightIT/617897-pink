@@ -1,3 +1,10 @@
+.data__list {
+  @include desktop() {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .data__item {
   margin-bottom: 15px;
 
@@ -12,6 +19,13 @@
 
     &--position {
       flex-wrap: wrap;
+    }
+  }
+
+  @include desktop() {
+    &--position {
+      margin: 0;
+      flex-basis: 373px;
     }
   }
 }
