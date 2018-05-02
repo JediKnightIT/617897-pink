@@ -14,13 +14,13 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 22px;
+  top: 16px;
   right: 20px;
   z-index: 2;
 
   display: block;
   width: 50px;
-  height: 25px;
+  height: 30px;
 
   background-color: transparent;
 
@@ -32,14 +32,14 @@
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
 
   width: 50px;
   height: 4px;
 
   background-color: $header-icon-color;
-  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  box-shadow: 0 10px 0 0 $header-icon-color, 0 20px 0 0 $header-icon-color;
 }
 
 .main-nav--closed .main-nav__toggle:hover::before,
@@ -52,27 +52,40 @@
   background-color: rgba($header-icon-action-color, 0.3%);
   box-shadow: 0 10px 0 0 rgba($header-icon-action-color, 0.3%), 0 20px 0 0 rgba($header-icon-action-color, 0.3%);
 }
-// .menu-burger__icon {
-//   fill: $header-icon-color;
 
-//   &:hover {
-//     fill: $header-icon-action-color;
-//   }
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
 
-//   &:active {
-//     fill: rgba($header-icon-action-color, 0.3%);
-//   }
-// }
+    position: absolute;
+    top: 13px;
+    right: 0;
 
-// стили для крестика
-// .main-nav__close-icon {
-//   fill: $header-icon-color;
+    width: 30px;
+    height: 5px;
 
-//   &:hover {
-//     fill: $header-icon-action-color;
-//   }
+    background-color: $header-icon-color;
+    border-radius: 10px;
+  }
 
-//   &:active {
-//     fill: rgba($header-icon-action-color, 0.3%);
-//   }
-// }
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:focus::before,
+.main-nav--opened .main-nav__toggle:hover::after,
+.main-nav--opened .main-nav__toggle:focus::after {
+  background-color: $header-icon-action-color;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: rgba($header-icon-action-color, 0.3%);
+}
