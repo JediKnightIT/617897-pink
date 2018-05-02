@@ -36,6 +36,14 @@
   text-align: center;
 }
 
+.copyright__text {
+  line-height: 18px;
+
+  @include tablets() {
+    font-size: 18px;
+  }
+}
+
 .copyright__link {
   height: 34px;
 }

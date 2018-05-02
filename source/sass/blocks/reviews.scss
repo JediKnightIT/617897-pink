@@ -33,6 +33,11 @@
     display: block;
     margin: 0;
   }
+
+  @include desktop() {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__author-name {
@@ -48,6 +53,10 @@
     margin-bottom: 10px;
 
     font-size: 20px;
+  }
+
+  @include desktop() {
+    font-size: 24px;
   }
 }
 
