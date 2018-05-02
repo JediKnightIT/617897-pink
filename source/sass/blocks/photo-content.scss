@@ -9,13 +9,17 @@
 .photo-content__item {
   margin-bottom: 20px;
 
+  background-color: $photo-background-color;
+
   @include tablets() {
     flex-basis: 300px;
   }
 }
 
-.photo-content__item--margin {
-  margin: 0;
+.photo-content__item-panorama {
+  margin-bottom: 20px;
+
+  background-color: $white;
 }
 
 .photo-content__header {

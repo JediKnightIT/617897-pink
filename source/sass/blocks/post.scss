@@ -1,17 +1,30 @@
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
 .post__source-photo {
   display: block;
+  flex-basis: 100%;
 }
 
 .post__photo {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .post__description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
   margin: 0;
-  padding: 20px 18px;
+  margin-bottom: 20 px;
+  padding: 20px 18px 0 18px;
 
-  background-color: $post-background-color;
+  &--panorama {
+    background-color: $post-background-color;
+  }
 }
 
 .post__author-name {
@@ -32,6 +45,7 @@
 
 .post__like {
   margin: 0;
+  margin-top: auto;
   padding-left: 32px;
 
   font-size: 12px;
