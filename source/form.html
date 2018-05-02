@@ -10,30 +10,23 @@
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-          <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
-            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
-          </svg>
-        </a>
-        <button class="menu-burger" type="button" aria-label="Кнопка открытия выпадающего меню">
-          <svg class="menu-burger__icon" width="49" height="24">
-            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
-          </svg>
-        </button>
-        <nav class="main-nav">
-          <button class="main-nav__close" type="button" aria-label="Кнопка закрытия выпадающего меню">
-            <svg class="main-nav__close-icon" width="24" height="24">
-              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
-            </svg>
-          </button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__menu">
+            <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
+              <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
+          </div>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="index.html">Главная</a>
             </li>
-            <li class="menu-list__item menu-list__item--active">
+            <li class="menu-list__item">
               <a class="menu-list__link" href="photo.html">Фотографии</a>
             </li>
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link" href="#">Конкурс</a>
             </li>
             <li class="menu-list__item">
