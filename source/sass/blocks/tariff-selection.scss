@@ -2,6 +2,8 @@
   width: 1120px;
   margin-bottom: 40px;
 
+  border-collapse: collapse;
+
   transform: translateX(-560px);
 
   @include tablets() {
@@ -15,20 +17,26 @@
   }
 }
 
-.tariff-selection__item {
-  background-color: $tariff-selection-background-color;
-}
-
-.tariff-selection__cell-hidden {
-  background-color: #f2f2f2;
-}
-
 .tariff-selection__cell-header {
   width: 280px;
+  height: 98px;
 
   text-align: center;
 
   background-color: $tariff-selection-header-background-color;
+  border-right: 2px solid $tariff-selection-border-color;
+
+  @include tablets() {
+    height: 80px;
+  }
+
+  @include desktop() {
+    height: 98px;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
 }
 
 .tariff-selection__cell {
@@ -39,6 +47,14 @@
   &--tariff {
     font-size: 18px;
     font-weight: 700;
+
+    @include tablets() {
+      font-size: 16px;
+    }
+
+    @include desktop() {
+      font-size: 18px;
+    }
   }
 
   &--cost {
@@ -46,13 +62,43 @@
 
     font-size: 24px;
     font-weight: 300;
+
+    @include tablets() {
+      font-size: 18px;
+    }
+
+    @include desktop() {
+      font-size: 24px;
+    }
   }
 }
 
 .tariff-selection__cell-option {
   width: 280px;
+  height: 60px;
   padding-left: 25px;
 
   line-height: 30px;
   text-transform: uppercase;
+
+  background-color: $tariff-selection-background-color;
+  border: 2px solid $tariff-selection-border-color;
+
+  @include tablets() {
+    height: 47px;
+
+    text-transform: none;
+  }
+
+  @include desktop() {
+    height: 60px;
+
+    font-size: 18px;
+  }
+}
+
+.tariff-selection__cell-hidden {
+  @include tablets() {
+    display: none;
+  }
 }
