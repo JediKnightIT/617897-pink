@@ -31,6 +31,7 @@
 
   @include tablets() {
     display: block;
+    margin: 0;
   }
 }
 
@@ -42,12 +43,24 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+
+  @include tablets() {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+  }
 }
 
 .reviews__quote {
   margin: 0;
 
   line-height: 30px;
+
+  @include tablets() {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+  }
 }
 
 .reviews__toggles {
