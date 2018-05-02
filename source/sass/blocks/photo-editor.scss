@@ -51,6 +51,10 @@
   text-align: center;
 }
 
+.photo-editor__list {
+  @include list;
+}
+
 .photo-editor__buttons {
   margin: 0;
 }
