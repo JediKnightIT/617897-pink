@@ -41,14 +41,18 @@
   }
 }
 
-// .photo-editor__filter {
-//   @include tablet() {
-//     display: flex;
-//   }
-// }
+.photo-editor__label {
+  @include tablet() {
+    display: flex;
+    align-items: center;
+  }
+}
 
-.photo-editor__controls {
-  text-align: center;
+.photo-editor__control {
+  @include tablet() {
+    flex-basis: 54px;
+    text-align: center;
+  }
 }
 
 .photo-editor__buttons {
