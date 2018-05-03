@@ -38,7 +38,7 @@
   }
 
   @include desktop() {
-    &--position {
+    &--displaced {
       order: 1;
     }
   }
