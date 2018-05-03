@@ -1,7 +1,7 @@
 .app {
   width: 280px;
 
-  @include tablets() {
+  @include tablet() {
     width: 300px;
   }
 }
@@ -9,7 +9,7 @@
 .app__slogan {
   display: none;
 
-  @include tablets() {
+  @include tablet() {
     display: block;
     margin: 0;
     margin-bottom: 35px;
@@ -38,7 +38,7 @@
   text-align: center;
   color: $app-text-color;
 
-  @include tablets() {
+  @include tablet() {
     font-size: 18px;
   }
 }

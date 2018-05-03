@@ -6,7 +6,7 @@
 
   transform: translateX(-560px);
 
-  @include tablets() {
+  @include tablet() {
     width: 620px;
 
     transform: translateX(0);
@@ -26,7 +26,7 @@
   background-color: $tariff-selection-header-background-color;
   border-right: 2px solid $tariff-selection-border-color;
 
-  @include tablets() {
+  @include tablet() {
     height: 80px;
   }
 
@@ -48,7 +48,7 @@
     font-size: 18px;
     font-weight: 700;
 
-    @include tablets() {
+    @include tablet() {
       font-size: 16px;
     }
 
@@ -63,7 +63,7 @@
     font-size: 24px;
     font-weight: 300;
 
-    @include tablets() {
+    @include tablet() {
       font-size: 18px;
     }
 
@@ -84,7 +84,7 @@
   background-color: $tariff-selection-background-color;
   border: 2px solid $tariff-selection-border-color;
 
-  @include tablets() {
+  @include tablet() {
     height: 47px;
 
     text-transform: none;
@@ -98,7 +98,7 @@
 }
 
 .tariff-selection__cell-hidden {
-  @include tablets() {
+  @include tablet() {
     display: none;
   }
 }

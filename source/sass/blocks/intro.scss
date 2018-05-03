@@ -8,7 +8,7 @@
 .intro__download {
   padding: 490px 20px 30px 20px;
 
-  @include tablets() {
+  @include tablet() {
     padding-top: 100px;
   }
 

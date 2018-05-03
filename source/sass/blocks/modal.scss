@@ -3,7 +3,7 @@
 
   box-shadow: 0 9px 25px 5px #e2e2e2;
 
-  @include tablets() {
+  @include tablet() {
     width: 460px;
     margin: 0 auto;
   }
@@ -27,7 +27,7 @@
   width: 280px;
   margin: 0 auto;
 
-  @include tablets() {
+  @include tablet() {
     width: 320px;
 
     text-align: center;

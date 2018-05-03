@@ -5,7 +5,7 @@
   font-weight: 300;
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     width: 575px;
 
     font-size: 40px;
@@ -21,7 +21,7 @@
 .contacts__list {
   @include list;
 
-  @include tablets() {
+  @include tablet() {
     display: flex;
     flex-wrap: wrap;
   }
@@ -32,7 +32,7 @@
 
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     flex-basis: 300px;
     flex-grow: 1;
   }

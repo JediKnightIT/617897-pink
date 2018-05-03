@@ -11,7 +11,7 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
-  @include tablets() {
+  @include tablet() {
     display: flex;
     justify-content: space-between;
   }
@@ -23,13 +23,13 @@
 }
 
 .photo-editor__source-photo {
-  @include tablets() {
+  @include tablet() {
     flex-basis: 300px;
   }
 }
 
 .photo-editor__interface {
-  @include tablets() {
+  @include tablet() {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +42,7 @@
 }
 
 .photo-editor__filter {
-  @include tablets() {
+  @include tablet() {
     display: flex;
   }
 }

@@ -4,7 +4,7 @@
 
   background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%, #f2f2f2 50%, #ffffff 50%, #ffffff 62%, #f2f2f2 62%, #f2f2f2 78%, #ffffff 78%);
 
-  @include tablets() {
+  @include tablet() {
     background-image: linear-gradient(to bottom, #ffffff);
   }
 
@@ -21,7 +21,7 @@
 
   border: none;
 
-  @include tablets() {
+  @include tablet() {
     margin-bottom: 50px;
     padding: 40px 60px;
 
@@ -75,7 +75,7 @@
   &--hidden {
     display: none;
 
-    @include tablets() {
+    @include tablet() {
       display: block;
     }
   }

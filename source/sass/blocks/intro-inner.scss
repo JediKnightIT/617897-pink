@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-color: $intro-background-color;
 
-  @include tablets() {
+  @include tablet() {
     min-height: 395px;
   }
 }
@@ -20,7 +20,7 @@
   color: $intro-text-color;
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     width: 620px;
     margin: 0 auto;
 

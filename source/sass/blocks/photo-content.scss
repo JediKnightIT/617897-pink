@@ -1,5 +1,5 @@
 .photo-content__wrapper {
-  @include tablets() {
+  @include tablet() {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,7 +11,7 @@
 
   background-color: $photo-background-color;
 
-  @include tablets() {
+  @include tablet() {
     flex-basis: 300px;
   }
 }
@@ -33,7 +33,7 @@
   line-height: 30px;
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     width: 500px;
     font-size: 18px;
   }

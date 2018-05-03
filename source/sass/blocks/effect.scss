@@ -1,7 +1,7 @@
 .effect {
   display: none;
 
-  @include tablets() {
+  @include tablet() {
     display: block;
   }
 }

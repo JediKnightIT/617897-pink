@@ -14,7 +14,7 @@
   font-weight: 300;
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     margin-bottom: 0;
 
     font-size: 40px;
@@ -40,7 +40,7 @@
   padding-top: 50px;
   padding-bottom: 280px;
 
-  @include tablets() {
+  @include tablet() {
     padding-bottom: 0;
 
     background-position: 0 140%;
@@ -59,7 +59,7 @@
 
   text-align: center;
 
-  @include tablets() {
+  @include tablet() {
     width: 310px;
     margin-left: auto;
     padding-bottom: 0;

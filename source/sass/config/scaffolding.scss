@@ -20,7 +20,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
 
-  @include tablets() {
+  @include tablet() {
     width: 620px;
   }
 

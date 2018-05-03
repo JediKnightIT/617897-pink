@@ -11,8 +11,8 @@
   }
 }
 
-@mixin tablets {
-  @media screen and (min-width: $tablets) {
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
     @content;
   }
 }

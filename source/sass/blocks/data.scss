@@ -12,7 +12,7 @@
     margin-bottom: 0;
   }
 
-  @include tablets() {
+  @include tablet() {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -38,7 +38,7 @@
 
   text-transform: uppercase;
 
-  @include tablets() {
+  @include tablet() {
     margin-right: 20px;
     padding: 0;
 
@@ -59,7 +59,7 @@
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
 
-  @include tablets() {
+  @include tablet() {
     flex-grow: 1;
   }
 
