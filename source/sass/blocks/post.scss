@@ -3,6 +3,35 @@
   flex-direction: column;
 }
 
+.post__link {
+  position: relative;
+}
+
+.post__hit {
+  position: absolute;
+  right: 20px;
+
+  width: 140px;
+  padding: 6px 0;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $pink;
+
+  @include tablet() {
+    top: 80px;
+  }
+
+  @include desktop() {
+    top: 55px;
+    right: 130px;
+  }
+}
+
 .post__source-photo {
   display: block;
   flex-basis: 100%;
