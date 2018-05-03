@@ -1,8 +1,10 @@
 .main-nav {
   position: relative;
 
-  background-color: $nav-background-color;
+  background-color: rgba($header-background-color, 0.3%);
+}
 
+.main-nav__wrapper {
   @include laptop-min() {
     display: flex;
     align-items: center;
@@ -15,6 +17,11 @@
 
 .main-nav__menu {
   padding: 20px;
+
+  @include tablet() {
+    padding-top: 26px;
+    padding-bottom: 42px;
+  }
 
   @include laptop-min() {
     margin-right: auto;
@@ -36,6 +43,10 @@
 
   cursor: pointer;
   border: none;
+
+  @include tablet() {
+    top: 25px;
+  }
 
   @include laptop-min() {
     display: none;

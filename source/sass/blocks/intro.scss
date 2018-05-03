@@ -1,18 +1,14 @@
 .intro {
-  min-height: 462px;
-
-  background: url("../img/iphone-hand-mobile@1x.png") 0 176px no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
-  background-color: $intro-background-color;
-}
-
-.intro__download {
-  padding: 490px 20px 30px 20px;
+  padding-top: 422px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include tablet() {
     padding-top: 100px;
   }
 
-  @include desktop() {
-    padding-left: 130px;
+  @include laptop-min() {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

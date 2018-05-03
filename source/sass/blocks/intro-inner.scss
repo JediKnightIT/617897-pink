@@ -1,11 +1,6 @@
 .intro-inner {
   min-height: 237px;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: $intro-background-color;
-
   @include tablet() {
     min-height: 395px;
   }
