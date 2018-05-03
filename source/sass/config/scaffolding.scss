@@ -16,9 +16,15 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper {
-  min-width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 
-  box-sizing: border-box;
+  @include tablet() {
+    width: 620px;
+  }
+
+  @include desktop() {
+    width: 940px;
+  }
 }

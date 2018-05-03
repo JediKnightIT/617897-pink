@@ -1,18 +1,42 @@
 .tariff-selection {
-  width: 840px;
+  width: 1120px;
   margin-bottom: 40px;
 
-  transform: translateX(-280px);
-}
+  border-collapse: collapse;
 
-.tariff-selection__item {
-  background-color: $tariff-selection-background-color;
+  transform: translateX(-560px);
+
+  @include tablet() {
+    width: 620px;
+
+    transform: translateX(0);
+  }
+
+  @include desktop() {
+    width: 940px;
+  }
 }
 
 .tariff-selection__cell-header {
+  width: 280px;
+  height: 98px;
+
   text-align: center;
 
   background-color: $tariff-selection-header-background-color;
+  border-right: 2px solid $tariff-selection-border-color;
+
+  @include tablet() {
+    height: 80px;
+  }
+
+  @include desktop() {
+    height: 98px;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
 }
 
 .tariff-selection__cell {
@@ -23,6 +47,14 @@
   &--tariff {
     font-size: 18px;
     font-weight: 700;
+
+    @include tablet() {
+      font-size: 16px;
+    }
+
+    @include desktop() {
+      font-size: 18px;
+    }
   }
 
   &--cost {
@@ -30,12 +62,43 @@
 
     font-size: 24px;
     font-weight: 300;
+
+    @include tablet() {
+      font-size: 18px;
+    }
+
+    @include desktop() {
+      font-size: 24px;
+    }
   }
 }
 
 .tariff-selection__cell-option {
+  width: 280px;
+  height: 60px;
   padding-left: 25px;
 
   line-height: 30px;
   text-transform: uppercase;
+
+  background-color: $tariff-selection-background-color;
+  border: 2px solid $tariff-selection-border-color;
+
+  @include tablet() {
+    height: 47px;
+
+    text-transform: none;
+  }
+
+  @include desktop() {
+    height: 60px;
+
+    font-size: 18px;
+  }
+}
+
+.tariff-selection__cell-hidden {
+  @include tablet() {
+    display: none;
+  }
 }

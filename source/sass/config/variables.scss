@@ -1,3 +1,9 @@
+// Resolutions
+$desktop: 1200px;
+$laptop: 990px;
+$tablet: 660px;
+$phones: 320px;
+
 // variables for applying font
 $main-font: "Opensans", "Arial", sans-serif;
 
@@ -29,6 +35,8 @@ $menu-text-color: $white;
 $menu-text-action-color: $pink;
 
 // variables for applying colors index.html
+$app-text-color: $white;
+
 $link-text-color: $white;
 $link-decor-color: $white;
 $link-text-action-color: $pink;
@@ -37,10 +45,13 @@ $link-background-action-color: $white;
 $tariff-selection-background-color: $white;
 $tariff-selection-header-background-color: $blue;
 $tariff-selection-header-text-color: $white;
+$tariff-selection-border-color: $darkgray;
 
 $contacts-link-text-color: $pink;
 
 // variables for applying colors photo.html
+$photo-background-color: $gray;
+
 $post-background-color: $gray;
 $post-like-text-color: $pink;
 
@@ -57,7 +68,7 @@ $reset-action-text-color: $blue;
 $reset-action-background-color: $blue;
 
 // variables for applying colors form.html
-$fieldset-background-color: $gray;
+$fieldset-border-color: $darkgray;
 $legend-text-color: $pink;
 $form-element-action-color: $blue;
 $form-element-modify-color: $pink;

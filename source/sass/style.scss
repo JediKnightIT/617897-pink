@@ -9,7 +9,6 @@
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
-@import "blocks/menu-burger.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/menu-list.scss";
 
@@ -19,17 +18,20 @@
 @import "blocks/app.scss";
 @import "blocks/link.scss";
 @import "blocks/information.scss";
-@import "blocks/slider.scss";
+@import "blocks/effect.scss";
 @import "blocks/reviews.scss";
 @import "blocks/price.scss";
+@import "blocks/slider.scss";
 @import "blocks/tariff-selection.scss";
 @import "blocks/contacts.scss";
+@import "blocks/map.scss";
 
 // blocks photo.html
 @import "blocks/intro-inner.scss";
 @import "blocks/photo-content.scss";
 @import "blocks/post.scss";
 @import "blocks/photo-editor.scss";
+@import "blocks/scale.scss";
 @import "blocks/buttons.scss";
 
 // blocks form.html

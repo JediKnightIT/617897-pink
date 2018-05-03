@@ -1,4 +1,5 @@
 .page {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -7,4 +8,8 @@
   line-height: 24px;
   font-family: $main-font;
   color: $main-text-color;
+}
+
+.page__footer {
+  padding: 40px 0;
 }

@@ -1,17 +1,74 @@
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__link {
+  position: relative;
+}
+
+.post__hit {
+  position: absolute;
+  right: 20px;
+
+  width: 140px;
+  padding: 6px 0;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $pink;
+
+  @include tablet() {
+    top: 80px;
+  }
+
+  @include desktop() {
+    top: 55px;
+    right: 130px;
+  }
+}
+
 .post__source-photo {
   display: block;
+  flex-basis: 100%;
+}
+
+.post__photo {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .post__description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
   margin: 0;
-  padding: 20px 18px;
+  margin-bottom: 20 px;
+  padding: 20px 18px 0 18px;
 
-  background-color: $post-background-color;
+  &--panorama {
+    background-color: $post-background-color;
+
+    @include tablet() {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .post__author-name {
   font-style: normal;
   font-weight: 700;
+
+  @include tablet() {
+    order: 1;
+    margin-right: auto;
+  }
 }
 
 .post__time {
@@ -23,13 +80,24 @@
 .post__comment {
   margin: 0;
   margin-bottom: 15px;
+
+  @include tablet() {
+    order: 3;
+  }
 }
 
 .post__like {
   margin: 0;
+  margin-top: auto;
   padding-left: 32px;
 
   font-size: 12px;
   color: $post-like-text-color;
   text-transform: uppercase;
+
+  @include tablet() {
+    order: 2;
+    padding-left: 0;
+    padding-right: 30px;
+  }
 }

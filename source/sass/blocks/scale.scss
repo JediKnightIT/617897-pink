@@ -1,0 +1,33 @@
+.scale {
+  width: 100%;
+  height: 100px;
+}
+
+.scale__slider {
+  position: relative;
+
+  display: block;
+  width: 240px;
+  height: 3px;
+  margin: 34px auto;
+
+  background-color: $blue;
+
+  @include tablet() {
+    width: 202px;
+  }
+
+  @include desktop() {
+    width: 288px;
+  }
+}
+
+.scale__toggle {
+  position: absolute;
+  top: -9px;
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+  border: 3px solid $pink;
+  border-radius: 50%;
+}

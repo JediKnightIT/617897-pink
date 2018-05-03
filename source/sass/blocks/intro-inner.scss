@@ -5,6 +5,10 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: $intro-background-color;
+
+  @include tablet() {
+    min-height: 395px;
+  }
 }
 
 .intro-inner__title {
@@ -15,4 +19,18 @@
   line-height: 30px;
   color: $intro-text-color;
   text-align: center;
+
+  @include tablet() {
+    width: 620px;
+    margin: 0 auto;
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &--width {
+    @include desktop() {
+      width: 754px;
+    }
+  }
 }

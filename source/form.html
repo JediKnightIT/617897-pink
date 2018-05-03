@@ -9,144 +9,139 @@
   </head>
   <body class="page">
     <header class="header">
-      <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink"><use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use></svg>
-      <button class="menu-burger" type="button" aria-label="Кнопка открытия выпадающего меню">
-        <svg class="menu-burger__icon" width="49" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
-      </button>
-      <nav class="main-nav">
-        <button class="main-nav__close" type="button" aria-label="Кнопка закрытия выпадающего меню">
-          <svg class="main-nav__close-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
-        </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item menu-list__item--active">
-            <a class="menu-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__menu">
+            <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
+              <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
+          </div>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="#">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Конкурс мобильного приложения Pink</h1>
       <section class="intro-inner main__intro-inner">
-        <h2 class="intro-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="intro-inner__title intro-inner__title--width">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </section>
       <section class="competition">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
         <header class="competition__header">
-          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="competition__hidden">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </header>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__fieldset data">
-            <div class="wrapper">
-              <h3 class="form__legend form__legend--hidden">Персональные данные</h3>
-              <ul class="form__list data__list">
-                <li class="data__item">
-                  <label class="data__label" for="user-surname">Фамилия:</label>
-                  <input class="data__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
-                </li>
-                <li class="data__item">
-                  <label class="data__label" for="user-name">Имя:</label>
-                  <input class="data__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
-                </li>
-                <li class="data__item">
-                  <label class="data__label" for="user-patronymic">Отчество</label>
-                  <input class="data__input" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-                </li>
-              </ul>
-            </div>
+          <fieldset class="form__fieldset form__fieldset--user data">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <ul class="form__list">
+              <li class="data__item">
+                <label class="data__label" for="user-surname">Фамилия:</label>
+                <input class="data__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="data__item">
+                <label class="data__label" for="user-name">Имя:</label>
+                <input class="data__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="data__item">
+                <label class="data__label" for="user-patronymic">Отчество</label>
+                <input class="data__input" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--background-color">
-            <div class="wrapper">
-              <h3 class="form__legend">Ваши безбашенные<br> достижения в путешествии</h3>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="visually-hidden" id="first-achievement" type="checkbox" name="first-achievement" checked>
-                  <label class="form__label form__label--checkbox" for="first-achievement">Сделал селфи с акулой</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="second-achievement" type="checkbox" name="second-achievement" checked>
-                  <label class="form__label form__label--checkbox" for="second-achievement">Обгорел на пляже</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="third-achievement" type="checkbox" name="third-achievement">
-                  <label class="form__label form__label--checkbox" for="third-achievement">Видел Чака Норриса</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="fourth-achievement" type="checkbox" name="fourth-achievement">
-                  <label class="form__label form__label--checkbox" for="fourth-achievement">Накупил сувениров</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="fifth-achievement" type="checkbox" name="fifth-achievement" checked>
-                  <label class="form__label form__label--checkbox" for="fifth-achievement">Удержал башню</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="sixth-achievement" type="checkbox" name="sixth-achievement">
-                  <label class="form__label form__label--checkbox" for="sixth-achievement">Разгромил отель</label>
-                </li>
-              </ul>
-            </div>
+          <fieldset class="form__fieldset form__fieldset--achievement">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__list form__list--achievement">
+              <li class="form__item">
+                <input class="visually-hidden" id="first-achievement" type="checkbox" name="first-achievement" checked>
+                <label class="form__label form__label--checkbox" for="first-achievement">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__item form__item--achievement">
+                <input class="visually-hidden" id="second-achievement" type="checkbox" name="second-achievement" checked>
+                <label class="form__label form__label--checkbox" for="second-achievement">Обгорел на пляже</label>
+              </li>
+              <li class="form__item form__item--achievement">
+                <input class="visually-hidden" id="third-achievement" type="checkbox" name="third-achievement">
+                <label class="form__label form__label--checkbox" for="third-achievement">Видел Чака Норриса</label>
+              </li>
+              <li class="form__item form__item--achievement">
+                <input class="visually-hidden" id="fourth-achievement" type="checkbox" name="fourth-achievement">
+                <label class="form__label form__label--checkbox" for="fourth-achievement">Накупил сувениров</label>
+              </li>
+              <li class="form__item form__item--achievement">
+                <input class="visually-hidden" id="fifth-achievement" type="checkbox" name="fifth-achievement" checked>
+                <label class="form__label form__label--checkbox" for="fifth-achievement">Удержал башню</label>
+              </li>
+              <li class="form__item form__item--achievement">
+                <input class="visually-hidden" id="sixth-achievement" type="checkbox" name="sixth-achievement">
+                <label class="form__label form__label--checkbox" for="sixth-achievement">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__fieldset data">
-            <div class="wrapper">
-              <h3 class="form__legend form__legend--hidden">Контактные данные</h3>
-              <ul class="form__list data__list">
-                <li class="data__item">
-                  <label class="data__label" for="user-phone">Номер телефона</label>
-                  <input class="data__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-                </li>
-                <li class="data__item">
-                  <label class="data__label" for="user-email">Адрес почты</label>
-                  <input class="data__input" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
-                </li>
-              </ul>
-            </div>
+          <fieldset class="form__fieldset form__fieldset--contacts data">
+            <legend class="form__legend form__legend--hidden">Контактная информация</legend>
+            <ul class="form__list data__list">
+              <li class="data__item data__item--position">
+                <label class="data__label data__label--order" for="user-phone">Номер телефона</label>
+                <input class="data__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="data__item data__item--position">
+                <label class="data__label data__label--order" for="user-email">Адрес почты</label>
+                <input class="data__input" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--background-color">
-            <div class="wrapper">
-              <h3 class="form__legend">С каким приложением путешествовали?</h3>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="visually-hidden" id="version-ios" type="radio" name="version-app" checked>
-                  <label class="form__label form__label--radio" for="version-ios">Pink для iOS</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="version-android" type="radio" name="version-app">
-                  <label class="form__label form__label--radio" for="version-android">Pink на Android</label>
-                </li>
-                <li class="form__item">
-                  <input class="visually-hidden" id="version-windows" type="radio" name="version-app">
-                  <label class="form__label form__label--radio" for="version-windows">Windows Phone</label>
-                </li>
-              </ul>
-            </div>
+          <fieldset class="form__fieldset form__fieldset--app">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="visually-hidden" id="version-ios" type="radio" name="version-app" checked>
+                <label class="form__label form__label--radio" for="version-ios">Pink для iOS</label>
+              </li>
+              <li class="form__item">
+                <input class="visually-hidden" id="version-android" type="radio" name="version-app">
+                <label class="form__label form__label--radio" for="version-android">Pink на Android</label>
+              </li>
+              <li class="form__item">
+                <input class="visually-hidden" id="version-windows" type="radio" name="version-app">
+                <label class="form__label form__label--radio" for="version-windows">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <div class="wrapper">
-              <h3 class="form__legend form__legend--margin">Опишите свои эмоции</h3>
-              <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
-              <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
+          <fieldset class="form__fieldset form__fieldset--comment">
+            <legend class="form__legend form__legend--margin">Опишите свои эмоции</legend>
+            <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
+            <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <p class="wrapper">
+          <div class="competition__footer">
             <button class="form__button button" type="submit">Отправить форму</button>
-          </p>
+            <p class="form__description"> <span class="form__description-simbol">*</span> — обязательные поля</p>
+          </div>
         </form>
-        <footer class="competition__footer">
-          <p class="competition__description"><span class="competition__description-simbol">*</span> — обязательные поля</p>
-        </footer>
       </section>
     </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <svg class="footer__logo logo logo--pink-blue" width="146" height="40" aria-label="Логотип мобильного приложения Pink"><use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use></svg>
+    <footer class="footer page__footer">
+      <div class="footer__wrapper wrapper">
+        <svg class="footer__logo logo logo--pink-blue" width="146" height="40" aria-label="Логотип мобильного приложения Pink">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мы в твиттере">
@@ -181,7 +176,7 @@
       </div>
     </footer>
     <section class="modal modal-error">
-      <div class="wrapper">
+      <div class="modal__wrapper">
         <h2 class="visually-hidden">Ошибка при отправке формы</h2>
         <p class="modal__title">Что-то пошло не так!</p>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -189,13 +184,12 @@
       </div>
     </section>
     <section class="modal modal-show">
-      <div class="wrapper">
+      <div class="modal__wrapper modal__wrapper--show">
         <h2 class="modal__title">Ваша заявка отправлена</h2>
-        <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее<br> и оповестим вас.</p>
+        <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="button button--margin button--show" type="button">Закрыть окно</button>
       </div>
-      <p class="modal__button">
-        <button class="button" type="button">Закрыть окно</button>
-      </p>
-      </section>
+    </section>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

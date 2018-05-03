@@ -6,7 +6,13 @@
 }
 
 .intro__download {
-  margin: 0 auto;
-  padding-top: 490px;
-  padding-bottom: 30px;
+  padding: 490px 20px 30px 20px;
+
+  @include tablet() {
+    padding-top: 100px;
+  }
+
+  @include desktop() {
+    padding-left: 130px;
+  }
 }

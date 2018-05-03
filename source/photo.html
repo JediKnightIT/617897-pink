@@ -9,35 +9,32 @@
   </head>
   <body class="page">
     <header class="header">
-      <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
-        <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
-      </svg>
-      <button class="menu-burger" type="button" aria-label="Кнопка открытия выпадающего меню">
-        <svg class="menu-burger__icon" width="49" height="24">
-          <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
-        </svg>
-      </button>
-      <nav class="main-nav">
-        <button class="main-nav__close" type="button" aria-label="Кнопка закрытия выпадающего меню">
-          <svg class="main-nav__close-icon" width="24" height="24">
-            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
-          </svg>
-        </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item menu-list__item--active">
-            <a class="menu-list__link" href="#">Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__menu">
+            <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
+              <svg class="header__logo logo logo--header-color" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
+          </div>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="#">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Страница с фотографиями пользователей, воспользовавшихся приложением Pink</h1>
@@ -47,107 +44,115 @@
       <section class="photo-content">
         <h2 class="visually-hidden">Галерея постов</h2>
         <header class="photo-content__header">
-          <p class="photo-content__description">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+          <p class="photo-content__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
         <div class="photo-content__list">
-          <article class="photo-content__item post post--device-width">
+          <article class="photo-content__item-panorama post">
             <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-            <picture class="post__source-photo">
-              <!-- <source media="()" srcset="">
-                    <source media="()" srcset=""> -->
-              <img class="post__photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с гор">
-            </picture>
+            <a class="post__link" href="#">
+              <div class="post__hit">Панорама дня</div>
+              <picture class="post__source-photo">
+                <!-- <source media="()" srcset="">
+                      <source media="()" srcset=""> -->
+                <img class="post__photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с гор">
+              </picture>
+            </a>
             <div class="wrapper">
-              <blockquote class="post__description">
-                <cite class="post__author-name">Анна</cite>
-                <time class="post__time" datetime="2018-06-10T15:00">(5 минут назад)</time>
+              <blockquote class="post__description post__description--panorama">
+                <cite class="post__author-name">Анна <time class="post__time" datetime="2018-06-10T15:00">(5 минут назад)</time></cite>
                 <p class="post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <p class="post__like">Нравится: 215</p>
               </blockquote>
             </div>
           </article>
-          <div class="wrapper">
+          <div class="photo-content__wrapper wrapper">
             <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотограф в процессе работы">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотограф в процессе работы">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Левон</cite>
-                <time class="post__time" datetime="2018-06-10T10:00">(5 часов назад)</time>
+                <cite class="post__author-name">Левон <time class="post__time" datetime="2018-06-10T10:00">(5 часов назад)</time></cite>
                 <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <p class="post__like">Нравится: 356</p>
               </blockquote>
             </article>
             <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Моя новая барабанная установка">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Моя новая барабанная установка">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Антон</cite>
-                <time class="post__time" datetime="2018-06-10T03:00">(12 часов назад)</time>
+                <cite class="post__author-name">Антон <time class="post__time" datetime="2018-06-10T03:00">(12 часов назад)</time></cite>
                 <p class="post__comment">Соседи будут рады!</p>
                 <p class="post__like">Нравится: 666</p>
               </blockquote>
             </article>
             <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянный потолк в здании небоскрёба">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянный потолк в здании небоскрёба">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Борис</cite>
-                <time class="post__time" datetime="2018-06-09T19:00">(20 часов назад)</time>
+                <cite class="post__author-name">Борис <time class="post__time" datetime="2018-06-09T19:00">(20 часов назад)</time></cite>
                 <p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <p class="post__like">Нравится: 215</p>
               </blockquote>
             </article>
             <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка Кубанская бахча">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка Кубанская бахча">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Сергей</cite>
-                <time class="post__time" datetime="2018-06-09T15:00">(25 часов назад)</time>
+                <cite class="post__author-name">Сергей <time class="post__time" datetime="2018-06-09T15:00">(25 часов назад)</time></cite>
                 <p class="post__comment">Самая кубанская в мире!</p>
                 <p class="post__like">Нравится: 4</p>
               </blockquote>
             </article>
             <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Присел на камень во время похода">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Присел на камень во время похода">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Максим</cite>
-                <time class="post__time" datetime="2018-06-09T00:00">(40 часов назад)</time>
+                <cite class="post__author-name">Максим <time class="post__time" datetime="2018-06-09T00:00">(40 часов назад)</time></cite>
                 <p class="post__comment">Где снег-то?</p>
                 <p class="post__like">Нравится: 150</p>
               </blockquote>
             </article>
-            <article class="photo-content__item photo-content__item--margin post">
+            <article class="photo-content__item post">
               <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-              <picture class="post__source-photo">
-                <!-- <source media="()" srcset="">
-                      <source media="()" srcset=""> -->
-                <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Пейзаж из иллюминатора самолета">
-              </picture>
+              <a class="post__link" href="#">
+                <picture class="post__source-photo">
+                  <!-- <source media="()" srcset="">
+                        <source media="()" srcset=""> -->
+                  <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Пейзаж из иллюминатора самолета">
+                </picture>
+              </a>
               <blockquote class="post__description">
-                <cite class="post__author-name">Надежда</cite>
-                <time class="post__time" datetime="2018-06-08T19:00">(45 часов назад)</time>
+                <cite class="post__author-name">Надежда <time class="post__time" datetime="2018-06-08T19:00">(45 часов назад)</time></cite>
                 <p class="post__comment">Всем GM и взаимные лайки!</p>
                 <p class="post__like">Нравится: 2560</p>
               </blockquote>
@@ -161,30 +166,59 @@
       <section class="photo-editor">
         <h2 class="visually-hidden">Фоторедактор с возможностью запостить свою фотографию</h2>
         <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="wrapper">
+          <div class="photo-editor__wrapper wrapper">
             <picture class="photo-editor__source-photo">
               <!-- <source media="()" srcset="">
                   <source media="()" srcset=""> -->
               <img class="photo-editor__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимний пейзаж">
             </picture>
-            <div class="photo-editor__filter">
-              <button class="photo-editor__toggle photo-editor__toggle--crop" type="button" aria-label="Обрезка фотографии"></button>
-              <button class="photo-editor__toggle photo-editor__toggle--fill" type="button" aria-label="Выбор цвета фотографии"></button>
-              <button class="photo-editor__toggle photo-editor__toggle--contrast" type="button" aria-label="Выбор контрастности фотографии"></button>
+            <div class="photo-editor__interface">
+              <div class="photo-editor__filter">
+                <input class="visually-hidden" id="tool-crop" type="radio" name="tool" value="crop">
+                <label class="photo-editor__label" for="tool-crop">
+                  <span class="photo-editor__control photo-editor__control--crop" aria-label="Обрезка фотографии">
+                    <svg class="photo-editor__icon" width="45" height="45">
+                      <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                    </svg>
+                  </span>
+                  <span class="photo-editor__scale scale__slider" aria-label="Шкала кадрирования">
+                    <span class="scale__toggle" aria-label="Ползунок шкалы кадрирования"></span>
+                  </span>
+                </label>
+                <input class="visually-hidden" id="tool-fill" type="radio" name="tool" value="fill">
+                <label class="photo-editor__label" for="tool-fill">
+                  <span class="photo-editor__control photo-editor__control--fill" aria-label="Выбор цвета фотографии">
+                    <svg class="photo-editor__icon" width="49" height="45">
+                      <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                  </span>
+                  <span class="photo-editor__scale scale__slider" aria-label="Шкала цвета">
+                    <span class="scale__toggle" aria-label="Ползунок шкалы цвета"></span>
+                  </span>
+                </label>
+                <input class="visually-hidden" id="tool-contrast" type="radio" name="tool" value="contrast">
+                <label class="photo-editor__label" for="tool-contrast">
+                  <span class="photo-editor__control photo-editor__control--contrast" aria-label="Выбор контрастности фотографии">
+                    <svg class="photo-editor__icon" width="33" height="33">
+                      <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                  </span>
+                  <span class="photo-editor__scale scale__slider" aria-label="Шкала контрастности">
+                    <span class="scale__toggle" aria-label="Ползунок шкалы контрастности"></span>
+                  </span>
+                </label>
+              </div>
+              <p class="photo-editor__buttons buttons">
+                <button class="buttons__item buttons__item--submit" type="submit">Запостить</button>
+                <button class="buttons__item buttons__item--reset" type="reset">Отмена</button>
+              </p>
             </div>
-            <div class="photo-editor__scale">
-              <div class="photo-editor__slider"></div>
-            </div>
-            <p class="photo-editor__buttons buttons">
-              <button class="buttons__item buttons__item--submit" type="submit">Запостить</button>
-              <button class="buttons__item buttons__item--reset" type="reset">Отмена</button>
-            </p>
           </div>
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <div class="wrapper">
+    <footer class="footer page__footer">
+      <div class="footer__wrapper wrapper">
         <svg class="footer__logo logo logo--pink-blue" width="146" height="40" aria-label="Логотип мобильного приложения Pink">
           <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
         </svg>
@@ -221,5 +255,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

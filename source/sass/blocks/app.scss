@@ -1,5 +1,26 @@
 .app {
-  width: 320px;
+  width: 280px;
+
+  @include tablet() {
+    width: 300px;
+  }
+}
+
+.app__slogan {
+  display: none;
+
+  @include tablet() {
+    display: block;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0 30px;
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    color: $app-text-color;
+    text-align: center;
+  }
 }
 
 .app__link {
@@ -15,5 +36,9 @@
 
   font-weight: 300;
   text-align: center;
-  color: #eaeaeb;
+  color: $app-text-color;
+
+  @include tablet() {
+    font-size: 18px;
+  }
 }

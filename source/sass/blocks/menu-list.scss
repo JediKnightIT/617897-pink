@@ -4,6 +4,15 @@
   text-align: center;
 
   border-bottom: 1px solid $menu-decor-color;
+
+  @include laptop-min() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 630px;
+
+    border: none;
+  }
 }
 
 .menu-list__item {
@@ -11,6 +20,14 @@
 
   border-top: 1px solid #485461;
   box-shadow: 0 -1px 0 0 $menu-decor-color;
+
+  @include laptop-min() {
+    display: flex;
+    padding: 0;
+
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .menu-list__link {
@@ -28,5 +45,12 @@
 
   &:active {
     color: rgba($menu-text-action-color, 0.3%);
+  }
+
+  @include laptop-min() {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
   }
 }
