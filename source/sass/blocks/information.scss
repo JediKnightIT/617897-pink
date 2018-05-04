@@ -1,9 +1,9 @@
 .information {
-  background-image: linear-gradient(-5deg, $gray 77%, $white 0%);
+  background-image: linear-gradient(-6deg, $gray 77%, $white 0%);
 }
 
 .information__header {
-  padding-top: 50px;
+  padding-top: 43px;
 }
 
 .information__text {
@@ -12,6 +12,7 @@
 
   font-size: 24px;
   font-weight: 300;
+  line-height: 26px;
   text-align: center;
 
   @include tablet() {
@@ -32,18 +33,11 @@
 }
 
 .information__list {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: 50% 110%;
-  background-repeat: no-repeat;
-
   @include list;
-  padding-top: 50px;
-  padding-bottom: 280px;
+  padding-top: 80px;
 
   @include tablet() {
     padding-bottom: 0;
-
-    background-position: 0 140%;
   }
 
   @include desktop() {
@@ -70,32 +64,14 @@
   @include desktop() {
     width: 245px;
     margin-left: 0;
-    padding-top: 355px;
 
     text-align: center;
-
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 285px;
-      left: 0;
-
-      width: 245px;
-      height: 50px;
-
-      background-color: #f2f2f2;
-      box-shadow: 0 -3px 0 0 #000000;
-    }
   }
 }
 
 .information__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font-size: 18px;
 
@@ -114,6 +90,18 @@
   @include desktop() {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.information__picture {
+  display: none;
+  padding-top: 10px;
+
+  &--active {
+    display: block;
+    height: 278px;
+
+    overflow: hidden;
   }
 }
 
