@@ -24,11 +24,13 @@
 }
 
 .app__link {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .app__list {
   @include list;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
 
 .app__description {
