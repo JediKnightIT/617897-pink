@@ -3,6 +3,7 @@
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 27px;
   text-align: center;
 
   @include tablet() {
@@ -28,7 +29,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   text-align: center;
 
@@ -46,6 +47,7 @@
 
 .contacts__title {
   margin: 0;
+  margin-bottom: 4px;
 
   font-size: 18px;
 }
@@ -53,6 +55,7 @@
 .contacts__link {
   font-size: 24px;
   font-weight: 300;
+  line-height: 26px;
   color: $contacts-link-text-color;
   text-decoration: none;
 }
