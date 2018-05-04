@@ -1,8 +1,8 @@
 .intro-inner {
-  min-height: 237px;
+  padding: 30px 20px 85px 20px;
 
   @include tablet() {
-    min-height: 395px;
+    padding: 75px 0 147px 0;
   }
 }
 

@@ -115,6 +115,10 @@
   background-color: rgba($header-icon-action-color, 0.3%);
 }
 
+.main-nav--opened .main-nav__wrapper {
+  background-color: $nav-background-color;
+}
+
 .main-nav--closed .main-nav__list {
   @include laptop-max() {
     display: none;

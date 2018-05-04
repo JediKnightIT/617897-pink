@@ -1,18 +1,8 @@
 .header {
-  min-height: 462px;
-
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-
-  @include tablet() {
-    min-height: 729px;
-  }
-
-  @include desktop() {
-    min-height: 853px;
-  }
 }
 
 .header__wrapper {
