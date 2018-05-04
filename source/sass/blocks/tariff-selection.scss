@@ -18,8 +18,9 @@
 }
 
 .tariff-selection__cell-header {
+  position: relative;
   width: 280px;
-  height: 98px;
+  height: 96px;
 
   text-align: center;
 
@@ -36,6 +37,35 @@
 
   &:last-child {
     border-right: none;
+  }
+}
+
+.tariff-selection__hit {
+  position: absolute;
+  top: 0;
+  left: -2px;
+
+  width: 73px;
+  height: 73px;
+
+  overflow: hidden;
+
+  &::before {
+    content: "Хит";
+    position: absolute;
+    top: 12px;
+    left: -25px;
+
+    width: 101px;
+    height: 29px;
+
+    line-height: 30px;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $pink;
+
+    transform: rotate(-45deg);
   }
 }
 
@@ -74,9 +104,11 @@
 }
 
 .tariff-selection__cell-option {
+  position: relative;
+
   width: 280px;
-  height: 60px;
-  padding-left: 25px;
+  height: 58px;
+  padding: 0 23px;
 
   line-height: 30px;
   text-transform: uppercase;
@@ -100,5 +132,23 @@
 .tariff-selection__cell-hidden {
   @include tablet() {
     display: none;
+  }
+}
+
+.tariff-selection__icon {
+  position: absolute;
+
+  &--on {
+    top: 19px;
+    right: 19px;
+
+    fill: #3dc644;
+  }
+
+  &--off {
+    top: 16px;
+    right: 20px;
+
+    fill: #f25b26;
   }
 }
