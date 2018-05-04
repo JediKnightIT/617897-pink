@@ -18,8 +18,7 @@
 .menu-list__item {
   padding: 16px 0;
 
-  border-top: 1px solid #485461;
-  box-shadow: 0 -1px 0 0 $menu-decor-color;
+  box-shadow: 0 -1px 0 0 #485461, 0 -2px 0 0 #000000;
 
   @include laptop-min() {
     display: flex;
@@ -35,6 +34,7 @@
   font-weight: 700;
   line-height: 32px;
   color: $menu-text-color;
+  letter-spacing: 1.4px;
   text-decoration: none;
   text-transform: uppercase;
 

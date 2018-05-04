@@ -16,7 +16,7 @@
 }
 
 .main-nav__menu {
-  padding: 20px;
+  padding: 21px;
 
   @include tablet() {
     padding-top: 26px;
@@ -113,6 +113,10 @@
 .main-nav--opened .main-nav__toggle:active::before,
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba($header-icon-action-color, 0.3%);
+}
+
+.main-nav--opened .header {
+  background-position: 0 259px;
 }
 
 .main-nav--opened .main-nav__wrapper {
