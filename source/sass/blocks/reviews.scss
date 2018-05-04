@@ -1,6 +1,6 @@
 .reviews__list {
-  margin-bottom: 20px;
-  padding-top: 45px;
+  margin-bottom: 32px;
+  padding-top: 42px;
 
   @include desktop() {
     width: 690px;
@@ -42,7 +42,7 @@
 
 .reviews__author-name {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
   font-style: normal;
   font-size: 18px;
@@ -72,9 +72,6 @@
   }
 }
 
-.reviews__toggles {
-  margin: 0;
+.reviews__bullets {
   margin-bottom: 40px;
-
-  text-align: center;
 }
