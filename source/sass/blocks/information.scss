@@ -28,6 +28,10 @@
 
       width: 160px;
     }
+
+    @include desktop() {
+      display: none;
+    }
   }
 }
 
@@ -82,13 +86,16 @@
 
   @include desktop() {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 435px 28px 0 28px;
 
     background-image: none;
   }
 }
 
 .information__item {
+  position: relative;
+
   text-align: center;
 
   @include tablet() {
@@ -104,6 +111,21 @@
     margin-left: 0;
 
     text-align: center;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -340px;
+      left: 30px;
+
+      width: 160px;
+      height: 283px;
+
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -114,6 +136,8 @@
   font-size: 18px;
 
   @include desktop() {
+    margin-bottom: 23px;
+
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
