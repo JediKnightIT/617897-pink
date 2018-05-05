@@ -19,7 +19,7 @@
   padding: 21px;
 
   @include tablet() {
-    padding-top: 27px;
+    padding-top: 25px;
     padding-bottom: 37px;
   }
 
@@ -116,12 +116,15 @@
   background-color: rgba($header-icon-action-color, 0.3%);
 }
 
+// не понимаю почему не работает
 .main-nav--opened .header {
   background-position: 0 259px;
 }
 
 .main-nav--opened .main-nav__wrapper {
-  background-color: $nav-background-color;
+  @include laptop-max() {
+    background-color: $nav-background-color;
+  }
 }
 
 .main-nav--closed .main-nav__list {
