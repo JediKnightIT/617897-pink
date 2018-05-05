@@ -1,0 +1,15 @@
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include circle(46px, transparent);
+
+  border: 3px solid rgba($social-border-color, 0.1%);
+}
+
+.social-list__icon {
+  &--youtube {
+    padding-left: 5px;
+  }
+}

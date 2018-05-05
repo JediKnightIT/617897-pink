@@ -15,18 +15,24 @@
 
   @include tablet() {
     flex-direction: row;
-    justify-content: space-between;
   }
+}
+
+.footer__logo {
+  margin-right: 68px;
+  margin-bottom: 12px;
 }
 
 .footer__list {
   display: flex;
   justify-content: space-around;
-  width: 200px;
+  width: 188px;
 
   @include list;
 
-  text-align: center;
+  @include tablet() {
+    margin-right: auto;
+  }
 }
 
 .footer__copyright {
@@ -37,11 +43,9 @@
 }
 
 .copyright__text {
-  line-height: 18px;
+  margin-right: 11px;
 
-  @include tablet() {
-    font-size: 18px;
-  }
+  line-height: 18px;
 }
 
 .copyright__link {
