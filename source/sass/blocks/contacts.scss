@@ -64,4 +64,18 @@
   line-height: 26px;
   color: $contacts-link-text-color;
   text-decoration: none;
+
+  &--email {
+    &:hover {
+      color: $contacts-link-text-color-hover;
+
+      border-bottom: 1px solid $contacts-link-text-color-hover;
+    }
+
+    &:active {
+      color: rgba($contacts-link-text-color-hover, 0.3%);
+
+      border: none;
+    }
+  }
 }

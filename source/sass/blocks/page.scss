@@ -14,6 +14,6 @@
   padding-top: 36px;
 
   @include tablet() {
-    padding-top: 34px;
+    padding: 34px 0;
   }
 }
