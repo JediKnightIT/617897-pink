@@ -1,0 +1,22 @@
+.copyright__text {
+  margin-right: 11px;
+
+  line-height: 18px;
+}
+
+.copyright__link {
+  height: 34px;
+}
+
+.copyright__icon {
+  fill: $copyright-icon-fill;
+
+  &:hover,
+  &:focus {
+    fill: $copyright-icon-fill-hover;
+  }
+
+  &:active {
+    fill: rgba($copyright-icon-fill-hover, 0.3%);
+  }
+}
