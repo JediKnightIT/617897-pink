@@ -9,6 +9,8 @@
   @include tablet() {
     width: 620px;
 
+    table-layout: fixed;
+
     transform: translateX(0);
   }
 
@@ -20,7 +22,7 @@
 .tariff-selection__cell-header {
   position: relative;
   width: 280px;
-  height: 96px;
+  padding: 19px;
 
   text-align: center;
 
@@ -28,11 +30,7 @@
   border-right: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
-    height: 80px;
-  }
-
-  @include desktop() {
-    height: 98px;
+    padding: 9px;
   }
 
   &:last-child {
@@ -59,6 +57,7 @@
     width: 101px;
     height: 29px;
 
+    font-weight: 400;
     line-height: 30px;
     color: $white;
     text-transform: uppercase;
@@ -66,6 +65,15 @@
     background-color: $pink;
 
     transform: rotate(-45deg);
+
+    @include tablet() {
+      top: 5px;
+      left: -27px;
+
+      height: 27px;
+
+      line-height: 25px;
+    }
   }
 }
 
@@ -107,8 +115,7 @@
   position: relative;
 
   width: 280px;
-  height: 58px;
-  padding: 0 23px;
+  padding: 14px 22px;
 
   line-height: 30px;
   text-transform: uppercase;
@@ -117,14 +124,12 @@
   border: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
-    height: 47px;
+    padding: 7px 15px;
 
     text-transform: none;
   }
 
   @include desktop() {
-    height: 60px;
-
     font-size: 18px;
   }
 }
@@ -143,6 +148,11 @@
     right: 19px;
 
     fill: #3dc644;
+
+    @include tablet() {
+      top: 12px;
+      right: 60px;
+    }
   }
 
   &--off {
@@ -150,5 +160,16 @@
     right: 20px;
 
     fill: #f25b26;
+
+    @include tablet() {
+      top: 9px;
+      right: 62px;
+    }
+  }
+}
+
+.tariff-selection__bullets {
+  @include tablet() {
+    display: none;
   }
 }
