@@ -8,9 +8,10 @@
 
   @include tablet() {
     width: 575px;
+    margin-bottom: 42px;
 
     font-size: 40px;
-    line-height: 40px;
+    line-height: 49px;
   }
 
   @include desktop() {
@@ -36,6 +37,7 @@
   @include tablet() {
     flex-basis: 300px;
     flex-grow: 1;
+    margin-bottom: 45px;
   }
 
   @include desktop() {
@@ -50,6 +52,10 @@
   margin-bottom: 4px;
 
   font-size: 18px;
+
+  @include tablet() {
+    margin-bottom: 6px;
+  }
 }
 
 .contacts__link {
