@@ -32,6 +32,7 @@
   @include tablet() {
     display: block;
     margin: 0;
+    margin-bottom: 4px;
   }
 
   @include desktop() {
@@ -50,7 +51,7 @@
   line-height: 30px;
 
   @include tablet() {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     font-size: 20px;
   }
@@ -66,7 +67,7 @@
   line-height: 30px;
 
   @include tablet() {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }
