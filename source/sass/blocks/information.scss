@@ -4,6 +4,10 @@
 
 .information__header {
   padding-top: 43px;
+
+  @include tablet() {
+    padding-top: 50px;
+  }
 }
 
 .information__text {
@@ -19,7 +23,7 @@
     margin-bottom: 0;
 
     font-size: 40px;
-    line-height: 40px;
+    line-height: 47px;
 
     &--displaced {
       padding: 0 115px;
@@ -39,7 +43,8 @@
   @include tablet() {
     position: relative;
 
-    padding-bottom: 0;
+    padding-top: 123px;
+    padding-bottom: 9px;
   }
 
   @include desktop() {
@@ -86,6 +91,10 @@
 .information__description {
   margin: 0;
   margin-bottom: 30px;
+
+  @include tablet() {
+    margin-bottom: 33px;
+  }
 
   @include desktop() {
     font-size: 18px;
