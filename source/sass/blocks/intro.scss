@@ -8,6 +8,7 @@
   }
 
   @include laptop-min() {
+    padding-top: 113px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -50,5 +51,9 @@
 
   @include tablet() {
     padding-bottom: 110px;
+  }
+
+  @include laptop-min() {
+    padding-bottom: 122px;
   }
 }

@@ -22,4 +22,10 @@
   &:active {
     color: rgba($link-text-action-color, 0.3%);
   }
+
+  @include laptop-min() {
+    padding: 15px;
+
+    font-size: 21px;
+  }
 }
