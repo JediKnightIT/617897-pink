@@ -4,6 +4,10 @@
   min-height: 219px;
 
   overflow: hidden;
+
+  @include tablet() {
+    min-height: 363px;
+  }
 }
 
 .map__img {
