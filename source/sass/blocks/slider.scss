@@ -36,3 +36,12 @@
     border-radius: 50%;
   }
 }
+
+
+.slider__toggle {
+  display: none;
+
+  @include desktop() {
+    display: block;
+  }
+}
