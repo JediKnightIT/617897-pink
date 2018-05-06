@@ -6,6 +6,11 @@
     padding-top: 102px;
     padding-bottom: 30px;
   }
+
+  @include desktop() {
+    padding-top: 173px;
+    padding-bottom: 56px;
+  }
 }
 
 .main__contacts {

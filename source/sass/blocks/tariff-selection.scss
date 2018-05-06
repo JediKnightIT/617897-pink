@@ -33,6 +33,11 @@
     padding: 9px;
   }
 
+  @include desktop() {
+    padding-top: 17px;
+    padding-bottom: 21px;
+  }
+
   &:last-child {
     border-right: none;
   }
@@ -47,6 +52,10 @@
   height: 73px;
 
   overflow: hidden;
+
+  @include tablet() {
+    left: 0;
+  }
 
   &::before {
     content: "Хит";
@@ -73,6 +82,13 @@
       height: 27px;
 
       line-height: 25px;
+    }
+
+    @include desktop() {
+      top: 11px;
+      left: -25px;
+
+      height: 29px;
     }
   }
 }
@@ -130,6 +146,8 @@
   }
 
   @include desktop() {
+    padding: 14px 22px;
+
     font-size: 18px;
   }
 }
@@ -153,6 +171,11 @@
       top: 12px;
       right: 60px;
     }
+
+    @include desktop() {
+      top: 21px;
+      right: 101px;
+    }
   }
 
   &--off {
@@ -164,6 +187,11 @@
     @include tablet() {
       top: 9px;
       right: 62px;
+    }
+
+    @include desktop() {
+      top: 16px;
+      right: 103px;
     }
   }
 }
