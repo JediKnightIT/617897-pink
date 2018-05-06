@@ -1,4 +1,5 @@
 .slider {
+  position: relative;
   overflow: hidden;
 }
 
@@ -43,5 +44,41 @@
 
   @include desktop() {
     display: block;
+  }
+
+  &--left {
+    position: absolute;
+    top: 219px;
+    left: 26px;
+
+    width: 29px;
+    height: 29px;
+
+    background-color: transparent;
+
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgba($blue, 0.3%);
+    border-left: 2px solid rgba($blue, 0.3%);
+
+    transform: rotate(45deg);
+  }
+
+  &--right {
+    position: absolute;
+    top: 219px;
+    right: 26px;
+
+    width: 29px;
+    height: 29px;
+
+    background-color: transparent;
+
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgba($blue, 0.3%);
+    border-left: 2px solid rgba($blue, 0.3%);
+
+    transform: rotate(-135deg);
   }
 }
