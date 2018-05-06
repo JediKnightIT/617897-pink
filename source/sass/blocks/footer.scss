@@ -25,6 +25,10 @@
   &:hover {
     fill: $pink;
   }
+
+  @include desktop() {
+    margin-right: 230px;
+  }
 }
 
 .footer__list {

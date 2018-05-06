@@ -2,10 +2,18 @@
   margin-right: 11px;
 
   line-height: 18px;
+
+  @include desktop() {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
   height: 34px;
+
+  @include desktop() {
+    padding-top: 9px;
+  }
 }
 
 .copyright__icon {
