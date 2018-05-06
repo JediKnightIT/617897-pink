@@ -1,12 +1,32 @@
 .map {
   position: relative;
 
-  min-height: 219px;
+  min-height: 200px;
 
   overflow: hidden;
 
   @include tablet() {
     min-height: 363px;
+  }
+
+  @include desktop() {
+    min-height: 476px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 2px;
+
+    width: 100%;
+    height: 33px;
+
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 33px;
   }
 }
 
