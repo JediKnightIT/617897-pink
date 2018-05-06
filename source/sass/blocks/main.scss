@@ -15,4 +15,8 @@
 
 .main__contacts {
   padding-top: 45px;
+
+  @include desktop() {
+    padding-top: 67px;
+  }
 }
