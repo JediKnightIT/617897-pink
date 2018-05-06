@@ -14,8 +14,14 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
             <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-              <svg class="header__logo" width="75" height="23" aria-label="Логотип мобильного приложения Pink">
+              <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
                 <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="header__logo header__logo--all" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
               </svg>
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
@@ -139,9 +145,14 @@
     </main>
     <footer class="footer page__footer">
       <div class="footer__wrapper wrapper">
-        <svg class="footer__logo logo logo--pink-blue" width="146" height="40" aria-label="Логотип мобильного приложения Pink">
-          <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
-        </svg>
+        <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
+          <svg class="footer__logo" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+            <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
+          </svg>
+          <!-- <svg class="footer__logo" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          </svg> -->
+        </a>
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мы в твиттере">

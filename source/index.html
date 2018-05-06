@@ -13,11 +13,15 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
-            <picture class="main-nav__picture" >
-              <!-- <source media="(min-width: 1200px)" srcset="img/"> -->
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип мобильного приложения Pink">
-            </picture>
+            <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
+              <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
+              <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="header__logo header__logo--all" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
+              <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+            </svg>
             <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
           </div>
           <ul class="main-nav__list menu-list">
@@ -262,10 +266,12 @@
     </main>
     <footer class="footer footer--hidden page__footer">
       <div class="footer__wrapper wrapper">
-        <picture class="footer__picture">
-          <!-- <source media="(min-width: 1200px)" srcset="img"> -->
-          <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип мобильного приложения Pink">
-        </picture>
+        <svg class="footer__logo" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+          <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
+        </svg>
+        <!-- <svg class="footer__logo" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg> -->
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#" aria-label="Мы в твиттере">

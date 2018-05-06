@@ -11,3 +11,33 @@
     margin: 0 auto;
   }
 }
+
+.header__logo {
+  fill: $logo-header-color;
+
+  &--text {
+    @include tablet() {
+      display: none;
+    }
+  }
+
+  &--glasses {
+    display: none;
+
+    @include tablet() {
+      display: block;
+    }
+
+    @include laptop-min() {
+      display: none;
+    }
+  }
+
+  &--all {
+    display: none;
+
+    @include laptop-min() {
+      display: block;
+    }
+  }
+}
