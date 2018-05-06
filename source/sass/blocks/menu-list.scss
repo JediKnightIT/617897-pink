@@ -54,5 +54,9 @@
     line-height: 18px;
     text-transform: none;
     letter-spacing: 0.1px;
+
+    &:active {
+      color: rgba($menu-text-color, 0.3%);
+    }
   }
 }
