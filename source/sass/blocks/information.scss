@@ -162,4 +162,9 @@
 .information__footer {
   padding-top: 96px;
   padding-bottom: 82px;
+
+  @include desktop() {
+    padding-top: 124px;
+    padding-bottom: 113px;
+  }
 }

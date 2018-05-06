@@ -24,6 +24,10 @@
   font-weight: 700;
   line-height: 36px;
   color: $black;
+
+  @include desktop() {
+    margin-bottom: 21px;
+  }
 }
 
 .effect__description {
@@ -31,6 +35,8 @@
   margin-bottom: 10px;
 
   @include desktop() {
+    margin-bottom: 31px;
+
     font-size: 18px;
     line-height: 30px;
   }
@@ -38,4 +44,9 @@
 
 .effect__link {
   color: $pink;
+
+  @include desktop() {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
