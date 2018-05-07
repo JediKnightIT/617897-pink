@@ -13,9 +13,9 @@
 .page__footer {
   padding-top: 36px;
 
-  @include tablet() {
-    padding: 34px 0;
-  }
+  // @include tablet() {
+  //   padding: 34px 0;
+  // }
 
   @include desktop() {
     padding-top: 70px;
