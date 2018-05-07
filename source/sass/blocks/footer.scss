@@ -19,11 +19,9 @@
 }
 
 .footer__logo {
-  margin-right: 68px;
-  margin-bottom: 12px;
-
-  &:hover {
-    fill: $pink;
+  @include tablet() {
+    margin-right: 68px;
+    margin-bottom: 12px;
   }
 
   @include desktop() {
