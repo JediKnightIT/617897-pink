@@ -6,7 +6,7 @@
   overflow: hidden;
 
   @include tablet() {
-    min-height: 363px;
+    min-height: 374px;
   }
 
   @include desktop() {
@@ -18,7 +18,6 @@
 
     position: absolute;
     top: 0;
-    left: 2px;
 
     width: 100%;
     height: 33px;
@@ -27,6 +26,12 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 33px;
+
+    @include tablet() {
+      height: 70px;
+
+      background-size: 100% 68px;
+    }
   }
 }
 

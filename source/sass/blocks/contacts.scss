@@ -40,6 +40,10 @@
     flex-basis: 300px;
     flex-grow: 1;
     margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 33px;
+    }
   }
 
   @include desktop() {
