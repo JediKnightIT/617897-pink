@@ -111,6 +111,10 @@
   }
 }
 
+.form__input:focus + .form__label::before {
+  border: 2px solid $form-element-action-color;
+}
+
 .form__label {
   position: relative;
 
