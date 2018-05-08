@@ -16,8 +16,8 @@
 
 .form__fieldset {
   width: 100%;
-  padding: 40px 0;
   margin: 0 20px;
+  padding: 0;
 
   border: none;
 
@@ -38,27 +38,35 @@
     &--contacts {
       order: -1;
     }
+  }
 
-    @include desktop() {
-      margin-right: 0;
-      margin-left: 0;
+  @include desktop() {
+    margin-right: 0;
+    margin-left: 0;
 
-      &--user {
-        flex-basis: 435px;
-        margin-right: auto;
-      }
+    &--user {
+      flex-basis: 435px;
+      margin-right: auto;
+    }
 
-      &--app {
-        flex-basis: 435px;
-        padding: 0;
-      }
+    &--app {
+      flex-basis: 435px;
+      padding: 0;
     }
   }
 
   &--user {
+    margin-bottom: 79px;
+    padding-top: 34px;
     padding-right: 0;
     padding-left: 0;
+
     border: none;
+  }
+
+  &--achievement {
+    padding-top: 43px;
+    padding-bottom: 79px;
   }
 }
 
@@ -97,7 +105,7 @@
 }
 
 .form__item {
-  margin-bottom: 35px;
+  margin-bottom: 52px;
 
   &:last-child {
     margin-bottom: 0;
@@ -126,7 +134,7 @@
       content: "";
 
       position: absolute;
-      top: 0;
+      top: -7px;
       left: 0;
 
       width: 35px;
@@ -142,7 +150,7 @@
       content: "";
 
       position: absolute;
-      top: 10px;
+      top: 4px;
       left: 10px;
 
       width: 20px;
