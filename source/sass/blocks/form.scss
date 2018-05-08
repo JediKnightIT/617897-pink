@@ -17,6 +17,7 @@
 .form__fieldset {
   width: 100%;
   margin: 0 20px;
+  margin-bottom: 79px;
   padding: 0;
 
   border: none;
@@ -56,17 +57,26 @@
   }
 
   &--user {
-    margin-bottom: 79px;
     padding-top: 34px;
-    padding-right: 0;
-    padding-left: 0;
 
     border: none;
   }
 
   &--achievement {
     padding-top: 43px;
-    padding-bottom: 79px;
+  }
+
+  // &--contacts {
+  // }
+
+  &--app {
+    padding-top: 39px;
+    margin-bottom: 85px;
+  }
+
+  &--comment {
+    margin-bottom: 43px;
+    padding-top: 16px;
   }
 }
 
@@ -86,10 +96,6 @@
     @include tablet() {
       display: block;
     }
-  }
-
-  &--margin {
-    margin-bottom: 18px;
   }
 }
 
@@ -116,6 +122,10 @@
       flex-basis: 260px;
       flex-grow: 1;
     }
+  }
+
+  &--app {
+    margin-bottom: 45px;
   }
 }
 
@@ -170,7 +180,7 @@
       content: "";
 
       position: absolute;
-      top: 0;
+      top: -7px;
       left: 0;
 
       @include circle(35px, $white);
@@ -182,7 +192,7 @@
       content: "";
 
       position: absolute;
-      top: 12px;
+      top: 5px;
       left: 12px;
 
       @include circle(15px, $form-element-checked);
@@ -216,8 +226,10 @@
 .form__textarea {
   width: 100%;
   min-height: 200px;
-  padding: 18px;
+  padding: 14px 18px;
   box-sizing: border-box;
+
+  font: inherit;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
