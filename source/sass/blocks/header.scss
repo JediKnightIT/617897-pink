@@ -12,6 +12,16 @@
   }
 }
 
+.header__logo-link {
+  display: block;
+
+  width: 75px;
+
+  @include tablet() {
+    width: 146px;
+  }
+}
+
 .header__logo {
   fill: $logo-header-color;
 

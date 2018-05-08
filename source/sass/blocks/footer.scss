@@ -18,7 +18,9 @@
   }
 }
 
-.footer__logo {
+.footer__logo-link {
+  display: block;
+
   @include tablet() {
     margin-right: 68px;
     margin-bottom: 12px;
