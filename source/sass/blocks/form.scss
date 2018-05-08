@@ -111,10 +111,6 @@
   }
 }
 
-.form__input:focus + .form__label::before {
-  border: 2px solid $form-element-action-color;
-}
-
 .form__label {
   position: relative;
 
@@ -187,6 +183,27 @@
     }
   }
 }
+
+.form__label:hover::before {
+  border: 2px solid $form-element-action-color;
+}
+
+.form__input:focus + .form__label::before {
+  border: 2px solid $form-element-action-color;
+}
+
+.form__label:active::before {
+  border: 2px solid $form-element-checked;
+}
+
+.form__input:checked + .form__label--checkbox::after {
+  opacity: 1;
+}
+
+.form__input:checked + .form__label--radio::after {
+  opacity: 1;
+}
+
 
 .form__textarea {
   width: 100%;
