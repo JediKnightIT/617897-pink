@@ -15,7 +15,7 @@
   @include tablet() {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
     &--position {
       flex-wrap: wrap;
@@ -41,7 +41,8 @@
   text-transform: uppercase;
 
   @include tablet() {
-    margin-right: 20px;
+    margin: 0;
+    margin-right: 19px;
     padding: 0;
 
     &--order {

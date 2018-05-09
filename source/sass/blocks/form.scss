@@ -23,8 +23,8 @@
   border: none;
 
   @include tablet() {
-    margin-bottom: 50px;
-    padding: 40px 60px;
+    margin-bottom: 56px;
+    // padding: 40px 60px;
 
     border: 2px solid $fieldset-border-color;
 
@@ -60,6 +60,10 @@
     padding-top: 34px;
 
     border: none;
+
+    @include tablet() {
+      padding-top: 70px;
+    }
   }
 
   &--achievement {
