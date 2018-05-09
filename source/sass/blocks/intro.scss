@@ -21,6 +21,11 @@
       padding-top: 69px;
       padding-bottom: 81px;
     }
+
+    @include desktop() {
+      padding-top: 67px;
+      padding-bottom: 101px;
+    }
   }
 }
 
