@@ -246,7 +246,7 @@
 
 .form__textarea {
   width: 100%;
-  min-height: 193px;
+  min-height: 200px;
   padding: 14px 18px;
   box-sizing: border-box;
 
@@ -272,6 +272,10 @@
     font-size: 18px;
     line-height: 30px;
     color: $form-element-placeholder-color;
+  }
+
+  @include tablet() {
+    min-height: 193px;
   }
 
   @include desktop() {
