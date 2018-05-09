@@ -39,6 +39,8 @@
   border: 2px solid $pink;
   border-radius: 50%;
 
+  cursor: pointer;
+
   &--crop {
     right: 14%;
   }
@@ -49,5 +51,10 @@
 
   &--contrast {
     right: 50%;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $pink;
   }
 }
