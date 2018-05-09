@@ -29,6 +29,8 @@
 }
 
 .photo-editor__interface {
+  padding-top: 33px;
+
   @include tablet() {
     display: flex;
     flex-direction: column;
@@ -41,6 +43,24 @@
   }
 }
 
+.photo-editor__filter {
+  position: relative;
+  padding-top: 51px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: -25px;
+    left: -25px;
+
+    width: auto;
+    height: 1px;
+
+    background-color: rgba($blue, 0.1%);
+  }
+}
+
 .photo-editor__label {
   @include tablet() {
     display: flex;
@@ -49,9 +69,40 @@
 }
 
 .photo-editor__control {
+  position: absolute;
+
+  cursor: pointer;
+
+  &--crop {
+    top: 0;
+    left: 35px;
+  }
+
+  &--fill {
+    top: 3px;
+    left: 114px;
+  }
+
+  &--contrast {
+    top: 6px;
+    right: 45px;
+  }
+
   @include tablet() {
     flex-basis: 54px;
     text-align: center;
+  }
+}
+
+.photo-editor__icon {
+  fill: rgba($photo-editor-icon-color, 0.3%);
+
+  &:hover {
+    fill: rgba($photo-editor-icon-color, 0.5%);
+  }
+
+  &--active {
+    fill: $photo-editor-icon-active-color;
   }
 }
 

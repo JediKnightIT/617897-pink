@@ -8,10 +8,14 @@
 
   display: block;
   width: 240px;
-  height: 3px;
-  margin: 34px auto;
+  height: 2px;
+  margin: 33px auto;
 
   background-color: $blue;
+
+  &--hidden {
+    display: none;
+  }
 
   @include tablet() {
     width: 202px;
@@ -24,10 +28,12 @@
 
 .scale__toggle {
   position: absolute;
-  top: -9px;
-  width: 12px;
-  height: 12px;
+  top: -7px;
+  right: 14%;
+
+  width: 11px;
+  height: 11px;
   background-color: $white;
-  border: 3px solid $pink;
+  border: 2px solid $pink;
   border-radius: 50%;
 }
