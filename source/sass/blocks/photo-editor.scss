@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 300px;
+    padding: 0;
   }
 
   @include desktop() {
@@ -46,6 +47,10 @@
 .photo-editor__filter {
   position: relative;
   padding-top: 51px;
+
+  @include tablet() {
+    padding: 0;
+  }
 
   &::after {
     content: "";
@@ -58,13 +63,33 @@
     height: 1px;
 
     background-color: rgba($blue, 0.1%);
+
+    @include tablet() {
+      display: none;
+    }
   }
 }
 
 .photo-editor__label {
   @include tablet() {
+    position: relative;
+
     display: flex;
     align-items: center;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: auto;
+      height: 1px;
+
+      background-color: rgba($blue, 0.1%);
+    }
   }
 }
 
@@ -89,6 +114,8 @@
   }
 
   @include tablet() {
+    position: static;
+
     flex-basis: 54px;
     text-align: center;
   }
@@ -101,8 +128,31 @@
     fill: rgba($photo-editor-icon-color, 0.5%);
   }
 
-  &--active {
+  &--crop {
     fill: $photo-editor-icon-active-color;
+
+    @include tablet() {
+      width: 24px;
+      height: 22px;
+    }
+  }
+
+  &--fill {
+    @include tablet() {
+      width: 24px;
+      height: 22px;
+
+      fill: $photo-editor-icon-active-color;
+    }
+  }
+
+  &--contrast {
+    @include tablet() {
+      width: 17px;
+      height: 17px;
+
+      fill: $photo-editor-icon-active-color;
+    }
   }
 }
 
