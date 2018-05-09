@@ -25,7 +25,7 @@
     background-color: $button-action-background-color;
   }
 
-  &--disabled {
+  &:disabled {
     background-color: $button-disables-background-color;
   }
 
