@@ -104,6 +104,12 @@
       margin-bottom: 68px;
       padding: 37px 58px 44px 58px;
     }
+
+    @include desktop() {
+      margin-bottom: 66px;
+      padding-top: 33px;
+      padding-bottom: 37px;
+    }
   }
 }
 
@@ -317,7 +323,7 @@
   }
 
   @include desktop() {
-    min-height: 125px;
+    min-height: 128px;
   }
 }
 
@@ -339,4 +345,12 @@
 
 .form__description-simbol {
   color: $pink;
+}
+
+.form__description-specify {
+  display: none;
+
+  @include desktop() {
+    display: inline;
+  }
 }

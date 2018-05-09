@@ -49,4 +49,8 @@
   @include tablet() {
     justify-content: space-between;
   }
+
+  @include desktop() {
+    margin: 0;
+  }
 }
