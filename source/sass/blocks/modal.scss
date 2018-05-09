@@ -27,7 +27,7 @@
 
 
   @include desktop() {
-    background-image: linear-gradient(to bottom, $white 60%, $gray 60%);
+    background-image: linear-gradient(to bottom, $white 57%, $gray 57%);
   }
 }
 
@@ -36,7 +36,11 @@
   padding-top: 14px;
   padding-bottom: 12px;
 
-  background-image: linear-gradient(to bottom, $white 60%, $gray 60%);
+  background-image: linear-gradient(to bottom, $white 57%, $gray 57%);
+
+  @include desktop() {
+    padding-top: 41px;
+  }
 }
 
 .modal__wrapper {
@@ -82,12 +86,20 @@
 
   text-align: center;
 
-  &--show {
-    margin-bottom: 82px;
-  }
-
   @include tablet() {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @include desktop() {
+    margin-bottom: 110px;
+  }
+
+  &--show {
+    margin-bottom: 82px;
+
+    @include desktop() {
+      margin-bottom: 88px;
+    }
   }
 }
