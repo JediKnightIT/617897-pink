@@ -29,6 +29,11 @@
     border: 2px solid $fieldset-border-color;
   }
 
+  @include desktop() {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   &--user {
     padding-top: 34px;
 
@@ -38,6 +43,12 @@
       order: -3;
 
       padding-top: 70px;
+    }
+
+    @include desktop() {
+      flex-basis: 435px;
+      margin-right: auto;
+      padding-top: 12px;
     }
   }
 
@@ -68,6 +79,11 @@
       margin-bottom: 57px;
       padding: 48px 30px 59px 58px;
     }
+
+    @include desktop() {
+      flex-basis: 431px;
+      padding: 0;
+    }
   }
 
   &--comment {
@@ -79,27 +95,11 @@
       padding: 37px 58px 44px 58px;
     }
   }
-
-
-  @include desktop() {
-    margin-right: 0;
-    margin-left: 0;
-
-    &--user {
-      flex-basis: 435px;
-      margin-right: auto;
-    }
-
-    &--app {
-      flex-basis: 435px;
-      padding: 0;
-    }
-  }
 }
 
 .form__legend {
   margin: 0;
-  padding: 0 15px;
+  padding: 0 32px;
 
   font: inherit;
   line-height: 18px;

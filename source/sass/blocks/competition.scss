@@ -6,6 +6,10 @@
   @include tablet() {
     padding-top: 92px;
   }
+
+  @include desktop() {
+    margin-bottom: 71px;
+  }
 }
 
 .competition__description {
@@ -22,7 +26,7 @@
   }
 
   @include desktop() {
-    width: 754px;
+    width: 760px;
   }
 }
 
