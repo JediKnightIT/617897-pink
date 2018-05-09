@@ -11,7 +11,11 @@
 }
 
 .page__footer {
-  padding-top: 55px;
+  padding: 42px 0;
+
+  &--competition {
+    padding-top: 52px;
+  }
 
   @include tablet() {
     padding-top: 12px;

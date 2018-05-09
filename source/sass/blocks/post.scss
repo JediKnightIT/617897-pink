@@ -65,9 +65,11 @@
   font-style: normal;
   font-weight: 700;
 
-  @include tablet() {
-    order: 1;
-    margin-right: auto;
+  &--panorama {
+    @include tablet() {
+      order: 1;
+      margin-right: auto;
+    }
   }
 }
 
@@ -81,8 +83,10 @@
   margin: 0;
   margin-bottom: 9px;
 
-  @include tablet() {
-    order: 3;
+  &--panorama {
+    @include tablet() {
+      order: 3;
+    }
   }
 }
 
@@ -91,9 +95,16 @@
   margin-top: auto;
 
   @include tablet() {
-    order: 2;
-    padding-left: 0;
-    padding-right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--panorama {
+    @include tablet() {
+      order: 2;
+    }
   }
 }
 
@@ -101,6 +112,13 @@
   margin-right: 14px;
 
   fill: $pink;
+
+  &--panorama {
+    @include tablet() {
+      margin-right: 0;
+      margin-left: 14px;
+    }
+  }
 }
 
 .post__like-text {
