@@ -59,6 +59,10 @@
       margin-bottom: 57px;
       padding: 48px 30px 53px 58px;
     }
+
+    @include desktop() {
+      padding-bottom: 9px;
+    }
   }
 
   &--contacts {
@@ -128,6 +132,7 @@
   &--achievement {
     @include desktop() {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
   }
@@ -143,9 +148,31 @@
   &--achievement {
     @include desktop() {
       flex-basis: 260px;
-      flex-grow: 1;
+      order: 4;
+      padding-left: 22px;
+      box-sizing: border-box;
     }
   }
+
+  &--beach {
+    @include desktop() {
+      order: 4;
+      flex-basis: 260px;
+    }
+  }
+
+  &--chuck {
+    @include desktop() {
+      order: 2;
+    }
+  }
+
+  &--tower {
+    @include desktop() {
+      order: 3;
+    }
+  }
+
 
   &--app {
     margin-bottom: 45px;
