@@ -18,7 +18,6 @@
   }
 
   @include desktop() {
-    padding-top: 70px;
-    padding-bottom: 75px;
+    padding-top: 0;
   }
 }

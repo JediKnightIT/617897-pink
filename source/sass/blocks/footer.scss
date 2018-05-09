@@ -54,4 +54,9 @@
   @include tablet() {
     padding-top: 7px;
   }
+
+  @include desktop() {
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
 }
