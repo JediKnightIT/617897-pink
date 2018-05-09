@@ -46,10 +46,14 @@
     line-height: 59px;
   }
 
-  &--width {
+  &--competition {
     @include desktop() {
       width: 754px;
     }
+  }
+
+  &--photo {
+    margin-bottom: 30px;
   }
 }
 
