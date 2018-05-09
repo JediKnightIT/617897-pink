@@ -52,7 +52,7 @@
       order: 1;
       margin-right: 0;
       padding-top: 9px;
-      padding-left: 20px;
+      padding-left: 18px;
     }
   }
 }
@@ -69,13 +69,20 @@
 
   @include tablet() {
     flex-grow: 1;
+  }
 
-    &--contacts {
+  &--contacts {
+    @include tablet() {
       padding: 18px;
 
       background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
     }
+
+    @include desktop() {
+      background-image: linear-gradient(to right, $white 84%, $darkgray 84%);
+    }
   }
+
 
   &:hover,
   &:focus {

@@ -48,7 +48,7 @@
     @include desktop() {
       flex-basis: 435px;
       margin-right: auto;
-      padding-top: 12px;
+      padding-top: 14px;
     }
   }
 
@@ -65,7 +65,12 @@
     @include tablet() {
       order: -1;
 
-      padding: 37px 58px 27px 58px;
+      padding: 37px 59px 27px 58px;
+    }
+
+    @include desktop() {
+      padding-top: 33px;
+      padding-bottom: 13px;
     }
   }
 
@@ -81,8 +86,9 @@
     }
 
     @include desktop() {
-      flex-basis: 431px;
-      padding: 0;
+      flex-basis: 435px;
+      padding: 50px 20px;
+      box-sizing: border-box;
     }
   }
 
@@ -119,8 +125,8 @@
 .form__list {
   @include list;
 
-  @include desktop() {
-    &--achievement {
+  &--achievement {
+    @include desktop() {
       display: flex;
       flex-wrap: wrap;
     }
@@ -134,8 +140,8 @@
     margin-bottom: 0;
   }
 
-  @include desktop() {
-    &--achievement {
+  &--achievement {
+    @include desktop() {
       flex-basis: 260px;
       flex-grow: 1;
     }
@@ -143,6 +149,11 @@
 
   &--app {
     margin-bottom: 45px;
+
+    @include desktop() {
+      margin-bottom: 44px;
+      padding-left: 54px;
+    }
   }
 }
 
