@@ -135,6 +135,11 @@
       width: 24px;
       height: 22px;
     }
+
+    @include desktop() {
+      width: 46px;
+      height: 45px;
+    }
   }
 
   &--fill {
@@ -144,6 +149,11 @@
 
       fill: $photo-editor-icon-active-color;
     }
+
+    @include desktop() {
+      width: 49px;
+      height: 45px;
+    }
   }
 
   &--contrast {
@@ -152,6 +162,11 @@
       height: 17px;
 
       fill: $photo-editor-icon-active-color;
+    }
+
+    @include desktop() {
+      width: 33px;
+      height: 33px;
     }
   }
 }
