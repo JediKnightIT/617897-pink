@@ -59,7 +59,7 @@
 
 .data__input {
   width: 280px;
-  padding: 18px;
+  padding: 18px 20px;
   box-sizing: border-box;
 
   font: inherit;
@@ -71,6 +71,8 @@
     flex-grow: 1;
 
     &--contacts {
+      padding: 18px;
+
       background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
     }
   }

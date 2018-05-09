@@ -29,21 +29,6 @@
     border: 2px solid $fieldset-border-color;
   }
 
-  @include desktop() {
-    margin-right: 0;
-    margin-left: 0;
-
-    &--user {
-      flex-basis: 435px;
-      margin-right: auto;
-    }
-
-    &--app {
-      flex-basis: 435px;
-      padding: 0;
-    }
-  }
-
   &--user {
     padding-top: 34px;
 
@@ -58,6 +43,11 @@
 
   &--achievement {
     padding-top: 43px;
+
+    @include tablet() {
+      margin-bottom: 57px;
+      padding: 48px 30px 53px 58px;
+    }
   }
 
   &--contacts {
@@ -70,11 +60,12 @@
 
   &--app {
     padding-top: 39px;
-    margin-bottom: 57px;
+    margin-bottom: 85px;
 
     @include tablet() {
       order: -2;
 
+      margin-bottom: 57px;
       padding: 48px 30px 59px 58px;
     }
   }
@@ -82,6 +73,27 @@
   &--comment {
     margin-bottom: 43px;
     padding-top: 16px;
+
+    @include tablet() {
+      margin-bottom: 67px;
+      padding: 37px 58px 44px 58px;
+    }
+  }
+
+
+  @include desktop() {
+    margin-right: 0;
+    margin-left: 0;
+
+    &--user {
+      flex-basis: 435px;
+      margin-right: auto;
+    }
+
+    &--app {
+      flex-basis: 435px;
+      padding: 0;
+    }
   }
 }
 
@@ -137,12 +149,16 @@
 .form__label {
   position: relative;
 
-  padding-left: 59px;
+  padding-left: 69px;
 
   font-size: 18px;
   line-height: 30px;
 
   cursor: pointer;
+
+  @include tablet() {
+    padding-left: 59px;
+  }
 
   &--checkbox {
     &::before {
@@ -230,7 +246,7 @@
 
 .form__textarea {
   width: 100%;
-  min-height: 200px;
+  min-height: 193px;
   padding: 14px 18px;
   box-sizing: border-box;
 
