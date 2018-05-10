@@ -25,3 +25,15 @@
     padding-top: 67px;
   }
 }
+
+.main__competition {
+  margin-bottom: 13px;
+
+  @include tablet() {
+    margin-bottom: 50px;
+  }
+
+  @include desktop() {
+    margin-bottom: 0;
+  }
+}
