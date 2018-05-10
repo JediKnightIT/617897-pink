@@ -12,8 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  min-height: 203px;
+  align-items: flex-start;
+  // min-height: 203px;
 
   @include tablet() {
     flex-direction: row;
@@ -52,11 +52,10 @@
   text-align: center;
 
   @include tablet() {
-    padding-top: 7px;
+    padding-top: 12px;
   }
 
   @include desktop() {
-    padding-top: 0;
-    padding-bottom: 6px;
+    padding-top: 4px;
   }
 }

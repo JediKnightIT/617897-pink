@@ -11,17 +11,17 @@
 }
 
 .page__footer {
-  padding: 42px 0;
+  // padding: 42px 0;
 
-  &--competition {
-    padding-top: 52px;
-  }
+  // &--competition {
+  //   padding-top: 52px;
+  // }
 
   @include tablet() {
-    padding-top: 12px;
+    padding: 37px 0;
   }
 
   @include desktop() {
-    padding-top: 0;
+    padding: 72px 0;
   }
 }

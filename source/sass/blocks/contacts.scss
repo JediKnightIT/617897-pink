@@ -27,6 +27,7 @@
 
   @include tablet() {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -38,10 +39,11 @@
 
   @include tablet() {
     flex-basis: 300px;
-    flex-grow: 1;
     margin-bottom: 45px;
 
-    &:last-child {
+    &--addres {
+      flex-grow: 1;
+
       margin-bottom: 33px;
     }
   }
