@@ -1,18 +1,70 @@
 .intro {
-  min-height: 462px;
+  padding-top: 420px;
+  padding-right: 20px;
+  padding-left: 20px;
 
-  background: url("../img/iphone-hand-mobile@1x.png") 0 176px no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
-  background-color: $intro-background-color;
+  @include tablet() {
+    padding-top: 91px;
+  }
+
+  @include laptop-min() {
+    padding-top: 113px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &--inner, {
+    padding-top: 25px;
+    padding-bottom: 52px;
+
+    @include tablet() {
+      padding-top: 69px;
+      padding-bottom: 81px;
+    }
+
+    @include desktop() {
+      padding-top: 67px;
+      padding-bottom: 101px;
+    }
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $intro-text-color;
+  text-align: center;
+
+  @include tablet() {
+    width: 620px;
+    margin: 0 auto;
+
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  &--competition {
+    @include desktop() {
+      width: 754px;
+    }
+  }
+
+  &--photo {
+    margin-bottom: 30px;
+  }
 }
 
 .intro__download {
-  padding: 490px 20px 30px 20px;
+  padding-bottom: 30px;
 
   @include tablet() {
-    padding-top: 100px;
+    padding-bottom: 110px;
   }
 
-  @include desktop() {
-    padding-left: 130px;
+  @include laptop-min() {
+    padding-bottom: 122px;
   }
 }

@@ -1,3 +1,90 @@
 .slider {
+  position: relative;
   overflow: hidden;
+}
+
+.slider__bullets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.slider__button {
+  padding-right: 11px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.slider__bullet {
+  display: block;
+
+  @include circle(6px, rgba($slider-bullet-color, 0.3%));
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($slider-bullet-color, 0.6%);
+  }
+
+  &:active {
+    background-color: rgba($slider-bullet-color, 0.1%);
+  }
+
+  &--active {
+    background-color: rgba($slider-bullet-color, 0%);
+    border: 3px solid $slider-bullet-color;
+    border-radius: 50%;
+  }
+
+  @include desktop() {
+    display: none;
+  }
+}
+
+
+.slider__toggle {
+  display: none;
+
+  @include desktop() {
+    position: absolute;
+
+    display: block;
+    width: 29px;
+    height: 29px;
+
+    background-color: transparent;
+
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgba($blue, 0.3%);
+    border-left: 2px solid rgba($blue, 0.3%);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid rgba($blue, 0.6%);
+      border-left: 2px solid rgba($blue, 0.6%);
+    }
+
+    &:active {
+      border-bottom: 2px solid rgba($blue, 0.1%);
+      border-left: 2px solid rgba($blue, 0.1%);
+    }
+  }
+
+  &--left {
+    top: 219px;
+    left: 26px;
+
+    transform: rotate(45deg);
+  }
+
+  &--right {
+    top: 219px;
+    right: 26px;
+
+    transform: rotate(-135deg);
+  }
 }

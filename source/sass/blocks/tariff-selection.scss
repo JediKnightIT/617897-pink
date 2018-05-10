@@ -9,6 +9,8 @@
   @include tablet() {
     width: 620px;
 
+    table-layout: fixed;
+
     transform: translateX(0);
   }
 
@@ -18,8 +20,9 @@
 }
 
 .tariff-selection__cell-header {
+  position: relative;
   width: 280px;
-  height: 98px;
+  padding: 19px;
 
   text-align: center;
 
@@ -27,15 +30,66 @@
   border-right: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
-    height: 80px;
+    padding: 9px;
   }
 
   @include desktop() {
-    height: 98px;
+    padding-top: 17px;
+    padding-bottom: 21px;
   }
 
   &:last-child {
     border-right: none;
+  }
+}
+
+.tariff-selection__hit {
+  position: absolute;
+  top: 0;
+  left: -2px;
+
+  width: 73px;
+  height: 73px;
+
+  overflow: hidden;
+
+  @include tablet() {
+    left: 0;
+  }
+
+  &::before {
+    content: "Хит";
+    position: absolute;
+    top: 12px;
+    left: -25px;
+
+    width: 101px;
+    height: 29px;
+
+    font-weight: 400;
+    line-height: 30px;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $pink;
+
+    transform: rotate(-45deg);
+
+    @include tablet() {
+      top: 5px;
+      left: -27px;
+
+      height: 27px;
+
+      line-height: 25px;
+    }
+
+    @include desktop() {
+      top: 11px;
+      left: -25px;
+
+      height: 29px;
+    }
   }
 }
 
@@ -74,9 +128,10 @@
 }
 
 .tariff-selection__cell-option {
+  position: relative;
+
   width: 280px;
-  height: 60px;
-  padding-left: 25px;
+  padding: 14px 22px;
 
   line-height: 30px;
   text-transform: uppercase;
@@ -85,19 +140,63 @@
   border: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
-    height: 47px;
+    padding: 7px 15px;
 
     text-transform: none;
   }
 
   @include desktop() {
-    height: 60px;
+    padding: 14px 22px;
 
     font-size: 18px;
   }
 }
 
 .tariff-selection__cell-hidden {
+  @include tablet() {
+    display: none;
+  }
+}
+
+.tariff-selection__icon {
+  position: absolute;
+
+  &--on {
+    top: 19px;
+    right: 19px;
+
+    fill: #3dc644;
+
+    @include tablet() {
+      top: 12px;
+      right: 60px;
+    }
+
+    @include desktop() {
+      top: 21px;
+      right: 101px;
+    }
+  }
+
+  &--off {
+    top: 16px;
+    right: 20px;
+
+    fill: #f25b26;
+
+    @include tablet() {
+      top: 9px;
+      right: 62px;
+    }
+
+    @include desktop() {
+      top: 16px;
+      right: 103px;
+    }
+  }
+}
+
+.tariff-selection__bullets {
   @include tablet() {
     display: none;
   }

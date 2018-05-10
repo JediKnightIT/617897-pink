@@ -3,18 +3,22 @@
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 27px;
   text-align: center;
 
   @include tablet() {
     width: 575px;
+    margin-bottom: 42px;
 
     font-size: 40px;
-    line-height: 40px;
+    line-height: 49px;
   }
 
   @include desktop() {
+    margin-bottom: 55px;
+
     font-size: 50px;
-    line-height: 50px;
+    line-height: 59px;
   }
 }
 
@@ -28,31 +32,69 @@
 }
 
 .contacts__item {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   text-align: center;
 
   @include tablet() {
     flex-basis: 300px;
     flex-grow: 1;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 33px;
+    }
   }
 
   @include desktop() {
     &--displaced {
       order: 1;
     }
+
+    &:last-child {
+      margin-bottom: 21px;
+    }
   }
 }
 
 .contacts__title {
   margin: 0;
+  margin-bottom: 4px;
 
   font-size: 18px;
+
+  @include tablet() {
+    margin-bottom: 6px;
+  }
+
+  @include desktop() {
+    margin-bottom: 23px;
+  }
 }
 
 .contacts__link {
+  font-style: normal;
   font-size: 24px;
   font-weight: 300;
+  line-height: 26px;
   color: $contacts-link-text-color;
   text-decoration: none;
+
+  &--email {
+    &:hover {
+      color: $contacts-link-text-color-hover;
+
+      border-bottom: 1px solid $contacts-link-text-color-hover;
+    }
+
+    &:active {
+      color: rgba($contacts-link-text-color-hover, 0.3%);
+
+      border: none;
+    }
+  }
+
+  @include desktop() {
+    line-height: 30px;
+  }
 }

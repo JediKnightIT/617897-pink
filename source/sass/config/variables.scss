@@ -19,7 +19,6 @@ $black: #000000;
 
 // variables for applying colors
 $main-text-color: $blue;
-$intro-background-color: $blue;
 $intro-text-color: $white;
 
 // variables for applying colors header
@@ -42,12 +41,15 @@ $link-decor-color: $white;
 $link-text-action-color: $pink;
 $link-background-action-color: $white;
 
+$slider-bullet-color: $blue;
+
 $tariff-selection-background-color: $white;
 $tariff-selection-header-background-color: $blue;
 $tariff-selection-header-text-color: $white;
 $tariff-selection-border-color: $darkgray;
 
 $contacts-link-text-color: $pink;
+$contacts-link-text-color-hover: $blue;
 
 // variables for applying colors photo.html
 $photo-background-color: $gray;
@@ -56,6 +58,8 @@ $post-background-color: $gray;
 $post-like-text-color: $pink;
 
 $photo-editor-background-color: $gray;
+$photo-editor-icon-color: $blue;
+$photo-editor-icon-active-color: $pink;
 
 $submit-text-color: $pink;
 $submit-decor-color: $pink;
@@ -73,6 +77,7 @@ $legend-text-color: $pink;
 $form-element-action-color: $blue;
 $form-element-modify-color: $pink;
 $form-element-decor-color: $darkgray;
+$form-element-checked: $pink;
 $form-label-text-color: $pink;
 $form-element-placeholder-color: $blue;
 
@@ -82,4 +87,12 @@ $button-background-color: $green;
 $button-action-background-color: $darkgreen;
 $button-disables-background-color: $darkgray;
 
+// variables for applying colors footer
+$social-icon-fill: $pink;
+$social-border-color: $blue;
+
+$copyright-icon-fill: $pink;
+$copyright-icon-fill-hover: $blue;
+
+// variables for applying colors modal
 $modal-title-color: $black;

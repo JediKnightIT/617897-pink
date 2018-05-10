@@ -9,7 +9,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 630px;
+    width: 621px;
+    padding-top: 15px;
 
     border: none;
   }
@@ -18,8 +19,7 @@
 .menu-list__item {
   padding: 16px 0;
 
-  border-top: 1px solid #485461;
-  box-shadow: 0 -1px 0 0 $menu-decor-color;
+  box-shadow: 0 -1px 0 0 #485461, 0 -2px 0 0 #000000;
 
   @include laptop-min() {
     display: flex;
@@ -35,6 +35,7 @@
   font-weight: 700;
   line-height: 32px;
   color: $menu-text-color;
+  letter-spacing: 1.4px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -52,5 +53,10 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+    letter-spacing: 0.1px;
+
+    &:active {
+      color: rgba($menu-text-color, 0.3%);
+    }
   }
 }

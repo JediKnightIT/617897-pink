@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%, #f2f2f2 50%, #ffffff 50%, #ffffff 62%, #f2f2f2 62%, #f2f2f2 78%, #ffffff 78%);
+  background-image: linear-gradient(to bottom, $white 19%, $gray 19%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 78%, $white 78%);
 
   @include tablet() {
-    background-image: linear-gradient(to bottom, #ffffff);
+    background-image: linear-gradient(to bottom, $white);
   }
 
   @include desktop() {
@@ -16,55 +16,106 @@
 
 .form__fieldset {
   width: 100%;
-  padding: 40px 0;
   margin: 0 20px;
+  margin-bottom: 79px;
+  padding: 0;
 
   border: none;
 
   @include tablet() {
-    margin-bottom: 50px;
-    padding: 40px 60px;
+    margin-bottom: 56px;
+    // padding: 40px 60px;
 
     border: 2px solid $fieldset-border-color;
+  }
 
-    &--user {
-      order: -3;
-    }
-
-    &--app {
-      order: -2;
-    }
-
-    &--contacts {
-      order: -1;
-    }
-
-    @include desktop() {
-      margin-right: 0;
-      margin-left: 0;
-
-      &--user {
-        flex-basis: 435px;
-        margin-right: auto;
-      }
-
-      &--app {
-        flex-basis: 435px;
-        padding: 0;
-      }
-    }
+  @include desktop() {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   &--user {
-    padding-right: 0;
-    padding-left: 0;
+    padding-top: 34px;
+
     border: none;
+
+    @include tablet() {
+      order: -3;
+
+      padding-top: 70px;
+    }
+
+    @include desktop() {
+      flex-basis: 435px;
+      margin-right: auto;
+      padding-top: 14px;
+    }
+  }
+
+  &--achievement {
+    padding-top: 43px;
+
+    @include tablet() {
+      margin-bottom: 57px;
+      padding: 48px 30px 53px 58px;
+    }
+
+    @include desktop() {
+      padding-bottom: 9px;
+    }
+  }
+
+  &--contacts {
+    @include tablet() {
+      order: -1;
+
+      padding: 37px 59px 27px 58px;
+    }
+
+    @include desktop() {
+      padding-top: 33px;
+      padding-bottom: 13px;
+    }
+  }
+
+  &--app {
+    padding-top: 39px;
+    margin-bottom: 85px;
+
+    @include tablet() {
+      order: -2;
+
+      margin-bottom: 57px;
+      padding: 48px 30px 59px 58px;
+    }
+
+    @include desktop() {
+      flex-basis: 435px;
+      padding: 50px 20px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--comment {
+    margin-bottom: 43px;
+    padding-top: 16px;
+
+    @include tablet() {
+      margin-bottom: 68px;
+      padding: 37px 58px 44px 58px;
+    }
+
+    @include desktop() {
+      margin-bottom: 66px;
+      padding-top: 33px;
+      padding-bottom: 37px;
+    }
   }
 }
 
 .form__legend {
   margin: 0;
-  padding: 0 15px;
+  padding: 0 30px;
 
   font: inherit;
   line-height: 18px;
@@ -79,50 +130,171 @@
       display: block;
     }
   }
-
-  &--margin {
-    margin-bottom: 18px;
-  }
 }
 
 .form__list {
   @include list;
 
-  @include desktop() {
-    &--achievement {
+  &--achievement {
+    @include desktop() {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
   }
 }
 
 .form__item {
-  margin-bottom: 35px;
+  margin-bottom: 52px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @include desktop() {
-    &--achievement {
+  &--achievement {
+    @include desktop() {
       flex-basis: 260px;
-      flex-grow: 1;
+      order: 4;
+      padding-left: 22px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--beach {
+    @include desktop() {
+      order: 4;
+      flex-basis: 260px;
+    }
+  }
+
+  &--chuck {
+    @include desktop() {
+      order: 2;
+    }
+  }
+
+  &--tower {
+    @include desktop() {
+      order: 3;
+    }
+  }
+
+
+  &--app {
+    margin-bottom: 45px;
+
+    @include desktop() {
+      margin-bottom: 44px;
+      padding-left: 54px;
     }
   }
 }
 
 .form__label {
-  padding-left: 70px;
+  position: relative;
+
+  padding-left: 69px;
 
   font-size: 18px;
   line-height: 30px;
+
+  cursor: pointer;
+
+  @include tablet() {
+    padding-left: 59px;
+  }
+
+  &--checkbox {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -7px;
+      left: 0;
+
+      width: 35px;
+      height: 35px;
+
+      background-color: $white;
+
+      border: 2px solid $form-element-decor-color;
+      border-radius: 2px;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 4px;
+      left: 10px;
+
+      width: 20px;
+      height: 8px;
+
+      border-left: solid 2px $form-element-checked;
+      border-bottom: solid 2px $form-element-checked;
+
+      transform: rotate(-45deg);
+
+      opacity: 0;
+    }
+  }
+
+  &--radio {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -7px;
+      left: 0;
+
+      @include circle(35px, $white);
+
+      border: 2px solid $form-element-decor-color;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      left: 12px;
+
+      @include circle(15px, $form-element-checked);
+
+      opacity: 0;
+    }
+  }
 }
+
+.form__label:hover::before {
+  border: 2px solid $form-element-action-color;
+}
+
+.form__input:focus + .form__label::before {
+  border: 2px solid $form-element-action-color;
+}
+
+.form__label:active::before {
+  border: 2px solid $form-element-checked;
+}
+
+.form__input:checked + .form__label--checkbox::after {
+  opacity: 1;
+}
+
+.form__input:checked + .form__label--radio::after {
+  opacity: 1;
+}
+
 
 .form__textarea {
   width: 100%;
   min-height: 200px;
-  padding: 18px;
+  padding: 14px 18px;
   box-sizing: border-box;
+
+  font: inherit;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
@@ -146,8 +318,20 @@
     color: $form-element-placeholder-color;
   }
 
+  @include tablet() {
+    min-height: 193px;
+  }
+
   @include desktop() {
-    min-height: 125px;
+    min-height: 128px;
+  }
+}
+
+.form__button {
+  margin-bottom: 35px;
+
+  @include tablet() {
+    margin-bottom: 0;
   }
 }
 
@@ -161,4 +345,12 @@
 
 .form__description-simbol {
   color: $pink;
+}
+
+.form__description-specify {
+  display: none;
+
+  @include desktop() {
+    display: inline;
+  }
 }

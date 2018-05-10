@@ -12,23 +12,48 @@
   @include tablet() {
     display: block;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     padding: 0 30px;
 
     font-size: 40px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 47px;
     color: $app-text-color;
     text-align: center;
+  }
+
+  @include laptop-min() {
+    margin-bottom: 52px;
+
+    font-size: 50px;
+    line-height: 59px;
   }
 }
 
 .app__link {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+
+  @include tablet() {
+    margin-bottom: 48px;
+  }
+
+  @include laptop-min() {
+    margin-bottom: 69px;
+  }
 }
 
 .app__list {
   @include list;
+  margin: 0 auto;
+  margin-bottom: 14px;
+
+  @include tablet() {
+    margin-bottom: 28px;
+  }
+
+  @include laptop-min() {
+    margin-bottom: 47px;
+  }
 }
 
 .app__description {

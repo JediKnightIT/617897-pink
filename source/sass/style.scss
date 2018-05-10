@@ -8,7 +8,6 @@
 // blocks header
 @import "blocks/page.scss";
 @import "blocks/header.scss";
-@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/menu-list.scss";
 
@@ -16,6 +15,7 @@
 @import "blocks/main.scss";
 @import "blocks/intro.scss";
 @import "blocks/app.scss";
+@import "blocks/store-list.scss";
 @import "blocks/link.scss";
 @import "blocks/information.scss";
 @import "blocks/effect.scss";
@@ -27,7 +27,6 @@
 @import "blocks/map.scss";
 
 // blocks photo.html
-@import "blocks/intro-inner.scss";
 @import "blocks/photo-content.scss";
 @import "blocks/post.scss";
 @import "blocks/photo-editor.scss";
@@ -43,3 +42,5 @@
 
 // blocks footer
 @import "blocks/footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";

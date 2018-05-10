@@ -1,5 +1,9 @@
 .price {
-  background-image: linear-gradient(-5deg, $gray 91%, $white 0%);
+  background-image: linear-gradient(-5deg, $gray 95%, $white 0%);
+
+  @include tablet() {
+    background-image: linear-gradient(-4deg, $gray 84%, $white 0%);
+  }
 }
 
 .price__toggles {

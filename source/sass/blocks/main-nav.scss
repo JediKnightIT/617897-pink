@@ -1,8 +1,10 @@
 .main-nav {
   position: relative;
 
-  background-color: $nav-background-color;
+  background-color: rgba($header-background-color, 0.3%);
+}
 
+.main-nav__wrapper {
   @include laptop-min() {
     display: flex;
     align-items: center;
@@ -14,7 +16,12 @@
 }
 
 .main-nav__menu {
-  padding: 20px;
+  padding: 21px;
+
+  @include tablet() {
+    padding-top: 25px;
+    padding-bottom: 46px;
+  }
 
   @include laptop-min() {
     margin-right: auto;
@@ -25,7 +32,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 16px;
-  right: 20px;
+  right: 17px;
   z-index: 2;
 
   display: block;
@@ -36,6 +43,11 @@
 
   cursor: pointer;
   border: none;
+
+  @include tablet() {
+    top: 40px;
+    right: 16px;
+  }
 
   @include laptop-min() {
     display: none;
@@ -102,6 +114,17 @@
 .main-nav--opened .main-nav__toggle:active::before,
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba($header-icon-action-color, 0.3%);
+}
+
+// не понимаю почему не работает
+.main-nav--opened .header {
+  background-position: 0 259px;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  @include laptop-max() {
+    background-color: $nav-background-color;
+  }
 }
 
 .main-nav--closed .main-nav__list {

@@ -1,15 +1,58 @@
 .map {
   position: relative;
 
-  min-height: 250px;
+  min-height: 200px;
 
   overflow: hidden;
+
+  @include tablet() {
+    min-height: 374px;
+  }
+
+  @include desktop() {
+    min-height: 501px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 10;
+
+    width: 100%;
+    height: 33px;
+
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 33px;
+
+    @include tablet() {
+      height: 70px;
+
+      background-size: 100% 68px;
+    }
+
+    @include desktop() {
+      height: 124px;
+
+      background-size: 100% 124px;
+    }
+  }
+}
+
+.map__interactive {
+  position: absolute;
+
+  width: 100%;
+  height: 500px;
 }
 
 .map__img {
   position: absolute;
   bottom: 0;
   left: 50%;
+  z-index: -1;
 
   transform: translateX(-50%);
 }

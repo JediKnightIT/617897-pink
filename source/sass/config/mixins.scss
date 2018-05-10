@@ -29,7 +29,7 @@
   height: $width;
 
   background-color: $color;
-  border-radius: $width/2;
+  border-radius: 50%;
 }
 
 @mixin list {

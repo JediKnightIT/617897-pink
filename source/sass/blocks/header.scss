@@ -1,3 +1,53 @@
 .header {
-  background-color: rgba($header-background-color, 0.3%);
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.header__wrapper {
+  @include laptop-min() {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.header__logo-link {
+  display: block;
+
+  width: 75px;
+
+  @include tablet() {
+    width: 146px;
+  }
+}
+
+.header__logo {
+  fill: $logo-header-color;
+
+  &--text {
+    @include tablet() {
+      display: none;
+    }
+  }
+
+  &--glasses {
+    display: none;
+
+    @include tablet() {
+      display: block;
+    }
+
+    @include laptop-min() {
+      display: none;
+    }
+  }
+
+  &--all {
+    display: none;
+
+    @include laptop-min() {
+      display: block;
+    }
+  }
 }
