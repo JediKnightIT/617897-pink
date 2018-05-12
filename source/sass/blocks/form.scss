@@ -5,7 +5,7 @@
   background-image: linear-gradient(to bottom, $white 19%, $gray 19%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 78%, $white 78%);
 
   @include tablet() {
-    background-image: linear-gradient(to bottom, $white);
+    background-image: none;
   }
 
   @include desktop() {
@@ -155,7 +155,7 @@
     @include desktop() {
       flex-basis: 260px;
       order: 4;
-      padding-left: 22px;
+      padding-left: 19px;
       box-sizing: border-box;
     }
   }
