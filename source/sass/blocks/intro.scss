@@ -3,6 +3,15 @@
   padding-right: 20px;
   padding-left: 20px;
 
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-position: 0 106px;
+  background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
+
   @include tablet() {
     padding-top: 91px;
   }
@@ -16,6 +25,8 @@
   &--inner, {
     padding-top: 25px;
     padding-bottom: 52px;
+
+    background-image: none;
 
     @include tablet() {
       padding-top: 69px;
