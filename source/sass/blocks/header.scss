@@ -1,8 +1,18 @@
 .header {
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
+  background-position: center 0;
   background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
+
+  // @include tablet() {
+  //   background-image: url("../img/bg-back-mobile@2x.jpg");
+  //   background-size: 660px auto;
+  // }
 }
 
 .header__wrapper {
