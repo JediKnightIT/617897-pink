@@ -24,6 +24,18 @@
   display: block;
   margin-bottom: 32px;
 
+  fill: $logo-footer-color;
+
+  &:hover,
+  &:focus {
+    fill: $logo-footer-action-color;
+  }
+
+  &:active {
+    fill: rgba($logo-footer-color, 0.3%);
+    opacity: 0.3;
+  }
+
   @include tablet() {
     margin-right: 68px;
     margin-bottom: 12px;

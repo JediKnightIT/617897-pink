@@ -50,4 +50,13 @@
       display: block;
     }
   }
+
+  &:hover,
+  &:focus {
+    fill: $logo-header-action-color;
+  }
+
+  &:active {
+    fill: rgba($logo-header-color, 0.3%);
+  }
 }
