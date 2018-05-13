@@ -66,6 +66,10 @@
 
 .hamburger-menu--opened.header {
   background-position: center 259px;
+
+  @include tablet() {
+    background-position: center 255px;
+  }
 }
 
 .hamburger-menu--opened .main-nav__wrapper {

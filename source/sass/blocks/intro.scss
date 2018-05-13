@@ -14,6 +14,14 @@
 
   @include tablet() {
     padding-top: 91px;
+
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 72px;
+
+    @include retina() {
+      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
 
   @include laptop-min() {

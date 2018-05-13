@@ -10,29 +10,6 @@
   @include desktop() {
     background-image: linear-gradient(-6deg, $gray 59%, $white 0%);
   }
-
-  // &::after {
-  //   content: "";
-
-  //   display: block;
-  //   height: 288px;
-
-  //   background-image: url("../img/iphone-screen-mobile@1x.png");
-  //   background-position: 50% 10px;
-  //   background-repeat: no-repeat;
-
-  //   @include tablet() {
-  //     position: absolute;
-  //     bottom: 394px;
-  //     left: 19px;
-
-  //     width: 160px;
-  //   }
-
-  //   @include desktop() {
-  //     display: none;
-  //   }
-  // }
 }
 
 .information__header {
@@ -79,7 +56,6 @@
   @include list;
   padding-top: 80px;
 
-  background-color: $gray;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 507px;
   background-repeat: no-repeat;
@@ -92,8 +68,18 @@
   @include tablet() {
     position: relative;
 
+    min-height: 400px;
+
     padding-top: 123px;
     padding-bottom: 9px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: left bottom;
+
+    @include retina() {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   @include desktop() {
