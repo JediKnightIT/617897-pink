@@ -3,16 +3,27 @@
 
   @include tablet() {
     display: block;
+
+    background-color: $effect-background-color;
   }
 }
 
 .effect__wrapper {
-  width: 310px;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 
   @include desktop() {
     width: 570px;
   }
+}
+
+.effect__icon {
+  margin-right: auto;
+}
+
+.effect__about {
+  flex-basis: 310px;
+  padding-top: 12px;
 }
 
 .effect__title {
