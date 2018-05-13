@@ -80,6 +80,10 @@
   }
 }
 
+.hamburger-menu--nojs.header {
+  background-position: center 259px;
+}
+
 .hamburger-menu--nojs .main-nav__wrapper {
   @include laptop-max() {
     background-color: $nav-background-color;
