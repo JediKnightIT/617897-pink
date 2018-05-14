@@ -6,24 +6,34 @@
 
     background-color: $effect-background-color;
   }
+
+  @include desktop() {
+    background-color: transparent;
+  }
 }
 
 .effect__wrapper {
   display: flex;
   align-items: center;
-
-  @include desktop() {
-    width: 570px;
-  }
 }
 
 .effect__icon {
   margin-right: auto;
+
+  @include desktop() {
+    flex-basis: 300px;
+    height: 345px;
+  }
 }
 
 .effect__about {
   flex-basis: 310px;
   padding-top: 12px;
+
+  @include desktop() {
+    flex-basis: 575px;
+    padding-top: 47px;
+  }
 }
 
 .effect__title {

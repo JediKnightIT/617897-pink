@@ -8,7 +8,7 @@
   }
 
   @include desktop() {
-    background-image: linear-gradient(-5deg, $gray 73%, $white 0%);
+    background-image: linear-gradient(-5deg, $gray 71%, $white 0%);
   }
 }
 
@@ -146,7 +146,7 @@
   padding-bottom: 88px;
 
   @include desktop() {
-    padding-top: 124px;
-    padding-bottom: 113px;
+    padding-top: 33px;
+    padding-bottom: 67px;
   }
 }
