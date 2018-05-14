@@ -85,15 +85,13 @@
   @include desktop() {
     display: flex;
     justify-content: space-between;
-    padding: 435px 28px 0 28px;
+    padding: 77px 28px 0 28px;
 
     background-image: none;
   }
 }
 
 .information__item {
-  position: relative;
-
   text-align: center;
 
   @include tablet() {
@@ -107,23 +105,9 @@
   @include desktop() {
     width: 245px;
     margin-left: 0;
+    padding-top: 358px;
 
     text-align: center;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: -340px;
-      left: 30px;
-
-      width: 160px;
-      height: 283px;
-
-      background-image: url("../img/iphone-screen-mobile@1x.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
   }
 }
 
