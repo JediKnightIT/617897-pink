@@ -109,7 +109,9 @@
 }
 
 .post__icon {
+  display: inline-block;
   margin-right: 14px;
+  vertical-align: middle;
 
   fill: $pink;
 
