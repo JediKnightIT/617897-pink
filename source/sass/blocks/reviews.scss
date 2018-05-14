@@ -1,3 +1,11 @@
+.reviews__icon {
+  position: absolute;
+  top: 72px;
+  left: 453px;
+
+  fill: $gray;
+}
+
 .reviews__list {
   margin-bottom: 32px;
   padding-top: 11px;
@@ -58,6 +66,8 @@
   }
 
   @include desktop() {
+    margin-bottom: 3px;
+
     font-size: 24px;
   }
 }
