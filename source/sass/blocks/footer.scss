@@ -36,6 +36,10 @@
     opacity: 0.3;
   }
 
+  &--element-decore {
+    display: none;
+  }
+
   @include tablet() {
     margin-right: 68px;
     margin-bottom: 12px;
@@ -43,6 +47,14 @@
 
   @include desktop() {
     margin-right: 230px;
+
+    &--glasses {
+      display: none;
+    }
+
+    &--element-decore {
+      display: inline;
+    }
   }
 }
 

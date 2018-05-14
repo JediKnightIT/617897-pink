@@ -70,6 +70,10 @@
   @include tablet() {
     background-position: center 255px;
   }
+
+  @include laptop-min() {
+    background-position: center top;
+  }
 }
 
 .hamburger-menu--opened .main-nav__wrapper {
