@@ -23,7 +23,9 @@
 .footer__logo-link {
   display: block;
   margin-bottom: 32px;
+}
 
+.footer__logo {
   fill: $logo-footer-color;
 
   &:hover,
