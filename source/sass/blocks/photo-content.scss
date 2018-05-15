@@ -61,4 +61,8 @@
   @include tablet() {
     padding: 43px 20px 69px 20px;
   }
+
+  @include desktop() {
+    padding: 7px 20px 66px 20px;
+  }
 }

@@ -75,6 +75,12 @@
       bottom: -16px;
       left: 15px;
     }
+
+    @include desktop() {
+      right: 0;
+      bottom: -3px;
+      left: 0;
+    }
   }
 
   @include tablet() {
@@ -83,6 +89,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 31px;
+  }
+
+  @include desktop() {
+    margin-bottom: 16px;
   }
 }
 
@@ -112,6 +122,10 @@
     flex-basis: 54px;
     text-align: center;
   }
+
+  @include desktop() {
+    text-align: left;
+  }
 }
 
 .photo-editor__icon {
@@ -133,6 +147,7 @@
     @include desktop() {
       width: 46px;
       height: 45px;
+      padding-top: 0;
     }
   }
 
@@ -148,7 +163,9 @@
 
     @include desktop() {
       width: 49px;
-      height: 45px;
+      height: 49px;
+      padding-top: 3px;
+      padding-left: 0;
     }
   }
 
@@ -164,7 +181,8 @@
 
     @include desktop() {
       width: 33px;
-      height: 33px;
+      height: 44px;
+      padding-top: 0;
     }
   }
 }

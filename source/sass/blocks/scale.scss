@@ -23,7 +23,7 @@
 
   @include tablet() {
     width: 202px;
-    margin: 19px auto;
+    margin: 6px 30px 16px 38px;
   }
 
   @include desktop() {
@@ -48,6 +48,10 @@
     @include tablet() {
       right: 21%;
     }
+
+    @include desktop() {
+      right: 70%;
+    }
   }
 
   &--fill {
@@ -56,6 +60,10 @@
     @include tablet() {
       right: 81%;
     }
+
+    @include desktop() {
+      right: 9%;
+    }
   }
 
   &--contrast {
@@ -63,6 +71,10 @@
 
     @include tablet() {
       right: 46%;
+    }
+
+    @include desktop() {
+      right: 39%;
     }
   }
 
