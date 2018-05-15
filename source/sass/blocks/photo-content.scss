@@ -49,4 +49,8 @@
 
 .photo-content__footer {
   padding: 24px 20px 43px 20px;
+
+  @include tablet() {
+    padding: 43px 20px 69px 20px;
+  }
 }
