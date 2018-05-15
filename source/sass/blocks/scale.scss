@@ -23,11 +23,12 @@
 
   @include tablet() {
     width: 202px;
-    margin: 6px 30px 16px 38px;
+    margin: 19px auto;
   }
 
   @include desktop() {
     width: 288px;
+    margin: 6px 30px 16px 38px;
   }
 }
 
