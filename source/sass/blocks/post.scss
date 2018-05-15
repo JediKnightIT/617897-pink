@@ -23,7 +23,7 @@
   background-color: $pink;
 
   @include tablet() {
-    top: 80px;
+    top: 57px;
   }
 
   @include desktop() {
@@ -41,6 +41,12 @@
   display: block;
   width: 100%;
   height: auto;
+
+  @include tablet() {
+    &--panorama {
+      height: 509px;
+    }
+  }
 }
 
 .post__description {
@@ -48,8 +54,12 @@
   flex-direction: column;
   flex-basis: 100%;
   margin: 0;
-  margin-bottom: 20 px;
   padding: 18px;
+
+  @include tablet() {
+    min-height: 105px;
+    padding: 24px 32px 25px 28px;
+  }
 
   &--panorama {
     background-color: $post-background-color;
@@ -57,6 +67,9 @@
     @include tablet() {
       flex-direction: row;
       flex-wrap: wrap;
+      min-height: 80px;
+      margin-bottom: 30px;
+      padding: 24px 28px 15px 28px;
     }
   }
 }
@@ -115,10 +128,14 @@
 
   fill: $pink;
 
+  @include tablet() {
+    margin: 0;
+  }
+
   &--panorama {
     @include tablet() {
       margin-right: 0;
-      margin-left: 14px;
+      margin-left: 18px;
     }
   }
 }
