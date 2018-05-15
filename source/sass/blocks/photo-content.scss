@@ -28,6 +28,10 @@
   @include tablet() {
     padding: 92px 20px 76px 20px;
   }
+
+  @include desktop() {
+    padding: 92px 20px 88px 20px;
+  }
 }
 
 .photo-content__description {
