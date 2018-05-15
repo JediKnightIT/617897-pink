@@ -56,6 +56,16 @@
       padding-bottom: 71px;
     }
   }
+
+  &--competition {
+    @include tablet() {
+      padding-bottom: 81px;
+    }
+
+    @include desktop() {
+      padding-bottom: 101px;
+    }
+  }
 }
 
 .intro__title {
