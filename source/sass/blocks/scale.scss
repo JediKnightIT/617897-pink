@@ -23,6 +23,7 @@
 
   @include tablet() {
     width: 202px;
+    margin: 19px auto;
   }
 
   @include desktop() {
@@ -43,14 +44,26 @@
 
   &--crop {
     right: 14%;
+
+    @include tablet() {
+      right: 21%;
+    }
   }
 
   &--fill {
     right: 80%;
+
+    @include tablet() {
+      right: 81%;
+    }
   }
 
   &--contrast {
     right: 50%;
+
+    @include tablet() {
+      right: 46%;
+    }
   }
 
   &:hover,
