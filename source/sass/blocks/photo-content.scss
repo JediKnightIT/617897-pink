@@ -24,10 +24,14 @@
 
 .photo-content__header {
   padding: 45px 20px 49px 20px;
+
+  @include tablet() {
+    padding: 92px 20px 76px 20px;
+  }
 }
 
 .photo-content__description {
-  width: 252px;
+  width: 280px;
   margin: 0 auto;
 
   line-height: 30px;
