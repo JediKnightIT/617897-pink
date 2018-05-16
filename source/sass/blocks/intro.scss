@@ -24,6 +24,12 @@
     }
   }
 
+  @include laptop-min() {
+    padding-top: 111px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   @include desktop() {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 16px 101px;
@@ -32,12 +38,6 @@
       background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 1050px auto;
     }
-  }
-
-  @include laptop-min() {
-    padding-top: 113px;
-    padding-right: 0;
-    padding-left: 0;
   }
 
   &--inner {
