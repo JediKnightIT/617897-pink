@@ -1,0 +1,12 @@
+.standart {
+  @include desktop() {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    @include retina() {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px auto;
+    }
+  }
+}

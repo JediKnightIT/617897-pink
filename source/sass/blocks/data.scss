@@ -6,6 +6,8 @@
 }
 
 .data__item {
+  position: relative;
+
   margin-bottom: 16px;
 
   &:last-child {
@@ -99,5 +101,17 @@
     font-size: 18px;
     line-height: 30px;
     color: $form-element-placeholder-color;
+  }
+}
+
+.data__icon {
+  display: none;
+
+  @include tablet() {
+    position: absolute;
+    top: 22px;
+    right: 21px;
+
+    display: block;
   }
 }

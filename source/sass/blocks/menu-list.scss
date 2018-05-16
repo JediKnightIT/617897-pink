@@ -10,7 +10,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 621px;
-    padding-top: 15px;
+    padding-top: 18px;
 
     border: none;
   }
@@ -19,7 +19,7 @@
 .menu-list__item {
   padding: 16px 0;
 
-  box-shadow: 0 -1px 0 0 #485461, 0 -2px 0 0 #000000;
+  box-shadow: 0 -1px 0 0 #485461, 0 -2px 0 0 $black;
 
   @include laptop-min() {
     display: flex;
@@ -39,15 +39,6 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
-    color: $menu-text-action-color;
-  }
-
-  &:active {
-    color: rgba($menu-text-action-color, 0.3%);
-  }
-
   @include laptop-min() {
     font-size: 18px;
     font-weight: 400;
@@ -55,8 +46,23 @@
     text-transform: none;
     letter-spacing: 0.1px;
 
-    &:active {
-      color: rgba($menu-text-color, 0.3%);
+    &--active {
+      padding-bottom: 10px;
+
+      border-bottom: 2px solid $white;
     }
+  }
+}
+
+.menu-list__link[href]:hover,
+.menu-list__link[href]:focus {
+  color: $menu-text-action-color;
+}
+
+.menu-list__link[href]:active {
+  color: rgba($menu-text-action-color, 0.3%);
+
+  @include laptop-min() {
+    color: rgba($menu-text-color, 0.3%);
   }
 }

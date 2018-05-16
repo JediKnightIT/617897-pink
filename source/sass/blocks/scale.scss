@@ -23,10 +23,12 @@
 
   @include tablet() {
     width: 202px;
+    margin: 19px auto;
   }
 
   @include desktop() {
     width: 288px;
+    margin: 6px 30px 16px 38px;
   }
 }
 
@@ -43,14 +45,38 @@
 
   &--crop {
     right: 14%;
+
+    @include tablet() {
+      right: 21%;
+    }
+
+    @include desktop() {
+      right: 70%;
+    }
   }
 
   &--fill {
     right: 80%;
+
+    @include tablet() {
+      right: 81%;
+    }
+
+    @include desktop() {
+      right: 9%;
+    }
   }
 
   &--contrast {
     right: 50%;
+
+    @include tablet() {
+      right: 46%;
+    }
+
+    @include desktop() {
+      right: 39%;
+    }
   }
 
   &:hover,

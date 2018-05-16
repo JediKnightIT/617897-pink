@@ -39,6 +39,10 @@
 
       background-color: $submit-action-background-color;
     }
+
+    @include tablet() {
+      margin-bottom: 25px;
+    }
   }
 
   &--reset {
@@ -58,6 +62,10 @@
 
       background-color: rgba($reset-action-background-color, 0.3%);
     }
+  }
+
+  @include tablet() {
+    width: 260px;
   }
 
   @include desktop() {

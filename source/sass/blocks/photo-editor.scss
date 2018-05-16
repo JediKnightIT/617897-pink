@@ -14,6 +14,8 @@
   @include tablet() {
     display: flex;
     justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   @include desktop() {
@@ -25,6 +27,7 @@
 .photo-editor__source-photo {
   @include tablet() {
     flex-basis: 300px;
+    height: 400px;
   }
 }
 
@@ -35,7 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 300px;
+    flex-basis: 289px;
     padding: 0;
   }
 
@@ -51,13 +54,16 @@
   @include tablet() {
     padding: 0;
   }
+}
 
+.photo-editor__label {
   &::after {
     content: "";
 
     position: absolute;
-    right: -25px;
-    left: -25px;
+    right: -20px;
+    bottom: -34px;
+    left: -20px;
 
     width: auto;
     height: 1px;
@@ -65,31 +71,28 @@
     background-color: rgba($blue, 0.1%);
 
     @include tablet() {
-      display: none;
+      right: 0;
+      bottom: -16px;
+      left: 15px;
+    }
+
+    @include desktop() {
+      right: 0;
+      bottom: -3px;
+      left: 0;
     }
   }
-}
 
-.photo-editor__label {
   @include tablet() {
     position: relative;
 
     display: flex;
     align-items: center;
+    margin-bottom: 31px;
+  }
 
-    &::after {
-      content: "";
-
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      width: auto;
-      height: 1px;
-
-      background-color: rgba($blue, 0.1%);
-    }
+  @include desktop() {
+    margin-bottom: 16px;
   }
 }
 
@@ -119,6 +122,10 @@
     flex-basis: 54px;
     text-align: center;
   }
+
+  @include desktop() {
+    text-align: left;
+  }
 }
 
 .photo-editor__icon {
@@ -132,13 +139,15 @@
     fill: $photo-editor-icon-active-color;
 
     @include tablet() {
-      width: 24px;
+      width: 25px;
       height: 22px;
+      padding-top: 7px;
     }
 
     @include desktop() {
       width: 46px;
       height: 45px;
+      padding-top: 0;
     }
   }
 
@@ -146,13 +155,17 @@
     @include tablet() {
       width: 24px;
       height: 22px;
+      padding-top: 12px;
+      padding-left: 3px;
 
       fill: $photo-editor-icon-active-color;
     }
 
     @include desktop() {
       width: 49px;
-      height: 45px;
+      height: 49px;
+      padding-top: 3px;
+      padding-left: 0;
     }
   }
 
@@ -160,13 +173,16 @@
     @include tablet() {
       width: 17px;
       height: 17px;
+      padding-top: 6px;
+      padding-left: 7px;
 
       fill: $photo-editor-icon-active-color;
     }
 
     @include desktop() {
       width: 33px;
-      height: 33px;
+      height: 44px;
+      padding-top: 0;
     }
   }
 }
@@ -174,4 +190,6 @@
 .photo-editor__buttons {
   margin: 0;
   padding-top: 40px;
+
+  text-align: center;
 }

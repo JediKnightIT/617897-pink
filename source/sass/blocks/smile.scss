@@ -1,0 +1,12 @@
+.smile {
+  @include desktop() {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-position: -20px 0;
+    background-repeat: no-repeat;
+
+    @include retina() {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px auto;
+    }
+  }
+}

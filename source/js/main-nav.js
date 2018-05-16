@@ -1,16 +1,16 @@
-var mainNav = document.querySelector('.main-nav');
+var hamburgerMenu = document.querySelector('.hamburger-menu');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-mainNav.classList.remove('main-nav--nojs');
+hamburgerMenu.classList.remove('hamburger-menu--nojs');
 
 navToggle.addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (mainNav.classList.contains('main-nav--closed')) {
-    mainNav.classList.remove('main-nav--closed');
-    mainNav.classList.add('main-nav--opened');
+  if (hamburgerMenu.classList.contains('hamburger-menu--closed')) {
+    hamburgerMenu.classList.remove('hamburger-menu--closed');
+    hamburgerMenu.classList.add('hamburger-menu--opened');
   } else {
-    mainNav.classList.add('main-nav--closed');
-    mainNav.classList.remove('main-nav--opened');
+    hamburgerMenu.classList.add('hamburger-menu--closed');
+    hamburgerMenu.classList.remove('hamburger-menu--opened');
   }
 });

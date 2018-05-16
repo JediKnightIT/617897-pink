@@ -8,30 +8,7 @@
   }
 
   @include desktop() {
-    background-image: linear-gradient(-6deg, $gray 59%, $white 0%);
-  }
-
-  &::after {
-    content: "";
-
-    display: block;
-    height: 288px;
-
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-position: 50% 10px;
-    background-repeat: no-repeat;
-
-    @include tablet() {
-      position: absolute;
-      bottom: 394px;
-      left: 19px;
-
-      width: 160px;
-    }
-
-    @include desktop() {
-      display: none;
-    }
+    background-image: linear-gradient(-5deg, $gray 71%, $white 0%);
   }
 }
 
@@ -74,28 +51,47 @@
 }
 
 .information__list {
+  min-height: 706px;
+
   @include list;
   padding-top: 80px;
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: center 507px;
+  background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
 
   @include tablet() {
     position: relative;
 
+    min-height: 400px;
+
     padding-top: 123px;
     padding-bottom: 9px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: left bottom;
+
+    @include retina() {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   @include desktop() {
     display: flex;
     justify-content: space-between;
-    padding: 435px 28px 0 28px;
+    padding: 77px 28px 0 28px;
 
     background-image: none;
   }
 }
 
 .information__item {
-  position: relative;
-
   text-align: center;
 
   @include tablet() {
@@ -109,23 +105,9 @@
   @include desktop() {
     width: 245px;
     margin-left: 0;
+    padding-top: 358px;
 
     text-align: center;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: -340px;
-      left: 30px;
-
-      width: 160px;
-      height: 283px;
-
-      background-image: url("../img/iphone-screen-mobile@1x.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
   }
 }
 
@@ -160,11 +142,11 @@
 }
 
 .information__footer {
-  padding-top: 96px;
-  padding-bottom: 82px;
+  padding-top: 59px;
+  padding-bottom: 88px;
 
   @include desktop() {
-    padding-top: 124px;
-    padding-bottom: 113px;
+    padding-top: 33px;
+    padding-bottom: 67px;
   }
 }

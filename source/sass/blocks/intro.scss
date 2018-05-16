@@ -3,27 +3,66 @@
   padding-right: 20px;
   padding-left: 20px;
 
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 0 106px;
+  background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
+
   @include tablet() {
     padding-top: 91px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 72px;
+
+    @include retina() {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
 
   @include laptop-min() {
-    padding-top: 113px;
+    padding-top: 111px;
     padding-right: 0;
     padding-left: 0;
   }
 
-  &--inner, {
+  @include desktop() {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 16px 101px;
+
+    @include retina() {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
+  }
+
+  &--inner {
     padding-top: 25px;
     padding-bottom: 52px;
 
+    background-image: none;
+
     @include tablet() {
       padding-top: 69px;
-      padding-bottom: 81px;
+      padding-bottom: 110px;
     }
 
     @include desktop() {
       padding-top: 67px;
+      padding-bottom: 71px;
+    }
+  }
+
+  &--competition {
+    @include tablet() {
+      padding-bottom: 81px;
+    }
+
+    @include desktop() {
       padding-bottom: 101px;
     }
   }

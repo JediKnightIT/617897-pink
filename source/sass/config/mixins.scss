@@ -23,6 +23,13 @@
   }
 }
 
+// Миксин для определения плотности пикселей на экране
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
 // Миксин для декоративных кругов
 @mixin circle($width, $color) {
   width: $width;

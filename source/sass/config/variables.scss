@@ -19,13 +19,16 @@ $black: #000000;
 
 // variables for applying colors
 $main-text-color: $blue;
+
 $intro-text-color: $white;
 
 // variables for applying colors header
 $header-background-color: $black;
-$logo-header-color: $white;
 $header-icon-color: $white;
 $header-icon-action-color: $pink;
+
+$logo-header-color: $white;
+$logo-header-action-color: $pink;
 
 $nav-background-color: $blue;
 
@@ -40,6 +43,8 @@ $link-text-color: $white;
 $link-decor-color: $white;
 $link-text-action-color: $pink;
 $link-background-action-color: $white;
+
+$effect-background-color: $white;
 
 $slider-bullet-color: $blue;
 
@@ -73,7 +78,9 @@ $reset-action-background-color: $blue;
 
 // variables for applying colors form.html
 $fieldset-border-color: $darkgray;
+
 $legend-text-color: $pink;
+
 $form-element-action-color: $blue;
 $form-element-modify-color: $pink;
 $form-element-decor-color: $darkgray;
@@ -88,6 +95,10 @@ $button-action-background-color: $darkgreen;
 $button-disables-background-color: $darkgray;
 
 // variables for applying colors footer
+$logo-footer-color: $blue;
+$logo-footer-action-color: $pink;
+
+
 $social-icon-fill: $pink;
 $social-border-color: $blue;
 

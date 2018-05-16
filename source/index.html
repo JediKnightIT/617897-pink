@@ -8,9 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header hamburger-menu hamburger-menu--closed hamburger-menu--nojs">
       <h1 class="visually-hidden">Главная страница мобильного приложения Pink</h1>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
             <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
@@ -19,14 +19,14 @@
             <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
               <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
             </svg>
-            <svg class="header__logo header__logo--all" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
+            <svg class="header__logo header__logo--element-decore" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
               <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
             </svg>
             <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
           </div>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link menu-list__link--active" href="#">Главная</a>
+              <a class="menu-list__link menu-list__link--active">Главная</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="photo.html">Фотографии</a>
@@ -35,7 +35,7 @@
               <a class="menu-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">HTML Academy</a>
+              <a class="menu-list__link" href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -45,24 +45,24 @@
         <article class="intro__download app">
           <h3 class="visually-hidden">Способы скачать приложение</h3>
           <p class="app__slogan">Взгляните на жизнь иначе!</p>
-          <a class="app__link link" href="#">Скачать приложение</a>
+          <a class="app__link link" href="https://itunes.apple.com/store" target="blank">Скачать приложение</a>
           <ul class="app__list store-list">
             <li class="store-list__item">
-              <a class="store-list__link" href="#" aria-label="Apple">
+              <a class="store-list__link" href="https://www.apple.com/itunes/charts/free-apps/" target="blank" aria-label="Apple">
                 <svg class="store-list__logo" width="47" height="56" aria-label="Логотип Apple">
                   <use xlink:href="img/sprite.svg#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="store-list__item">
-              <a class="store-list__link" href="#" aria-label="Android">
+              <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Android">
                 <svg class="store-list__logo" width="43" height="47" aria-label="Логотип Android">
                   <use xlink:href="img/sprite.svg#logo-android"></use>
                 </svg>
               </a>
             </li>
             <li class="store-list__item">
-              <a class="store-list__link" href="#" aria-label="Windows Phone">
+              <a class="store-list__link" href="https://www.microsoft.com/en-us/store/b/home" target="blank" aria-label="Windows Phone">
                 <svg class="store-list__logo" width="44" height="41" aria-label="Логотип Windows Phone">
                   <use xlink:href="img/sprite.svg#logo-microsoft"></use>
                 </svg>
@@ -82,31 +82,39 @@
             <p class="information__text information__text--displaced">Нам есть, что вам предложить!</p>
           </header>
           <ul class="information__list">
-            <li class="information__item">
+            <li class="information__item standart">
               <h3 class="information__title">Поднимает настроение</h3>
               <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="information__item">
+            <li class="information__item filter">
               <h3 class="information__title">Меняет мир вокруг</h3>
               <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
             </li>
-            <li class="information__item">
+            <li class="information__item smile">
               <h3 class="information__title">Заводит новых&nbsp;друзей</h3>
               <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <footer class="information__footer effect">
-            <div class="effect__wrapper">
+        </div>
+        <footer class="information__footer effect">
+          <div class="effect__wrapper wrapper">
+            <svg class="effect__icon" width="240" height="275" aria-label="Декоративное изображение таймера">
+              <use xlink:href="img/sprite.svg#icon-timer"></use>
+            </svg>
+            <div class="effect__about">
               <p class="effect__title">Эффект на&nbsp;24&nbsp;часа!</p>
               <p class="effect__description">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
               <a class="effect__link" href="#">Узнать больше об исследовании</a>
             </div>
-          </footer>
-        </div>
+          </div>
+        </footer>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="wrapper slider">
+          <svg class="reviews__icon" width="79" height="64" aria-label="Декоративное изображение кавычек">
+            <use xlink:href="img/sprite.svg#icon-quotes"></use>
+          </svg>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item reviews__item--active slider__item">
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
@@ -250,10 +258,9 @@
               <h3 class="contacts__title">Пишите:</h3>
               <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--addres">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <address class="contacts__link">ул. Большая
-                <br> Конюшенная, 19/8</address>
+              <address class="contacts__link">ул. Большая <br> Конюшенная, 19/8</address>
             </li>
           </ul>
         </div>
@@ -261,17 +268,21 @@
       <article class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <div class="map__interactive" id="map"></div>
-        <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Наш офис находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8 ">
+        <picture class="map__picture">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Наш офис находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8 ">
+        </picture>
       </article>
     </main>
     <footer class="footer footer--hidden page__footer">
       <div class="footer__wrapper wrapper">
-        <svg class="footer__logo-link" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
-          <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
-        </svg>
-        <!-- <svg class="footer__logo" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
-          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
-        </svg> -->
+          <svg class="footer__logo footer__logo--glasses" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+            <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
+          </svg>
+          <svg class="footer__logo footer__logo--element-decore" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          </svg>
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#" aria-label="Мы в твиттере">
@@ -296,8 +307,8 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <span class="copyright__text">Разработано:</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Логотип HTML Academy">
             <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
@@ -306,6 +317,8 @@
       </div>
     </footer>
     <script src="js/main-nav.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGHt_OEYXdVRzpyPXC5ZI8oSGGdTtclso&callback=initMap" async defer></script>
     <script src="js/map.js"></script>
   </body>

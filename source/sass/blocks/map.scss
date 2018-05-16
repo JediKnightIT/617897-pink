@@ -34,9 +34,9 @@
     }
 
     @include desktop() {
-      height: 124px;
+      height: 100px;
 
-      background-size: 100% 124px;
+      background-size: 100% 100px;
     }
   }
 }

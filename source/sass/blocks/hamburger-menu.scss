@@ -1,0 +1,109 @@
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-menu--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  right: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: $header-icon-color;
+  box-shadow: 0 10px 0 0 $header-icon-color, 0 20px 0 0 $header-icon-color;
+}
+
+.hamburger-menu--closed .main-nav__toggle:hover::before,
+.hamburger-menu--closed .main-nav__toggle:focus::before {
+  background-color: $header-icon-action-color;
+  box-shadow: 0 10px 0 0 $header-icon-action-color, 0 20px 0 0 $header-icon-action-color;
+}
+
+.hamburger-menu--closed .main-nav__toggle:active::before {
+  background-color: rgba($header-icon-action-color, 0.3%);
+  box-shadow: 0 10px 0 0 rgba($header-icon-action-color, 0.3%), 0 20px 0 0 rgba($header-icon-action-color, 0.3%);
+}
+
+.hamburger-menu--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    right: 0;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: $header-icon-color;
+    border-radius: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.hamburger-menu--opened .main-nav__toggle:hover::before,
+.hamburger-menu--opened .main-nav__toggle:focus::before,
+.hamburger-menu--opened .main-nav__toggle:hover::after,
+.hamburger-menu--opened .main-nav__toggle:focus::after {
+  background-color: $header-icon-action-color;
+}
+
+.hamburger-menu--opened .main-nav__toggle:active::before,
+.hamburger-menu--opened .main-nav__toggle:active::after {
+  background-color: rgba($header-icon-action-color, 0.3%);
+}
+
+.hamburger-menu--opened.header {
+  background-position: center 259px;
+
+  @include tablet() {
+    background-position: center 255px;
+  }
+
+  @include laptop-min() {
+    background-position: center top;
+  }
+}
+
+.hamburger-menu--opened .main-nav__wrapper {
+  @include laptop-max() {
+    background-color: $nav-background-color;
+  }
+}
+
+.hamburger-menu--closed .main-nav__list {
+  @include laptop-max() {
+    display: none;
+  }
+}
+
+.hamburger-menu--nojs.header {
+  background-position: center 259px;
+}
+
+.hamburger-menu--nojs .main-nav__wrapper {
+  @include laptop-max() {
+    background-color: $nav-background-color;
+  }
+}
+
+.hamburger-menu--nojs .main-nav__toggle {
+  display: none;
+}
+
+.hamburger-menu--nojs .main-nav__list {
+  @include laptop-max() {
+    display: block;
+  }
+}

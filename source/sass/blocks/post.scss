@@ -23,11 +23,11 @@
   background-color: $pink;
 
   @include tablet() {
-    top: 80px;
+    top: 57px;
   }
 
   @include desktop() {
-    top: 55px;
+    top: 53px;
     right: 130px;
   }
 }
@@ -41,6 +41,16 @@
   display: block;
   width: 100%;
   height: auto;
+
+  &--panorama {
+    @include tablet() {
+      height: 509px;
+    }
+
+    @include desktop() {
+      height: 506px;
+    }
+  }
 }
 
 .post__description {
@@ -48,8 +58,12 @@
   flex-direction: column;
   flex-basis: 100%;
   margin: 0;
-  margin-bottom: 20 px;
   padding: 18px;
+
+  @include tablet() {
+    min-height: 105px;
+    padding: 24px 32px 25px 28px;
+  }
 
   &--panorama {
     background-color: $post-background-color;
@@ -57,6 +71,14 @@
     @include tablet() {
       flex-direction: row;
       flex-wrap: wrap;
+      min-height: 80px;
+      margin-bottom: 30px;
+      padding: 24px 28px 15px 28px;
+    }
+
+    @include desktop() {
+      min-height: 55px;
+      padding: 24px 31px 15px 28px;
     }
   }
 }
@@ -109,14 +131,20 @@
 }
 
 .post__icon {
+  display: inline-block;
   margin-right: 14px;
+  vertical-align: middle;
 
   fill: $pink;
+
+  @include tablet() {
+    margin: 0;
+  }
 
   &--panorama {
     @include tablet() {
       margin-right: 0;
-      margin-left: 14px;
+      margin-left: 18px;
     }
   }
 }
