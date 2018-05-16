@@ -1,4 +1,10 @@
 // Миксин для медиавыражений
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
 @mixin laptop-max {
   @media screen and (max-width: $laptop) {
     @content;
@@ -7,12 +13,6 @@
 
 @mixin laptop-min {
   @media screen and (min-width: $laptop) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: $tablet) {
     @content;
   }
 }

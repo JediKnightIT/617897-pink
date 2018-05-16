@@ -12,6 +12,8 @@
   border: 3px solid $link-decor-color;
   border-radius: 35px;
 
+  transition: 0.3s;
+
   &:hover,
   &:focus {
     color: $link-text-action-color;

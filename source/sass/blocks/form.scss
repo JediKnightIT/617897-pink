@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
+  background-color: $white;
   background-image: linear-gradient(to bottom, $white 19%, $gray 19%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 78%, $white 78%);
 
   @include tablet() {
@@ -24,7 +25,6 @@
 
   @include tablet() {
     margin-bottom: 56px;
-    // padding: 40px 60px;
 
     border: 2px solid $fieldset-border-color;
   }
@@ -41,7 +41,6 @@
 
     @include tablet() {
       order: -3;
-
       padding-top: 70px;
     }
 
@@ -84,7 +83,6 @@
 
     @include tablet() {
       order: -2;
-
       margin-bottom: 57px;
       padding: 48px 30px 59px 58px;
     }
@@ -298,6 +296,8 @@
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
+
+  transition: 0.3s;
 
   resize: none;
 

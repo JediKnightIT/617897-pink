@@ -28,6 +28,8 @@
 .footer__logo {
   fill: $logo-footer-color;
 
+  transition: 0.3s;
+
   &:hover,
   &:focus {
     fill: $logo-footer-action-color;
