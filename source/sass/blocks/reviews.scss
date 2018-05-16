@@ -1,9 +1,15 @@
 .reviews__icon {
-  position: absolute;
-  top: 72px;
-  left: 453px;
+  display: none;
 
-  fill: $gray;
+  @include desktop() {
+    position: absolute;
+    top: 72px;
+    left: 453px;
+
+    display: block;
+
+    fill: $gray;
+  }
 }
 
 .reviews__list {
