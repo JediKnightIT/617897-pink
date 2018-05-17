@@ -131,6 +131,8 @@
 .photo-editor__icon {
   fill: rgba($photo-editor-icon-color, 0.3%);
 
+  transition: 0.3s;
+
   &:hover {
     fill: rgba($photo-editor-icon-color, 0.5%);
   }

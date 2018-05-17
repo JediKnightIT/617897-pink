@@ -19,6 +19,8 @@
 .copyright__icon {
   fill: $copyright-icon-fill;
 
+  transition: 0.3s;
+
   &:hover,
   &:focus {
     fill: $copyright-icon-fill-hover;

@@ -85,6 +85,7 @@
   @include desktop() {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 77px 28px 0 28px;
 
     background-image: none;

@@ -38,7 +38,6 @@
 
 .header__logo-link {
   display: block;
-
   width: 75px;
 
   @include tablet() {
@@ -48,6 +47,8 @@
 
 .header__logo {
   fill: $logo-header-color;
+
+  transition: 0.3s;
 
   &--text {
     @include tablet() {

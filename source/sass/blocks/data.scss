@@ -2,6 +2,7 @@
   @include desktop() {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -21,15 +22,14 @@
 
     &--contacts {
       flex-wrap: wrap;
-
       margin-bottom: 29px;
     }
   }
 
   @include desktop() {
     &--contacts {
-      margin: 0;
       flex-basis: 373px;
+      margin: 0;
     }
   }
 }
@@ -69,22 +69,7 @@
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
 
-  @include tablet() {
-    flex-grow: 1;
-  }
-
-  &--contacts {
-    @include tablet() {
-      padding: 18px;
-
-      background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
-    }
-
-    @include desktop() {
-      background-image: linear-gradient(to right, $white 84%, $darkgray 84%);
-    }
-  }
-
+  transition: 0.3s;
 
   &:hover,
   &:focus {
@@ -101,6 +86,22 @@
     font-size: 18px;
     line-height: 30px;
     color: $form-element-placeholder-color;
+  }
+
+  @include tablet() {
+    flex-grow: 1;
+  }
+
+  &--contacts {
+    @include tablet() {
+      padding: 18px;
+
+      background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
+    }
+
+    @include desktop() {
+      background-image: linear-gradient(to right, $white 84%, $darkgray 84%);
+    }
   }
 }
 

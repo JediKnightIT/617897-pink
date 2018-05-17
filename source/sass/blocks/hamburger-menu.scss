@@ -14,6 +14,8 @@
 
   background-color: $header-icon-color;
   box-shadow: 0 10px 0 0 $header-icon-color, 0 20px 0 0 $header-icon-color;
+
+  transition: 0.4s;
 }
 
 .hamburger-menu--closed .main-nav__toggle:hover::before,
@@ -41,6 +43,8 @@
 
     background-color: $header-icon-color;
     border-radius: 10px;
+
+    transition: 0.4s;
   }
 
   &::before {

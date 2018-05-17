@@ -12,6 +12,8 @@
   background-color: $button-background-color;
   border: none;
 
+  transition: 0.3s;
+
   cursor: pointer;
 
   &:hover,
