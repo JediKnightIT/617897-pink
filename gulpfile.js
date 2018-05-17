@@ -7,11 +7,12 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
+var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -22,7 +23,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("sprite", function() {
+gulp.task("sprite", function () {
   return gulp.src("source/img/svg/*.svg")
     .pipe(svgstore({
       inlineSvg: true
@@ -40,6 +41,12 @@ gulp.task("images", function () {
     .pipe(gulp.dest("source/img"));
 });
 
+gulp.task("webp", function () {
+  return gulp.src("source/img/*.jpg")
+    .pipe(webp({quality: 80}))
+    .pipe(gulp.dest("source/img/webp"));
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "source/",
@@ -54,5 +61,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function () {
-  run("style", "images");
+  run("style", "images", "webp");
 });
