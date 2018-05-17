@@ -6,6 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 
@@ -18,6 +20,15 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/svg/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("images", function () {
