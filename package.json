@@ -12,6 +12,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "4.0.x",
+    "gulp-svgstore": "^6.1.1",
     "normalize-scss": "^7.0.1",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
