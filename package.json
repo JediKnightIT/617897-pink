@@ -8,6 +8,7 @@
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
     "gulp": "3.9.x",
+    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "4.0.x",
