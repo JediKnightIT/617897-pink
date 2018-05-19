@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var del = require("del");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
@@ -13,6 +14,10 @@ var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+
+gulp.task("clean", function () {
+  return del("build");
+});
 
 gulp.task("copy", function () {
   return gulp.src([
