@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
 var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
@@ -26,14 +28,19 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
-// gulp.task("sprite", function () {
-//   return gulp.src("source/img/svg/*.svg")
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("source/img"));
-// });
+gulp.task("sprite", function () {
+  return gulp.src("source/img/svg/*.svg")
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("images", function () {
   return gulp.src("source/img/*.{png,jpg}")
@@ -64,5 +71,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function () {
-  run("style", "images", "webp");
+  run("style", "sprite", "images", "webp");
 });
