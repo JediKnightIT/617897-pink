@@ -39,6 +39,8 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  transition: 0.3s;
+
   @include laptop-min() {
     font-size: 18px;
     font-weight: 400;
