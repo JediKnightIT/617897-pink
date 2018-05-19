@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
@@ -24,14 +25,19 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/*.html",
     "source/img/**",
-    "source/js/**"
+    "source/js/lib/**"
   ], {
     base: "source"
   })
   .pipe(gulp.dest("build"));
 });
+
+gulp.task("htmlmin", function () {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin())
+  .pipe(gulp.dest('build'));
+})
 
 gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
@@ -97,5 +103,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function () {
-  run("clean", "copy", "style", "sprite", "images", "webp", "script");
+  run("clean", "copy", "htmlmin", "style", "sprite", "images", "webp", "script");
 });
