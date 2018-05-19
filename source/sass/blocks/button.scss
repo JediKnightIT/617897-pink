@@ -1,6 +1,7 @@
 .button {
   width: 280px;
   padding: 16px;
+  box-sizing: border-box;
 
   font-size: 18px;
   font-weight: 700;
@@ -8,6 +9,7 @@
   color: $button-text-color;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $button-background-color;
   border: none;
