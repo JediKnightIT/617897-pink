@@ -35,7 +35,7 @@ gulp.task("copy", function () {
 
 gulp.task("htmlmin", function () {
   return gulp.src('source/*.html')
-  .pipe(htmlmin())
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'));
 })
 
