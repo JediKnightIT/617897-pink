@@ -9,6 +9,8 @@
 .data__item {
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 
   &:last-child {
@@ -16,8 +18,8 @@
   }
 
   @include tablet() {
-    display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     margin-bottom: 52px;
 
     &--contacts {
@@ -60,7 +62,7 @@
 }
 
 .data__input {
-  width: 280px;
+  width: 100%;
   padding: 18px 20px;
   box-sizing: border-box;
 
@@ -88,10 +90,6 @@
     color: $form-element-placeholder-color;
   }
 
-  @include tablet() {
-    flex-grow: 1;
-  }
-
   &--contacts {
     @include tablet() {
       padding: 18px;
@@ -111,8 +109,12 @@
   @include tablet() {
     position: absolute;
     top: 22px;
-    right: 21px;
+    right: 4%;
 
     display: block;
+  }
+
+  @include desktop() {
+    right: 21px;
   }
 }
