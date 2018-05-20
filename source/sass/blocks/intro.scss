@@ -13,10 +13,14 @@
   }
 
   @include tablet() {
+    width: 640px;
+    margin: 0 auto;
     padding-top: 91px;
+    padding-left: 10px;
+    box-sizing: border-box;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 72px;
+    background-position: -30px 72px;
 
     @include retina() {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -24,13 +28,12 @@
     }
   }
 
-  @include laptop-min() {
+  @include desktop() {
+    width: 940px;
     padding-top: 111px;
     padding-right: 0;
     padding-left: 0;
-  }
 
-  @include desktop() {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 16px 101px;
 
@@ -97,13 +100,15 @@
 }
 
 .intro__download {
+  margin: 0 auto;
   padding-bottom: 30px;
 
   @include tablet() {
+    margin: 0;
     padding-bottom: 110px;
   }
 
-  @include laptop-min() {
+  @include desktop() {
     padding-bottom: 122px;
   }
 }

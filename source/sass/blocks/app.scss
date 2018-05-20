@@ -22,7 +22,7 @@
     text-align: center;
   }
 
-  @include laptop-min() {
+  @include desktop() {
     margin-bottom: 52px;
 
     font-size: 50px;
@@ -37,7 +37,7 @@
     margin-bottom: 48px;
   }
 
-  @include laptop-min() {
+  @include desktop() {
     margin-bottom: 69px;
   }
 }
@@ -51,7 +51,7 @@
     margin-bottom: 28px;
   }
 
-  @include laptop-min() {
+  @include desktop() {
     margin-bottom: 47px;
   }
 }
