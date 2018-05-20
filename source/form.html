@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сайт мобильного приложения Pink</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body class="page">
     <header class="header hamburger-menu hamburger-menu--closed hamburger-menu--nojs">
@@ -144,7 +148,7 @@
             <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="competition__footer">
-            <button class="form__button button" type="submit">Отправить форму</button>
+            <a class="form__button button" href="competition.html">Отправить форму</a>
             <p class="form__description">
               <span class="form__description-simbol">*</span> — обязательные
               <span class="form__description-specify">для заполнения</span> поля</p>
@@ -210,8 +214,8 @@
         <button class="button button--margin button--show" type="button">Закрыть окно</button>
       </div>
     </section>
-    <script src="js/main-nav.js"></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js"></script>
+    <script src="js/lib/picturefill.min.js"></script>
+    <script src="js/lib/svgxuse.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

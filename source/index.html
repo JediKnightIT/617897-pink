@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сайт мобильного приложения Pink</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body class="page">
     <header class="header hamburger-menu hamburger-menu--closed hamburger-menu--nojs">
@@ -320,10 +324,9 @@
         </div>
       </div>
     </footer>
-    <script src="js/main-nav.js"></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js"></script>
+    <script src="js/lib/picturefill.min.js"></script>
+    <script src="js/lib/svgxuse.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGHt_OEYXdVRzpyPXC5ZI8oSGGdTtclso&callback=initMap" async defer></script>
-    <script src="js/map.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
