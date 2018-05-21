@@ -30,7 +30,7 @@
 }
 
 .header__wrapper {
-  @include laptop-min() {
+  @include desktop() {
     width: 940px;
     margin: 0 auto;
   }
@@ -63,7 +63,7 @@
       display: block;
     }
 
-    @include laptop-min() {
+    @include desktop() {
       display: none;
     }
   }
@@ -71,7 +71,7 @@
   &--element-decore {
     display: none;
 
-    @include laptop-min() {
+    @include desktop() {
       display: block;
     }
   }

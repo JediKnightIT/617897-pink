@@ -9,7 +9,7 @@
     background-image: none;
   }
 
-  @include laptop-min() {
+  @include desktop() {
     width: 940px;
     margin: 0 auto;
   }
