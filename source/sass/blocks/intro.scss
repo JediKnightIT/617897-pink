@@ -1,7 +1,7 @@
 .intro {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 420px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: 0 106px;
@@ -14,7 +14,6 @@
 
   @include tablet() {
     width: 640px;
-    margin: 0 auto;
     padding-top: 91px;
     padding-left: 10px;
     box-sizing: border-box;
@@ -31,7 +30,6 @@
   @include desktop() {
     width: 940px;
     padding-top: 111px;
-    padding-right: 0;
     padding-left: 0;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
