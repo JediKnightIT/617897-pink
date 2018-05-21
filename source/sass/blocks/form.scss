@@ -3,13 +3,13 @@
   flex-wrap: wrap;
 
   background-color: $white;
-  background-image: linear-gradient(to bottom, $white 19%, $gray 19%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 78%, $white 78%);
+  background-image: linear-gradient(to bottom, $white 20%, $gray 20%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 79%, $white 79%);
 
   @include tablet() {
     background-image: none;
   }
 
-  @include desktop() {
+  @include laptop-min() {
     width: 940px;
     margin: 0 auto;
   }
@@ -139,6 +139,15 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
+  }
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @include tablet() {
+    width: auto;
   }
 }
 
