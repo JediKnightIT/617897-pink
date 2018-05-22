@@ -5,20 +5,14 @@
   }
 }
 
-@mixin laptop-max {
-  @media screen and (max-width: $laptop) {
-    @content;
-  }
-}
-
-@mixin laptop-min {
-  @media screen and (min-width: $laptop) {
-    @content;
-  }
-}
-
 @mixin desktop {
   @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-max {
+  @media screen and (max-width: $desktop) {
     @content;
   }
 }

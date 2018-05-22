@@ -1,7 +1,13 @@
 .slider {
   position: relative;
 
+  padding: 0 20px;
+
   overflow: hidden;
+
+  @include tablet() {
+    padding: 0;
+  }
 }
 
 .slider__bullets {
@@ -49,6 +55,7 @@
 
   @include desktop() {
     position: absolute;
+    top: 219px;
 
     display: block;
     width: 29px;
@@ -76,15 +83,13 @@
   }
 
   &--left {
-    top: 219px;
-    left: 26px;
+    left: 6px;
 
     transform: rotate(45deg);
   }
 
   &--right {
-    top: 219px;
-    right: 26px;
+    right: 6px;
 
     transform: rotate(-135deg);
   }

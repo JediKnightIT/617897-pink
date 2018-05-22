@@ -1,7 +1,7 @@
 .intro {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 420px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: 0 106px;
@@ -14,9 +14,8 @@
 
   @include tablet() {
     width: 640px;
-    margin: 0 auto;
     padding-top: 91px;
-    padding-left: 10px;
+    // padding-left: 10px;
     box-sizing: border-box;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -31,7 +30,6 @@
   @include desktop() {
     width: 940px;
     padding-top: 111px;
-    padding-right: 0;
     padding-left: 0;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
@@ -73,6 +71,7 @@
 
 .intro__title {
   margin: 0;
+  padding: 0 10px;
 
   font-size: 24px;
   font-weight: 300;
@@ -83,6 +82,7 @@
   @include tablet() {
     width: 620px;
     margin: 0 auto;
+    padding: 0;
 
     font-size: 50px;
     line-height: 59px;
