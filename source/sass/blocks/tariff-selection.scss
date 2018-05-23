@@ -196,9 +196,3 @@
     }
   }
 }
-
-.tariff-selection__bullets {
-  @include tablet() {
-    display: none;
-  }
-}

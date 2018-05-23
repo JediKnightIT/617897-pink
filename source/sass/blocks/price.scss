@@ -11,8 +11,8 @@
   }
 }
 
-.price__toggles {
-  margin: 0;
-
-  text-align: center;
+.price__bullets {
+  @include tablet() {
+    display: none;
+  }
 }
