@@ -3,7 +3,8 @@
 @import "config/fonts.scss";
 @import "config/variables.scss";
 @import "config/mixins.scss";
-@import "config/scaffolding.scss";
+@import "config/visually-hidden.scss";
+@import "config/wrapper.scss";
 
 // blocks header
 @import "blocks/page.scss";
