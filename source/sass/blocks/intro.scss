@@ -15,7 +15,6 @@
   @include tablet() {
     width: 640px;
     padding-top: 91px;
-    padding-left: 10px;
     box-sizing: border-box;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -30,7 +29,6 @@
   @include desktop() {
     width: 940px;
     padding-top: 111px;
-    padding-left: 0;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 16px 101px;
@@ -106,9 +104,11 @@
   @include tablet() {
     margin: 0;
     padding-bottom: 110px;
+    padding-left: 10px;
   }
 
   @include desktop() {
     padding-bottom: 122px;
+    padding-left: 0;
   }
 }

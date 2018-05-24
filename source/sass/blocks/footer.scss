@@ -23,6 +23,15 @@
 .footer__logo-link {
   display: block;
   margin-bottom: 32px;
+
+  @include tablet() {
+    margin-right: 68px;
+    margin-bottom: 0;
+  }
+
+  @include desktop() {
+    margin-right: 230px;
+  }
 }
 
 .footer__logo {
@@ -44,14 +53,7 @@
     display: none;
   }
 
-  @include tablet() {
-    margin-right: 68px;
-    margin-bottom: 12px;
-  }
-
   @include desktop() {
-    margin-right: 230px;
-
     &--glasses {
       display: none;
     }

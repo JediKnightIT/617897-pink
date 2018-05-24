@@ -18,7 +18,7 @@
   }
 
   @include desktop() {
-    padding-top: 72px;
+    padding: 72px 0;
 
     &--photo {
       padding-top: 99px;
