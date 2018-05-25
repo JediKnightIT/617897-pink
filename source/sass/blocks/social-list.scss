@@ -1,3 +1,14 @@
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 188px;
+}
+
+.social-list__item {
+  padding-bottom: 10px;
+}
+
 .social-list__link {
   display: flex;
   justify-content: center;

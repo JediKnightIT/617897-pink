@@ -65,13 +65,9 @@
 }
 
 .footer__list {
-  display: flex;
-  justify-content: space-around;
-  width: 188px;
-
   @include list;
 
-  margin-bottom: 38px;
+  margin-bottom: 29px;
 
   @include tablet() {
     margin-right: auto;
