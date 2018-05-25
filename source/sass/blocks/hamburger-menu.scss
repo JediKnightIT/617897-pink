@@ -68,7 +68,8 @@
   background-color: rgba($header-icon-action-color, 0.3%);
 }
 
-.hamburger-menu--opened.header {
+.hamburger-menu--opened.header,
+.hamburger-menu--nojs.header {
   background-position: center 259px;
 
   @include tablet() {
@@ -76,7 +77,7 @@
   }
 
   @include desktop() {
-    background-position: center 11px;
+    background-position: center top;
   }
 }
 
@@ -92,9 +93,17 @@
   }
 }
 
-.hamburger-menu--nojs.header {
-  background-position: center 259px;
-}
+// .hamburger-menu--nojs.header {
+//   background-position: center 259px;
+
+//   @include tablet() {
+//     background-position: center 255px;
+//   }
+
+//   @include desktop() {
+//     background-position: center 11px;
+//   }
+// }
 
 .hamburger-menu--nojs .main-nav__wrapper {
   @include desktop-max() {
