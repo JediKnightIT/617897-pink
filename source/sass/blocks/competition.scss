@@ -43,14 +43,8 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0 20px;
 
   @include tablet() {
     justify-content: space-between;
-  }
-
-  @include desktop() {
-    margin: 0;
   }
 }
