@@ -33,6 +33,13 @@
   border-radius: 50%;
 }
 
+// Миксин для кросбраузерной стилизации placeholder
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+}
+
 @mixin list {
   margin: 0;
   padding: 0;

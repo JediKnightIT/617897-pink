@@ -302,6 +302,8 @@
   box-sizing: border-box;
 
   font: inherit;
+  font-size: 18px;
+  line-height: 30px;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
@@ -321,18 +323,17 @@
     border: 2px solid $form-element-modify-color;
   }
 
-  &::placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: $form-element-placeholder-color;
-  }
-
   @include tablet() {
     min-height: 193px;
   }
 
   @include desktop() {
     min-height: 128px;
+  }
+
+  @include placeholder() {
+    color: $form-element-placeholder-color;
+    opacity: 1;
   }
 }
 

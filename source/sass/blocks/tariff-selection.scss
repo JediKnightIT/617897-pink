@@ -28,6 +28,7 @@
   text-align: center;
 
   background-color: $tariff-selection-header-background-color;
+  background-clip: padding-box;
   border-right: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
@@ -138,6 +139,7 @@
   text-transform: uppercase;
 
   background-color: $tariff-selection-background-color;
+  background-clip: padding-box;
   border: 2px solid $tariff-selection-border-color;
 
   @include tablet() {
