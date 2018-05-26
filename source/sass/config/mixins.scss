@@ -17,6 +17,12 @@
   }
 }
 
+@mixin large-desktop {
+  @media screen and (min-width: $large-desktop) {
+    @content;
+  }
+}
+
 // Миксин для определения плотности пикселей на экране
 @mixin retina {
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

@@ -14,12 +14,21 @@
   height: auto;
 
   &--panorama {
+    width: 320px;
+    margin: 0 auto;
+
     @include tablet() {
+      width: 660px;
       height: 509px;
     }
 
     @include desktop() {
+      width: 960px;
       height: 506px;
+    }
+
+    @include large-desktop() {
+      width: 1200px;
     }
   }
 }
