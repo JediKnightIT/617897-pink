@@ -90,11 +90,7 @@
 
   &--contacts {
     @include tablet() {
-      background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
-    }
-
-    @include desktop() {
-      background-image: linear-gradient(to right, $white 84%, $darkgray 84%);
+      background-image: linear-gradient(to right, $white calc(100% - 60px), $darkgray calc(100% - 60px));
     }
   }
 
@@ -109,13 +105,9 @@
 
   @include tablet() {
     position: absolute;
-    top: 22px;
-    right: 4%;
+    top: 23px;
+    right: 21px;
 
     display: block;
-  }
-
-  @include desktop() {
-    right: 21px;
   }
 }
