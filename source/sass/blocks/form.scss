@@ -2,13 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  background-color: $white;
-  background-image: linear-gradient(to bottom, $white 20%, $gray 20%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 79%, $white 79%);
-
-  @include tablet() {
-    background-image: none;
-  }
-
   @include desktop() {
     width: 940px;
     margin: 0 auto;
@@ -17,14 +10,13 @@
 
 .form__fieldset {
   width: 100%;
-  margin: 0 20px;
-  margin-bottom: 79px;
+  margin: 0;
   padding: 0;
 
   border: none;
 
   @include tablet() {
-    margin-bottom: 56px;
+    margin: 0 20px;
 
     border: 2px solid $fieldset-border-color;
   }
@@ -35,13 +27,13 @@
   }
 
   &--user {
-    padding-top: 34px;
+    padding: 34px 20px 23px 20px;
 
     border: none;
 
     @include tablet() {
       order: -3;
-      padding-top: 70px;
+      padding: 70px 0 55px 0;
     }
 
     @include desktop() {
@@ -52,11 +44,17 @@
   }
 
   &--achievement {
-    padding-top: 43px;
+    margin-bottom: 32px;
+    padding-top: 99px;
+    padding-bottom: 47px;
+
+    background-color: $fieldset-background-color;
 
     @include tablet() {
       margin-bottom: 57px;
       padding: 48px 30px 53px 58px;
+
+      background-color: transparent;
     }
 
     @include desktop() {
@@ -65,10 +63,13 @@
   }
 
   &--contacts {
+    margin-bottom: 23px;
+
     @include tablet() {
       order: -1;
 
       padding: 37px 59px 27px 58px;
+      margin-bottom: 56px;
     }
 
     @include desktop() {
@@ -78,13 +79,18 @@
   }
 
   &--app {
-    padding-top: 39px;
-    margin-bottom: 85px;
+    margin-bottom: 37px;
+    padding-top: 95px;
+    padding-bottom: 48px;
+
+    background-color: $fieldset-background-color;
 
     @include tablet() {
       order: -2;
       margin-bottom: 57px;
       padding: 48px 30px 59px 58px;
+
+      background-color: transparent;
     }
 
     @include desktop() {
@@ -112,8 +118,11 @@
 }
 
 .form__legend {
+  position: relative;
+  top: 56px;
+
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 35px;
 
   font: inherit;
   line-height: 18px;
@@ -121,12 +130,28 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--hidden {
+  @include tablet() {
+    top: 0;
+  }
+
+  &--contacts {
     display: none;
 
     @include tablet() {
       display: block;
     }
+  }
+
+  &--comment {
+    top: 0;
+  }
+}
+
+.form__wrapper {
+  margin: 0 20px;
+
+  @include tablet() {
+    margin: 0;
   }
 }
 
@@ -140,14 +165,15 @@
       flex-wrap: wrap;
     }
   }
-}
 
-.form__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  &--displaced {
+    width: 280px;
+    margin: 0 auto;
 
-  @include tablet() {
-    width: auto;
+    @include tablet() {
+      width: auto;
+      margin: 0;
+    }
   }
 }
 

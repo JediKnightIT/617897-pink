@@ -90,7 +90,7 @@
 
   &--contacts {
     @include tablet() {
-      background-image: linear-gradient(to right, $white calc(100% - 60px), $darkgray calc(100% - 60px));
+      background-image: linear-gradient(to left, $darkgray 60px, transparent 60px);
     }
   }
 
