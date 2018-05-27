@@ -19,11 +19,11 @@
 
   cursor: pointer;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 300px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     &--show {
       width: 460px;
     }

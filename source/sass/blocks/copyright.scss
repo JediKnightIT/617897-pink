@@ -3,7 +3,7 @@
 
   line-height: 18px;
 
-  @include desktop() {
+  @media ($desktop) {
     font-size: 18px;
   }
 }
@@ -11,7 +11,7 @@
 .copyright__link {
   height: 34px;
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 9px;
   }
 }

@@ -9,7 +9,7 @@
     background-size: 700px auto;
   }
 
-  @include tablet() {
+  @media ($tablet) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @include retina() {
@@ -18,7 +18,7 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @include retina() {
@@ -30,7 +30,7 @@
 }
 
 .header__wrapper {
-  @include desktop() {
+  @media ($desktop) {
     width: 940px;
     margin: 0 auto;
   }
@@ -40,7 +40,7 @@
   display: block;
   width: 75px;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 146px;
   }
 }
@@ -51,7 +51,7 @@
   transition: 0.3s;
 
   &--text {
-    @include tablet() {
+    @media ($tablet) {
       display: none;
     }
   }
@@ -59,11 +59,11 @@
   &--glasses {
     display: none;
 
-    @include tablet() {
+    @media ($tablet) {
       display: block;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       display: none;
     }
   }
@@ -71,7 +71,7 @@
   &--element-decore {
     display: none;
 
-    @include desktop() {
+    @media ($desktop) {
       display: block;
     }
   }

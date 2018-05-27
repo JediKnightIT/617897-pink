@@ -1,12 +1,8 @@
 // Resolutions
-$large-desktop: 1200px;
-$desktop: 959px;
-$tablet: 660px;
-
-// $large-desktop: "min-width: 1200px";
-// $desktop-max: "max-width: 959px";
-// $desktop: "min-width: 959px";
-// $tablet: "min-width: 660px";
+$large-desktop: "min-width: 1200px";
+$desktop-max: "max-width: 959px";
+$desktop: "min-width: 959px";
+$tablet: "min-width: 660px";
 
 // variables for applying font
 $main-font: "Open Sans", "Arial", sans-serif;

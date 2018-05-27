@@ -1,5 +1,5 @@
 .smile {
-  @include desktop() {
+  @media ($desktop) {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-position: -20px 0;
     background-repeat: no-repeat;

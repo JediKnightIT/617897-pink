@@ -1,7 +1,7 @@
 .photo-editor {
   background-color: $photo-editor-background-color;
 
-  @include desktop() {
+  @media ($desktop) {
     width: 940px;
     margin: 0 auto;
   }
@@ -11,21 +11,21 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
-  @include tablet() {
+  @media ($tablet) {
     display: flex;
     justify-content: space-between;
     padding-top: 57px;
     padding-bottom: 54px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding: 57px 60px 57px 80px;
     box-sizing: border-box;
   }
 }
 
 .photo-editor__source-photo {
-  @include tablet() {
+  @media ($tablet) {
     flex-basis: 300px;
     height: 400px;
   }
@@ -34,7 +34,7 @@
 .photo-editor__interface {
   padding-top: 33px;
 
-  @include tablet() {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +42,7 @@
     padding: 0;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     flex-basis: 410px;
   }
 }
@@ -51,13 +51,13 @@
   position: relative;
   padding-top: 51px;
 
-  @include tablet() {
+  @media ($tablet) {
     padding: 0;
   }
 }
 
 .photo-editor__label {
-  @include tablet() {
+  @media ($tablet) {
     position: relative;
 
     display: flex;
@@ -65,7 +65,7 @@
     margin-bottom: 31px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 16px;
   }
 
@@ -82,13 +82,13 @@
 
     background-color: rgba($blue, 0.1%);
 
-    @include tablet() {
+    @media ($tablet) {
       right: 0;
       bottom: -16px;
       left: 15px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       right: 0;
       bottom: -3px;
       left: 0;
@@ -101,14 +101,14 @@
 
   cursor: pointer;
 
-  @include tablet() {
+  @media ($tablet) {
     position: static;
 
     flex-basis: 54px;
     text-align: center;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     text-align: left;
   }
 
@@ -140,13 +140,13 @@
   &--crop {
     fill: $photo-editor-icon-active-color;
 
-    @include tablet() {
+    @media ($tablet) {
       width: 25px;
       height: 22px;
       padding-top: 7px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       width: 46px;
       height: 45px;
       padding-top: 0;
@@ -154,7 +154,7 @@
   }
 
   &--fill {
-    @include tablet() {
+    @media ($tablet) {
       width: 24px;
       height: 22px;
       padding-top: 12px;
@@ -163,7 +163,7 @@
       fill: $photo-editor-icon-active-color;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       width: 49px;
       height: 49px;
       padding-top: 3px;
@@ -172,7 +172,7 @@
   }
 
   &--contrast {
-    @include tablet() {
+    @media ($tablet) {
       width: 17px;
       height: 17px;
       padding-top: 6px;
@@ -181,7 +181,7 @@
       fill: $photo-editor-icon-active-color;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       width: 33px;
       height: 44px;
       padding-top: 0;

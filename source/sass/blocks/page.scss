@@ -13,11 +13,11 @@
 .page__footer {
   padding: 42px 0;
 
-  @include tablet() {
+  @media ($tablet) {
     padding: 37px 0;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding: 72px 0;
 
     &--photo {

@@ -5,13 +5,13 @@
 
   background-image: linear-gradient(-6deg, $gray 76%, $white 0%);
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 0;
 
     background-image: linear-gradient(-5deg, $gray 75%, $white 0%);
   }
 
-  @include desktop() {
+  @media ($desktop) {
     background-image: linear-gradient(-5deg, $gray 71%, $white 0%);
   }
 }
@@ -19,11 +19,11 @@
 .information__header {
   padding-top: 43px;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-top: 50px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 69px;
   }
 }
@@ -37,7 +37,7 @@
   line-height: 26px;
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 0;
 
     font-size: 40px;
@@ -48,7 +48,7 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     font-size: 50px;
     line-height: 59px;
   }
@@ -69,7 +69,7 @@
     background-size: 157px auto;
   }
 
-  @include tablet() {
+  @media ($tablet) {
     position: relative;
 
     min-height: 400px;
@@ -86,7 +86,7 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -99,7 +99,7 @@
 .information__item {
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 310px;
     margin-left: auto;
     padding-bottom: 0;
@@ -107,7 +107,7 @@
     text-align: left;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     width: 245px;
     margin-left: 0;
     padding-top: 358px;
@@ -122,7 +122,7 @@
 
   font-size: 18px;
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 23px;
 
     font-size: 30px;
@@ -136,11 +136,11 @@
   margin: 0;
   margin-bottom: 30px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 33px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     font-size: 18px;
     line-height: 30px;
   }
@@ -150,7 +150,7 @@
   padding-top: 59px;
   padding-bottom: 88px;
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 33px;
     padding-bottom: 67px;
   }

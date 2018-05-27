@@ -1,5 +1,5 @@
 .data__list {
-  @include desktop() {
+  @media ($desktop) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   margin-bottom: 16px;
 
-  @include tablet() {
+  @media ($tablet) {
     align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 52px;
@@ -24,7 +24,7 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     &--contacts {
       flex-basis: 373px;
       margin: 0;
@@ -46,7 +46,7 @@
 
   text-transform: uppercase;
 
-  @include tablet() {
+  @media ($tablet) {
     margin: 0;
     margin-right: 19px;
     padding: 0;
@@ -89,7 +89,7 @@
   }
 
   &--contacts {
-    @include tablet() {
+    @media ($tablet) {
       background-image: linear-gradient(to left, $darkgray 60px, transparent 60px);
     }
   }
@@ -103,7 +103,7 @@
 .data__icon {
   display: none;
 
-  @include tablet() {
+  @media ($tablet) {
     position: absolute;
     top: 23px;
     right: 21px;

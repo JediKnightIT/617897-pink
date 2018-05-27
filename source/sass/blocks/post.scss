@@ -10,15 +10,15 @@
     width: 320px;
     margin: 0 auto;
 
-    @include tablet() {
+    @media ($tablet) {
       width: 660px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       width: 960px;
     }
 
-    @include large-desktop() {
+    @media ($large-desktop) {
       width: 1200px;
     }
   }
@@ -39,16 +39,16 @@
 
   background-color: $pink;
 
-  @include tablet() {
+  @media ($tablet) {
     top: 57px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     top: 53px;
     right: 10px;
   }
 
-  @include large-desktop() {
+  @media ($large-desktop) {
     right: 130px;
   }
 }
@@ -64,11 +64,11 @@
   height: auto;
 
   &--panorama {
-    @include tablet() {
+    @media ($tablet) {
       height: 509px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       height: 506px;
     }
   }
@@ -81,7 +81,7 @@
   margin: 0;
   padding: 18px;
 
-  @include tablet() {
+  @media ($tablet) {
     min-height: 105px;
     padding: 24px 32px 25px 28px;
   }
@@ -89,7 +89,7 @@
   &--panorama {
     background-color: $post-background-color;
 
-    @include tablet() {
+    @media ($tablet) {
       flex-direction: row;
       flex-wrap: wrap;
       min-height: 80px;
@@ -97,7 +97,7 @@
       padding: 24px 28px 15px 28px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       min-height: 55px;
       padding: 24px 31px 15px 28px;
     }
@@ -109,7 +109,7 @@
   font-weight: 700;
 
   &--panorama {
-    @include tablet() {
+    @media ($tablet) {
       order: 1;
       margin-right: auto;
     }
@@ -127,7 +127,7 @@
   margin-bottom: 9px;
 
   &--panorama {
-    @include tablet() {
+    @media ($tablet) {
       order: 3;
     }
   }
@@ -137,7 +137,7 @@
   margin: 0;
   margin-top: auto;
 
-  @include tablet() {
+  @media ($tablet) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -145,7 +145,7 @@
   }
 
   &--panorama {
-    @include tablet() {
+    @media ($tablet) {
       order: 2;
     }
   }
@@ -158,12 +158,12 @@
 
   fill: $pink;
 
-  @include tablet() {
+  @media ($tablet) {
     margin: 0;
   }
 
   &--panorama {
-    @include tablet() {
+    @media ($tablet) {
       margin-right: 0;
       margin-left: 18px;
     }

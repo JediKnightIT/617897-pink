@@ -2,11 +2,11 @@
   width: 280px;
   margin: 0 auto;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 620px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     width: 940px;
   }
 }

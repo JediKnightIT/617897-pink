@@ -2,7 +2,7 @@
   &--hidden {
     display: none;
 
-    @include tablet() {
+    @media ($tablet) {
       display: block;
     }
   }
@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include tablet() {
+  @media ($tablet) {
     align-items: flex-start;
     flex-direction: row;
   }
@@ -24,12 +24,12 @@
   display: block;
   margin-bottom: 32px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-right: 68px;
     margin-bottom: 0;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-right: 230px;
   }
 }
@@ -43,7 +43,7 @@
     display: none;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     &--glasses {
       display: none;
     }
@@ -69,7 +69,7 @@
 
   margin-bottom: 29px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -81,11 +81,11 @@
 
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-top: 12px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 4px;
   }
 }

@@ -8,12 +8,12 @@
 
   background-color: $blue;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 202px;
     margin: 19px auto;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     width: 288px;
     margin: 6px 30px 16px 38px;
   }
@@ -21,7 +21,7 @@
   &--hidden {
     display: none;
 
-    @include tablet() {
+    @media ($tablet) {
       display: block;
     }
   }
@@ -45,11 +45,11 @@
   &--crop {
     right: 14%;
 
-    @include tablet() {
+    @media ($tablet) {
       right: 21%;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       right: 70%;
     }
   }
@@ -57,11 +57,11 @@
   &--fill {
     right: 80%;
 
-    @include tablet() {
+    @media ($tablet) {
       right: 81%;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       right: 9%;
     }
   }
@@ -69,11 +69,11 @@
   &--contrast {
     right: 50%;
 
-    @include tablet() {
+    @media ($tablet) {
       right: 46%;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       right: 39%;
     }
   }

@@ -5,11 +5,11 @@
 
   overflow: hidden;
 
-  @include tablet() {
+  @media ($tablet) {
     min-height: 374px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     min-height: 501px;
   }
 
@@ -27,13 +27,13 @@
     background-repeat: no-repeat;
     background-size: 100% 33px;
 
-    @include tablet() {
+    @media ($tablet) {
       height: 70px;
 
       background-size: 100% 68px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       height: 100px;
 
       background-size: 100% 100px;
@@ -47,11 +47,11 @@
   width: 100%;
   height: 260px;
 
-  @include tablet() {
+  @media ($tablet) {
     height: 460px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     height: 597px;
   }
 }

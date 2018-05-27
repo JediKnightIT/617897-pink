@@ -6,7 +6,7 @@
 
   transform: translateX(-560px);
 
-  @include tablet() {
+  @media ($tablet) {
     width: 620px;
 
     table-layout: fixed;
@@ -14,7 +14,7 @@
     transform: translateX(0);
   }
 
-  @include desktop() {
+  @media ($desktop) {
     width: 940px;
   }
 }
@@ -31,11 +31,11 @@
   background-clip: padding-box;
   border-right: 2px solid $tariff-selection-border-color;
 
-  @include tablet() {
+  @media ($tablet) {
     padding: 9px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 17px;
     padding-bottom: 21px;
   }
@@ -55,7 +55,7 @@
 
   overflow: hidden;
 
-  @include tablet() {
+  @media ($tablet) {
     left: 0;
   }
 
@@ -77,7 +77,7 @@
 
     transform: rotate(-45deg);
 
-    @include tablet() {
+    @media ($tablet) {
       top: 5px;
       left: -27px;
 
@@ -86,7 +86,7 @@
       line-height: 25px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       top: 11px;
       left: -25px;
 
@@ -104,11 +104,11 @@
     font-size: 18px;
     font-weight: 700;
 
-    @include tablet() {
+    @media ($tablet) {
       font-size: 16px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       font-size: 18px;
     }
   }
@@ -119,11 +119,11 @@
     font-size: 24px;
     font-weight: 300;
 
-    @include tablet() {
+    @media ($tablet) {
       font-size: 18px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       font-size: 24px;
     }
   }
@@ -142,13 +142,13 @@
   background-clip: padding-box;
   border: 2px solid $tariff-selection-border-color;
 
-  @include tablet() {
+  @media ($tablet) {
     padding: 7px 15px;
 
     text-transform: none;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding: 14px 22px;
 
     font-size: 18px;
@@ -156,7 +156,7 @@
 }
 
 .tariff-selection__cell-hidden {
-  @include tablet() {
+  @media ($tablet) {
     display: none;
   }
 }
@@ -170,12 +170,12 @@
 
     fill: #3dc644;
 
-    @include tablet() {
+    @media ($tablet) {
       top: 12px;
       right: 60px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       top: 21px;
       right: 101px;
     }
@@ -187,12 +187,12 @@
 
     fill: #f25b26;
 
-    @include tablet() {
+    @media ($tablet) {
       top: 9px;
       right: 62px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       top: 16px;
       right: 103px;
     }
