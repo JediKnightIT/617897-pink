@@ -57,6 +57,18 @@
 }
 
 .photo-editor__label {
+  @include tablet() {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  @include desktop() {
+    margin-bottom: 16px;
+  }
+
   &::after {
     content: "";
 
@@ -82,24 +94,23 @@
       left: 0;
     }
   }
-
-  @include tablet() {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 31px;
-  }
-
-  @include desktop() {
-    margin-bottom: 16px;
-  }
 }
 
 .photo-editor__control {
   position: absolute;
 
   cursor: pointer;
+
+  @include tablet() {
+    position: static;
+
+    flex-basis: 54px;
+    text-align: center;
+  }
+
+  @include desktop() {
+    text-align: left;
+  }
 
   &--crop {
     top: 0;
@@ -114,17 +125,6 @@
   &--contrast {
     top: 6px;
     right: 45px;
-  }
-
-  @include tablet() {
-    position: static;
-
-    flex-basis: 54px;
-    text-align: center;
-  }
-
-  @include desktop() {
-    text-align: left;
   }
 }
 

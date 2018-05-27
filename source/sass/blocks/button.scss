@@ -19,6 +19,16 @@
 
   cursor: pointer;
 
+  @include tablet() {
+    width: 300px;
+  }
+
+  @include desktop() {
+    &--show {
+      width: 460px;
+    }
+  }
+
   &:hover,
   &:focus {
     background-color: $button-action-background-color;
@@ -36,15 +46,5 @@
 
   &--margin {
     margin-bottom: 40px;
-  }
-
-  @include tablet() {
-    width: 300px;
-  }
-
-  @include desktop() {
-    &--show {
-      width: 460px;
-    }
   }
 }

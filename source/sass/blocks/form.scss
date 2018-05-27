@@ -338,17 +338,6 @@
 
   resize: none;
 
-  &:hover,
-  &:focus {
-    border: 2px solid $form-element-action-color;
-
-    outline: none;
-  }
-
-  &--active {
-    border: 2px solid $form-element-modify-color;
-  }
-
   @include tablet() {
     min-height: 193px;
   }
@@ -360,6 +349,17 @@
   @include placeholder() {
     color: $form-element-placeholder-color;
     opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $form-element-action-color;
+
+    outline: none;
+  }
+
+  &--active {
+    border: 2px solid $form-element-modify-color;
   }
 }
 

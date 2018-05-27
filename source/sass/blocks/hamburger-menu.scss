@@ -93,18 +93,6 @@
   }
 }
 
-// .hamburger-menu--nojs.header {
-//   background-position: center 259px;
-
-//   @include tablet() {
-//     background-position: center 255px;
-//   }
-
-//   @include desktop() {
-//     background-position: center 11px;
-//   }
-// }
-
 .hamburger-menu--nojs .main-nav__wrapper {
   @include desktop-max() {
     background-color: $nav-background-color;

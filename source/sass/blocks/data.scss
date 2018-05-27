@@ -13,10 +13,6 @@
   flex-wrap: wrap;
   margin-bottom: 16px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @include tablet() {
     align-items: center;
     flex-wrap: nowrap;
@@ -33,6 +29,10 @@
       flex-basis: 373px;
       margin: 0;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -39,16 +39,6 @@
 
   transition: 0.3s;
 
-  &:hover,
-  &:focus {
-    fill: $logo-footer-action-color;
-  }
-
-  &:active {
-    fill: rgba($logo-footer-color, 0.3%);
-    opacity: 0.3;
-  }
-
   &--element-decore {
     display: none;
   }
@@ -61,6 +51,16 @@
     &--element-decore {
       display: inline;
     }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $logo-footer-action-color;
+  }
+
+  &:active {
+    fill: rgba($logo-footer-color, 0.3%);
+    opacity: 0.3;
   }
 }
 

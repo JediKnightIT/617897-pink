@@ -83,6 +83,10 @@
   color: $contacts-link-text-color;
   text-decoration: none;
 
+  @include desktop() {
+    line-height: 30px;
+  }
+
   &--email {
     &:hover {
       color: $contacts-link-text-color-hover;
@@ -95,9 +99,5 @@
 
       border: none;
     }
-  }
-
-  @include desktop() {
-    line-height: 30px;
   }
 }

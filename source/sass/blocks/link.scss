@@ -14,6 +14,12 @@
 
   transition: 0.3s;
 
+  @include desktop() {
+    padding: 15px;
+
+    font-size: 21px;
+  }
+
   &:hover,
   &:focus {
     color: $link-text-action-color;
@@ -23,11 +29,5 @@
 
   &:active {
     color: rgba($link-text-action-color, 0.3%);
-  }
-
-  @include desktop() {
-    padding: 15px;
-
-    font-size: 21px;
   }
 }
