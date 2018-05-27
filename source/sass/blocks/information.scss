@@ -1,9 +1,13 @@
 .information {
   position: relative;
 
+  margin-bottom: 30px;
+
   background-image: linear-gradient(-6deg, $gray 76%, $white 0%);
 
   @include tablet() {
+    margin-bottom: 0;
+
     background-image: linear-gradient(-5deg, $gray 75%, $white 0%);
   }
 
