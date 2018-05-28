@@ -17,14 +17,14 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
-            <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-              <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
+            <a class="header__logo-link" href="index.html" aria-label="Логотип мобильного приложения Pink">
+              <svg class="header__logo header__logo--text" width="75" height="23">
                 <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
               </svg>
-              <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
+              <svg class="header__logo header__logo--glasses" width="146" height="40">
                 <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
               </svg>
-              <svg class="header__logo header__logo--element-decore" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
+              <svg class="header__logo header__logo--element-decore" width="146" height="40">
                 <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
               </svg>
             </a>
@@ -59,7 +59,8 @@
         <div class="photo-content__list">
           <article class="photo-content__item-panorama post">
             <h3 class="visually-hidden">Фотопост пользователя нашего приложения</h3>
-            <a class="post__link" href="#">
+            <a class="post__link post__link--panorama" href="#">
+              <div class="post__hit">Панорама дня</div>
               <picture class="post__source-photo">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
@@ -72,7 +73,6 @@
             </a>
             <div class="wrapper">
               <blockquote class="post__description post__description--panorama">
-                <div class="post__hit">Панорама дня</div>
                 <cite class="post__author-name post__author-name--panorama">Анна
                   <time class="post__time" datetime="2018-06-10T15:00">(5 минут назад)</time>
                 </cite>
@@ -265,7 +265,7 @@
             <div class="photo-editor__interface">
               <div class="photo-editor__filter">
                 <input class="visually-hidden" id="tool-crop" type="radio" name="tool" value="crop">
-                <label class="photo-editor__label" for="tool-crop">
+                <label class="photo-editor__label scale" for="tool-crop">
                   <span class="photo-editor__control photo-editor__control--crop" aria-label="Обрезка фотографии">
                     <svg class="photo-editor__icon photo-editor__icon--crop" width="46" height="45">
                       <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
@@ -276,7 +276,7 @@
                   </span>
                 </label>
                 <input class="visually-hidden" id="tool-fill" type="radio" name="tool" value="fill">
-                <label class="photo-editor__label" for="tool-fill">
+                <label class="photo-editor__label scale" for="tool-fill">
                   <span class="photo-editor__control photo-editor__control--fill" aria-label="Выбор цвета фотографии">
                     <svg class="photo-editor__icon photo-editor__icon--fill" width="49" height="45">
                       <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
@@ -287,7 +287,7 @@
                   </span>
                 </label>
                 <input class="visually-hidden" id="tool-contrast" type="radio" name="tool" value="contrast">
-                <label class="photo-editor__label" for="tool-contrast">
+                <label class="photo-editor__label scale" for="tool-contrast">
                   <span class="photo-editor__control photo-editor__control--contrast" aria-label="Выбор контрастности фотографии">
                     <svg class="photo-editor__icon photo-editor__icon--contrast" width="33" height="33">
                       <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
@@ -309,11 +309,11 @@
     </main>
     <footer class="footer page__footer page__footer--photo">
       <div class="footer__wrapper wrapper">
-        <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-          <svg class="footer__logo footer__logo--glasses" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+        <a class="footer__logo-link" href="index.html" aria-label="Логотип мобильного приложения Pink">
+          <svg class="footer__logo footer__logo--glasses" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
           </svg>
-          <svg class="footer__logo footer__logo--element-decore" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+          <svg class="footer__logo footer__logo--element-decore" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
           </svg>
         </a>

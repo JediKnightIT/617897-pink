@@ -1,10 +1,11 @@
 // Resolutions
-$desktop: 959px;
-$tablet: 660px;
-$phones: 320px;
+$large-desktop: "min-width: 1200px";
+$desktop-max: "max-width: 959px";
+$desktop: "min-width: 959px";
+$tablet: "min-width: 660px";
 
 // variables for applying font
-$main-font: "Opensans", "Arial", sans-serif;
+$main-font: "Open Sans", "Arial", sans-serif;
 
 // variables for colors
 $pink: #d22856;
@@ -77,6 +78,7 @@ $reset-action-background-color: $blue;
 
 // variables for applying colors form.html
 $fieldset-border-color: $darkgray;
+$fieldset-background-color: $gray;
 
 $legend-text-color: $pink;
 

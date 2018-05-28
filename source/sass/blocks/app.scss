@@ -1,7 +1,7 @@
 .app {
   width: 280px;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 300px;
   }
 }
@@ -9,7 +9,7 @@
 .app__slogan {
   display: none;
 
-  @include tablet() {
+  @media ($tablet) {
     display: block;
     margin: 0;
     margin-bottom: 33px;
@@ -22,7 +22,7 @@
     text-align: center;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 52px;
 
     font-size: 50px;
@@ -33,11 +33,11 @@
 .app__link {
   margin-bottom: 34px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 48px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 69px;
   }
 }
@@ -47,11 +47,11 @@
   margin: 0 auto;
   margin-bottom: 14px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 28px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 47px;
   }
 }
@@ -63,7 +63,7 @@
   text-align: center;
   color: $app-text-color;
 
-  @include tablet() {
+  @media ($tablet) {
     font-size: 18px;
   }
 }

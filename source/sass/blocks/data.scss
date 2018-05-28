@@ -1,5 +1,5 @@
 .data__list {
-  @include desktop() {
+  @media ($desktop) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -13,11 +13,7 @@
   flex-wrap: wrap;
   margin-bottom: 16px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @include tablet() {
+  @media ($tablet) {
     align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 52px;
@@ -28,11 +24,15 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     &--contacts {
       flex-basis: 373px;
       margin: 0;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -46,7 +46,7 @@
 
   text-transform: uppercase;
 
-  @include tablet() {
+  @media ($tablet) {
     margin: 0;
     margin-right: 19px;
     padding: 0;
@@ -63,10 +63,14 @@
 
 .data__input {
   width: 100%;
-  padding: 18px 20px;
+  min-height: 64px;
+  padding: 15px 20px;
   box-sizing: border-box;
 
   font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: inherit;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
@@ -84,37 +88,26 @@
     border: 2px solid $form-element-modify-color;
   }
 
-  &::placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: $form-element-placeholder-color;
+  &--contacts {
+    @media ($tablet) {
+      background-image: linear-gradient(to left, $darkgray 60px, transparent 60px);
+    }
   }
 
-  &--contacts {
-    @include tablet() {
-      padding: 18px;
-
-      background-image: linear-gradient(to right, $white 88%, $darkgray 88%);
-    }
-
-    @include desktop() {
-      background-image: linear-gradient(to right, $white 84%, $darkgray 84%);
-    }
+  @include placeholder() {
+    color: $form-element-placeholder-color;
+    opacity: 1;
   }
 }
 
 .data__icon {
   display: none;
 
-  @include tablet() {
+  @media ($tablet) {
     position: absolute;
-    top: 22px;
-    right: 4%;
+    top: 23px;
+    right: 21px;
 
     display: block;
-  }
-
-  @include desktop() {
-    right: 21px;
   }
 }

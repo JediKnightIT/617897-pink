@@ -3,7 +3,8 @@
 @import "config/fonts.scss";
 @import "config/variables.scss";
 @import "config/mixins.scss";
-@import "config/scaffolding.scss";
+@import "config/visually-hidden.scss";
+@import "config/wrapper.scss";
 
 // blocks header
 @import "blocks/page.scss";
@@ -23,9 +24,9 @@
 @import "blocks/filter.scss";
 @import "blocks/smile.scss";
 @import "blocks/effect.scss";
+@import "blocks/slider.scss";
 @import "blocks/reviews.scss";
 @import "blocks/price.scss";
-@import "blocks/slider.scss";
 @import "blocks/tariff-selection.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";

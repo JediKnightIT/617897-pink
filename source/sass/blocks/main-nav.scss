@@ -5,7 +5,7 @@
 }
 
 .main-nav__wrapper {
-  @include desktop() {
+  @media ($desktop) {
     display: flex;
     align-items: flex-start;
     width: 940px;
@@ -18,12 +18,12 @@
 .main-nav__menu {
   padding: 21px;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-top: 25px;
     padding-bottom: 46px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-right: auto;
     padding: 0;
   }
@@ -44,12 +44,12 @@
   cursor: pointer;
   border: none;
 
-  @include tablet() {
+  @media ($tablet) {
     top: 40px;
     right: 16px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     display: none;
   }
 }

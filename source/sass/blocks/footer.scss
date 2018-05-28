@@ -2,7 +2,7 @@
   &--hidden {
     display: none;
 
-    @include tablet() {
+    @media ($tablet) {
       display: block;
     }
   }
@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include tablet() {
+  @media ($tablet) {
     align-items: flex-start;
     flex-direction: row;
   }
@@ -23,12 +23,35 @@
 .footer__logo-link {
   display: block;
   margin-bottom: 32px;
+
+  @media ($tablet) {
+    margin-right: 68px;
+    margin-bottom: 0;
+  }
+
+  @media ($desktop) {
+    margin-right: 230px;
+  }
 }
 
 .footer__logo {
   fill: $logo-footer-color;
 
   transition: 0.3s;
+
+  &--element-decore {
+    display: none;
+  }
+
+  @media ($desktop) {
+    &--glasses {
+      display: none;
+    }
+
+    &--element-decore {
+      display: inline;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -39,39 +62,14 @@
     fill: rgba($logo-footer-color, 0.3%);
     opacity: 0.3;
   }
-
-  &--element-decore {
-    display: none;
-  }
-
-  @include tablet() {
-    margin-right: 68px;
-    margin-bottom: 12px;
-  }
-
-  @include desktop() {
-    margin-right: 230px;
-
-    &--glasses {
-      display: none;
-    }
-
-    &--element-decore {
-      display: inline;
-    }
-  }
 }
 
 .footer__list {
-  display: flex;
-  justify-content: space-around;
-  width: 188px;
-
   @include list;
 
-  margin-bottom: 38px;
+  margin-bottom: 29px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -83,11 +81,11 @@
 
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-top: 12px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 4px;
   }
 }

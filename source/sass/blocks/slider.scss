@@ -5,7 +5,7 @@
 
   overflow: hidden;
 
-  @include tablet() {
+  @media ($tablet) {
     padding: 0;
   }
 }
@@ -30,6 +30,10 @@
 
   cursor: pointer;
 
+  @media ($desktop) {
+    display: none;
+  }
+
   &:hover {
     background-color: rgba($slider-bullet-color, 0.6%);
   }
@@ -43,17 +47,13 @@
     border: 3px solid $slider-bullet-color;
     border-radius: 50%;
   }
-
-  @include desktop() {
-    display: none;
-  }
 }
 
 
 .slider__toggle {
   display: none;
 
-  @include desktop() {
+  @media ($desktop) {
     position: absolute;
     top: 219px;
 

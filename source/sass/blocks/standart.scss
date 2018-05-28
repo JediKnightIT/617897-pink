@@ -1,5 +1,5 @@
 .standart {
-  @include desktop() {
+  @media ($desktop) {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-position: center 0;
     background-repeat: no-repeat;

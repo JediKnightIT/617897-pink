@@ -1,22 +1,3 @@
-// Миксин для медиавыражений
-@mixin tablet {
-  @media screen and (min-width: $tablet) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: $desktop) {
-    @content;
-  }
-}
-
-@mixin desktop-max {
-  @media screen and (max-width: $desktop) {
-    @content;
-  }
-}
-
 // Миксин для определения плотности пикселей на экране
 @mixin retina {
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -31,6 +12,13 @@
 
   background-color: $color;
   border-radius: 50%;
+}
+
+// Миксин для кросбраузерной стилизации placeholder
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
 }
 
 @mixin list {

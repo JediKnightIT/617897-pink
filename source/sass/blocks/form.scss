@@ -2,14 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  background-color: $white;
-  background-image: linear-gradient(to bottom, $white 20%, $gray 20%, $gray 49%, $white 49%, $white 62%, $gray 62%, $gray 79%, $white 79%);
-
-  @include tablet() {
-    background-image: none;
-  }
-
-  @include desktop() {
+  @media ($desktop) {
     width: 940px;
     margin: 0 auto;
   }
@@ -17,34 +10,33 @@
 
 .form__fieldset {
   width: 100%;
-  margin: 0 20px;
-  margin-bottom: 79px;
+  margin: 0;
   padding: 0;
 
   border: none;
 
-  @include tablet() {
-    margin-bottom: 56px;
+  @media ($tablet) {
+    margin: 0 20px;
 
     border: 2px solid $fieldset-border-color;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-right: 0;
     margin-left: 0;
   }
 
   &--user {
-    padding-top: 34px;
+    padding: 34px 20px 23px 20px;
 
     border: none;
 
-    @include tablet() {
+    @media ($tablet) {
       order: -3;
-      padding-top: 70px;
+      padding: 70px 0 55px 0;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       flex-basis: 435px;
       margin-right: auto;
       padding-top: 14px;
@@ -52,42 +44,56 @@
   }
 
   &--achievement {
-    padding-top: 43px;
+    margin-bottom: 32px;
+    padding-top: 99px;
+    padding-bottom: 47px;
 
-    @include tablet() {
+    background-color: $fieldset-background-color;
+
+    @media ($tablet) {
       margin-bottom: 57px;
       padding: 48px 30px 53px 58px;
+
+      background-color: transparent;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       padding-bottom: 9px;
     }
   }
 
   &--contacts {
-    @include tablet() {
+    margin-bottom: 23px;
+
+    @media ($tablet) {
       order: -1;
 
       padding: 37px 59px 27px 58px;
+      margin-bottom: 56px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       padding-top: 33px;
       padding-bottom: 13px;
     }
   }
 
   &--app {
-    padding-top: 39px;
-    margin-bottom: 85px;
+    margin-bottom: 37px;
+    padding-top: 95px;
+    padding-bottom: 48px;
 
-    @include tablet() {
+    background-color: $fieldset-background-color;
+
+    @media ($tablet) {
       order: -2;
       margin-bottom: 57px;
       padding: 48px 30px 59px 58px;
+
+      background-color: transparent;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       flex-basis: 435px;
       padding: 50px 20px;
       box-sizing: border-box;
@@ -98,12 +104,12 @@
     margin-bottom: 43px;
     padding-top: 16px;
 
-    @include tablet() {
+    @media ($tablet) {
       margin-bottom: 68px;
       padding: 37px 58px 44px 58px;
     }
 
-    @include desktop() {
+    @media ($desktop) {
       margin-bottom: 66px;
       padding-top: 33px;
       padding-bottom: 37px;
@@ -112,8 +118,11 @@
 }
 
 .form__legend {
+  position: relative;
+  top: 56px;
+
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 35px;
 
   font: inherit;
   line-height: 18px;
@@ -121,12 +130,28 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--hidden {
+  @media ($tablet) {
+    top: 0;
+  }
+
+  &--contacts {
     display: none;
 
-    @include tablet() {
+    @media ($tablet) {
       display: block;
     }
+  }
+
+  &--comment {
+    top: 0;
+  }
+}
+
+.form__wrapper {
+  margin: 0 20px;
+
+  @media ($tablet) {
+    margin: 0;
   }
 }
 
@@ -134,20 +159,21 @@
   @include list;
 
   &--achievement {
-    @include desktop() {
+    @media ($desktop) {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
     }
   }
-}
 
-.form__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  &--displaced {
+    width: 280px;
+    margin: 0 auto;
 
-  @include tablet() {
-    width: auto;
+    @media ($tablet) {
+      width: auto;
+      margin: 0;
+    }
   }
 }
 
@@ -159,7 +185,7 @@
   }
 
   &--achievement {
-    @include desktop() {
+    @media ($desktop) {
       flex-basis: 260px;
       order: 4;
       padding-left: 19px;
@@ -168,20 +194,20 @@
   }
 
   &--beach {
-    @include desktop() {
+    @media ($desktop) {
       order: 4;
       flex-basis: 260px;
     }
   }
 
   &--chuck {
-    @include desktop() {
+    @media ($desktop) {
       order: 2;
     }
   }
 
   &--tower {
-    @include desktop() {
+    @media ($desktop) {
       order: 3;
     }
   }
@@ -190,7 +216,7 @@
   &--app {
     margin-bottom: 45px;
 
-    @include desktop() {
+    @media ($desktop) {
       margin-bottom: 44px;
       padding-left: 54px;
     }
@@ -207,7 +233,7 @@
 
   cursor: pointer;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-left: 59px;
   }
 
@@ -302,6 +328,8 @@
   box-sizing: border-box;
 
   font: inherit;
+  font-size: 18px;
+  line-height: 30px;
 
   border: 2px solid $form-element-decor-color;
   border-radius: 2px;
@@ -309,6 +337,19 @@
   transition: 0.3s;
 
   resize: none;
+
+  @media ($tablet) {
+    min-height: 193px;
+  }
+
+  @media ($desktop) {
+    min-height: 128px;
+  }
+
+  @include placeholder() {
+    color: $form-element-placeholder-color;
+    opacity: 1;
+  }
 
   &:hover,
   &:focus {
@@ -320,26 +361,12 @@
   &--active {
     border: 2px solid $form-element-modify-color;
   }
-
-  &::placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: $form-element-placeholder-color;
-  }
-
-  @include tablet() {
-    min-height: 193px;
-  }
-
-  @include desktop() {
-    min-height: 128px;
-  }
 }
 
 .form__button {
   margin-bottom: 35px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 0;
   }
 }
@@ -359,7 +386,7 @@
 .form__description-specify {
   display: none;
 
-  @include desktop() {
+  @media ($desktop) {
     display: inline;
   }
 }

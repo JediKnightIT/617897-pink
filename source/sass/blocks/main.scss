@@ -1,13 +1,13 @@
 .main__price {
-  padding-top: 92px;
+  padding-top: 117px;
   padding-bottom: 45px;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-top: 102px;
     padding-bottom: 30px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 176px;
     padding-bottom: 56px;
   }
@@ -17,11 +17,11 @@
   padding-top: 45px;
   padding-bottom: 19px;
 
-  @include tablet() {
+  @media ($tablet) {
     padding-bottom: 0;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     padding-top: 67px;
   }
 }
@@ -29,11 +29,11 @@
 .main__competition {
   margin-bottom: 13px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 50px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 0;
   }
 }

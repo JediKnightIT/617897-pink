@@ -17,14 +17,14 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
-            <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-              <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
+            <a class="header__logo-link" href="index.html" aria-label="Логотип мобильного приложения Pink">
+              <svg class="header__logo header__logo--text" width="75" height="23">
                 <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
               </svg>
-              <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
+              <svg class="header__logo header__logo--glasses" width="146" height="40">
                 <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
               </svg>
-              <svg class="header__logo header__logo--element-decore" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
+              <svg class="header__logo header__logo--element-decore" width="146" height="40">
                 <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
               </svg>
             </a>
@@ -78,91 +78,100 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--achievement">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__list form__wrapper form__list--achievement">
-              <li class="form__item">
-                <input class="form__input visually-hidden" id="first-achievement" type="checkbox" name="first-achievement" checked>
-                <label class="form__label form__label--checkbox" for="first-achievement">Сделал селфи с акулой</label>
-              </li>
-              <li class="form__item form__item--beach">
-                <input class="form__input visually-hidden" id="second-achievement" type="checkbox" name="second-achievement" checked>
-                <label class="form__label form__label--checkbox" for="second-achievement">Обгорел на пляже</label>
-              </li>
-              <li class="form__item form__item--achievement form__item--chuck">
-                <input class="form__input visually-hidden" id="third-achievement" type="checkbox" name="third-achievement">
-                <label class="form__label form__label--checkbox" for="third-achievement">Видел Чака Норриса</label>
-              </li>
-              <li class="form__item form__item--achievement">
-                <input class="form__input visually-hidden" id="fourth-achievement" type="checkbox" name="fourth-achievement">
-                <label class="form__label form__label--checkbox" for="fourth-achievement">Накупил сувениров</label>
-              </li>
-              <li class="form__item form__item--achievement form__item--tower">
-                <input class="form__input visually-hidden" id="fifth-achievement" type="checkbox" name="fifth-achievement" checked>
-                <label class="form__label form__label--checkbox" for="fifth-achievement">Удержал башню</label>
-              </li>
-              <li class="form__item form__item--achievement">
-                <input class="form__input visually-hidden" id="sixth-achievement" type="checkbox" name="sixth-achievement">
-                <label class="form__label form__label--checkbox" for="sixth-achievement">Разгромил отель</label>
-              </li>
-            </ul>
+            <div class="form__wrapper">
+              <ul class="form__list form__list--displaced form__list--achievement">
+                <li class="form__item">
+                  <input class="form__input visually-hidden" id="first-achievement" type="checkbox" name="first-achievement" checked>
+                  <label class="form__label form__label--checkbox" for="first-achievement">Сделал селфи с акулой</label>
+                </li>
+                <li class="form__item form__item--beach">
+                  <input class="form__input visually-hidden" id="second-achievement" type="checkbox" name="second-achievement" checked>
+                  <label class="form__label form__label--checkbox" for="second-achievement">Обгорел на пляже</label>
+                </li>
+                <li class="form__item form__item--achievement form__item--chuck">
+                  <input class="form__input visually-hidden" id="third-achievement" type="checkbox" name="third-achievement">
+                  <label class="form__label form__label--checkbox" for="third-achievement">Видел Чака Норриса</label>
+                </li>
+                <li class="form__item form__item--achievement">
+                  <input class="form__input visually-hidden" id="fourth-achievement" type="checkbox" name="fourth-achievement">
+                  <label class="form__label form__label--checkbox" for="fourth-achievement">Накупил сувениров</label>
+                </li>
+                <li class="form__item form__item--achievement form__item--tower">
+                  <input class="form__input visually-hidden" id="fifth-achievement" type="checkbox" name="fifth-achievement" checked>
+                  <label class="form__label form__label--checkbox" for="fifth-achievement">Удержал башню</label>
+                </li>
+                <li class="form__item form__item--achievement">
+                  <input class="form__input visually-hidden" id="sixth-achievement" type="checkbox" name="sixth-achievement">
+                  <label class="form__label form__label--checkbox" for="sixth-achievement">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts data">
-            <legend class="form__legend form__legend--hidden">Контактная информация</legend>
-            <ul class="form__list data__list">
-              <li class="data__item data__item--contacts">
-                <label class="data__label data__label--contacts" for="user-phone">Номер телефона</label>
-                <input class="data__input data__input--contacts" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-                <svg class="data__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </li>
-              <li class="data__item data__item--contacts">
-                <label class="data__label data__label--contacts" for="user-email">Адрес почты</label>
-                <input class="data__input data__input--contacts" id="user-email" type="email" name="email" placeholder="Введите почту *"
-                  required>
-                <svg class="data__icon" width="18" height="14">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </li>
-            </ul>
+            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <div class="form__wrapper">
+              <ul class="form__list data__list">
+                <li class="data__item data__item--contacts">
+                  <label class="data__label data__label--contacts" for="user-phone">Номер телефона</label>
+                  <input class="data__input data__input--contacts" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <svg class="data__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </li>
+                <li class="data__item data__item--contacts">
+                  <label class="data__label data__label--contacts" for="user-email">Адрес почты</label>
+                  <input class="data__input data__input--contacts" id="user-email" type="email" name="email" placeholder="Введите почту *"
+                    required>
+                  <svg class="data__icon" width="18" height="14">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--app">
             <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <ul class="form__list form__wrapper">
-              <li class="form__item form__item--app">
-                <input class="form__input visually-hidden" id="version-ios" type="radio" name="version-app" checked>
-                <label class="form__label form__label--radio" for="version-ios">Pink для iOS</label>
-              </li>
-              <li class="form__item form__item--app">
-                <input class="form__input visually-hidden" id="version-android" type="radio" name="version-app">
-                <label class="form__label form__label--radio" for="version-android">Pink на Android</label>
-              </li>
-              <li class="form__item form__item--app">
-                <input class="form__input visually-hidden" id="version-windows" type="radio" name="version-app">
-                <label class="form__label form__label--radio" for="version-windows">Windows Phone</label>
-              </li>
-            </ul>
+            <div class="form__wrapper">
+              <ul class="form__list form__list--displaced">
+                <li class="form__item form__item--app">
+                  <input class="form__input visually-hidden" id="version-ios" type="radio" name="version-app" checked>
+                  <label class="form__label form__label--radio" for="version-ios">Pink для iOS</label>
+                </li>
+                <li class="form__item form__item--app">
+                  <input class="form__input visually-hidden" id="version-android" type="radio" name="version-app">
+                  <label class="form__label form__label--radio" for="version-android">Pink на Android</label>
+                </li>
+                <li class="form__item form__item--app">
+                  <input class="form__input visually-hidden" id="version-windows" type="radio" name="version-app">
+                  <label class="form__label form__label--radio" for="version-windows">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--comment">
-            <legend class="form__legend">Опишите свои эмоции</legend>
-            <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
-            <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <legend class="form__legend form__legend--comment">Опишите свои эмоции</legend>
+            <div class="form__wrapper">
+              <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
+              <textarea class="form__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
           </fieldset>
-          <div class="competition__footer">
+          <div class="competition__footer wrapper">
             <button class="form__button button" type="submit">Отправить форму</button>
             <p class="form__description">
               <span class="form__description-simbol">*</span> — обязательные
-              <span class="form__description-specify">для заполнения</span> поля</p>
+              <span class="form__description-specify">для заполнения</span> поля
+            </p>
           </div>
         </form>
       </section>
     </main>
     <footer class="footer page__footer page__footer--competition">
       <div class="footer__wrapper wrapper">
-        <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу Pink">
-          <svg class="footer__logo footer__logo--glasses" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+        <a class="footer__logo-link" href="index.html" aria-label="Логотип мобильного приложения Pink">
+          <svg class="footer__logo footer__logo--glasses" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
           </svg>
-          <svg class="footer__logo footer__logo--element-decore" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+          <svg class="footer__logo footer__logo--element-decore" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
           </svg>
         </a>

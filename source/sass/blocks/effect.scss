@@ -1,13 +1,13 @@
 .effect {
   display: none;
 
-  @include tablet() {
+  @media ($tablet) {
     display: block;
 
     background-color: $effect-background-color;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     background-color: transparent;
   }
 }
@@ -20,7 +20,7 @@
 .effect__icon {
   margin-right: auto;
 
-  @include desktop() {
+  @media ($desktop) {
     flex-basis: 300px;
     height: 345px;
   }
@@ -30,7 +30,7 @@
   flex-basis: 310px;
   padding-top: 12px;
 
-  @include desktop() {
+  @media ($desktop) {
     flex-basis: 575px;
     padding-top: 47px;
   }
@@ -46,7 +46,7 @@
   line-height: 36px;
   color: $black;
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 21px;
   }
 }
@@ -55,7 +55,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 31px;
 
     font-size: 18px;
@@ -66,7 +66,7 @@
 .effect__link {
   color: $pink;
 
-  @include desktop() {
+  @media ($desktop) {
     font-size: 18px;
     line-height: 30px;
   }

@@ -7,7 +7,7 @@
   line-height: 27px;
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     width: 575px;
     margin-bottom: 42px;
 
@@ -15,7 +15,7 @@
     line-height: 49px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 55px;
 
     font-size: 50px;
@@ -26,7 +26,7 @@
 .contacts__list {
   @include list;
 
-  @include tablet() {
+  @media ($tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
 
   text-align: center;
 
-  @include tablet() {
+  @media ($tablet) {
     flex-basis: 300px;
     margin-bottom: 45px;
 
@@ -49,7 +49,7 @@
     }
   }
 
-  @include desktop() {
+  @media ($desktop) {
     &--displaced {
       order: 1;
     }
@@ -66,11 +66,11 @@
 
   font-size: 18px;
 
-  @include tablet() {
+  @media ($tablet) {
     margin-bottom: 6px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     margin-bottom: 23px;
   }
 }
@@ -82,6 +82,10 @@
   line-height: 26px;
   color: $contacts-link-text-color;
   text-decoration: none;
+
+  @media ($desktop) {
+    line-height: 30px;
+  }
 
   &--email {
     &:hover {
@@ -95,9 +99,5 @@
 
       border: none;
     }
-  }
-
-  @include desktop() {
-    line-height: 30px;
   }
 }

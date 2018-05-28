@@ -3,6 +3,7 @@
   padding: 16px;
   box-sizing: border-box;
 
+  font: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -17,6 +18,16 @@
   transition: 0.3s;
 
   cursor: pointer;
+
+  @media ($tablet) {
+    width: 300px;
+  }
+
+  @media ($desktop) {
+    &--show {
+      width: 460px;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -35,15 +46,5 @@
 
   &--margin {
     margin-bottom: 40px;
-  }
-
-  @include tablet() {
-    width: 300px;
-  }
-
-  @include desktop() {
-    &--show {
-      width: 460px;
-    }
   }
 }

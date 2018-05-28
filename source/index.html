@@ -17,15 +17,17 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__menu">
-            <svg class="header__logo header__logo--text" width="75" height="23" aria-label="Мобильная версия логотипа приложения Pink ">
-              <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
-            </svg>
-            <svg class="header__logo header__logo--glasses" width="146" height="40" aria-label="Планшетная версия логотипа приложения Pink">
-              <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
-            </svg>
-            <svg class="header__logo header__logo--element-decore" width="146" height="40" aria-label="Десктопная версия логотипа приложения Pink">
-              <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
-            </svg>
+            <a class="header__logo-link" aria-label="Логотип мобильного приложения Pink">
+              <svg class="header__logo header__logo--text" width="75" height="23">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="header__logo header__logo--glasses" width="146" height="40">
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="header__logo header__logo--element-decore" width="146" height="40">
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+              </svg>
+            </a>
             <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
           </div>
           <ul class="main-nav__list menu-list">
@@ -52,22 +54,22 @@
           <a class="app__link link" href="https://itunes.apple.com/store" target="blank">Скачать приложение</a>
           <ul class="app__list store-list">
             <li class="store-list__item">
-              <a class="store-list__link" href="https://www.apple.com/itunes/charts/free-apps/" target="blank" aria-label="Apple">
-                <svg class="store-list__logo" width="47" height="56" aria-label="Логотип Apple">
+              <a class="store-list__link" href="https://www.apple.com/itunes/charts/free-apps/" target="blank" aria-label="Скачать приложение для iOS">
+                <svg class="store-list__logo" width="47" height="56">
                   <use xlink:href="img/sprite.svg#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="store-list__item">
-              <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Android">
-                <svg class="store-list__logo" width="43" height="47" aria-label="Логотип Android">
+              <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Скачать приложение для Android">
+                <svg class="store-list__logo" width="43" height="47">
                   <use xlink:href="img/sprite.svg#logo-android"></use>
                 </svg>
               </a>
             </li>
             <li class="store-list__item">
-              <a class="store-list__link" href="https://www.microsoft.com/en-us/store/b/home" target="blank" aria-label="Windows Phone">
-                <svg class="store-list__logo" width="44" height="41" aria-label="Логотип Windows Phone">
+              <a class="store-list__link" href="https://www.microsoft.com/en-us/store/b/home" target="blank" aria-label="Скачать приложение для Windows Phone">
+                <svg class="store-list__logo" width="44" height="41">
                   <use xlink:href="img/sprite.svg#logo-microsoft"></use>
                 </svg>
               </a>
@@ -102,7 +104,7 @@
         </div>
         <footer class="information__footer effect">
           <div class="effect__wrapper wrapper">
-            <svg class="effect__icon" width="240" height="275" aria-label="Декоративное изображение таймера">
+            <svg class="effect__icon" width="240" height="275">
               <use xlink:href="img/sprite.svg#icon-timer"></use>
             </svg>
             <div class="effect__about">
@@ -116,7 +118,7 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="wrapper slider">
-          <svg class="reviews__icon" width="79" height="64" aria-label="Декоративное изображение кавычек">
+          <svg class="reviews__icon" width="79" height="64">
             <use xlink:href="img/sprite.svg#icon-quotes"></use>
           </svg>
           <div class="reviews__list slider__list">
@@ -138,17 +140,17 @@
           </div>
           <div class="reviews__bullets slider__bullets">
             <button class="slider__button" type="button" aria-label="Кнопка переключения на первый слайд">
-              <span class="slider__bullet slider__bullet--active" aria-label="Первый переключатель"></span>
+              <span class="slider__bullet slider__bullet--active"></span>
             </button>
             <button class="slider__button" type="button" aria-label="Кнопка переключения на второй слайд">
-              <span class="slider__bullet" aria-label="Второй переключатель"></span>
+              <span class="slider__bullet"></span>
             </button>
             <button class="slider__button" type="button" aria-label="Кнопка переключения на третий слайд">
-              <span class="slider__bullet" aria-label="Третий переключатель"></span>
+              <span class="slider__bullet"></span>
             </button>
           </div>
-          <button class="slider__toggle slider__toggle--left" type="button" aria-label="Кнопка переключения слайда влево"></button>
-          <button class="slider__toggle slider__toggle--right" type="button" aria-label="Кнопка переключения слайда вправо"></button>
+          <button class="slider__toggle slider__toggle--left" type="button" aria-label="Кнопка переключения к предыдущему отзыву"></button>
+          <button class="slider__toggle slider__toggle--right" type="button" aria-label="Кнопка переключения на следующему отзыву"></button>
         </div>
       </section>
       <section class="price main__price">
@@ -163,7 +165,7 @@
                 <p class="tariff-selection__cell tariff-selection__cell--cost">1,99 usd</p>
               </th>
               <th class="tariff-selection__cell-header">
-                <span class="tariff-selection__hit" aria-label="Иконка показывающая, что данный тариф является хитом"></span>
+                <span class="tariff-selection__hit"></span>
                 <b class="tariff-selection__cell tariff-selection__cell--tariff">Стандарт</b>
                 <p class="tariff-selection__cell tariff-selection__cell--cost">3,99 usd</p>
               </th>
@@ -176,19 +178,22 @@
               <td class="tariff-selection__cell-option">Розовый фильтр</td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Розовый фильтр</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Розовый фильтр</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Розовый фильтр</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
@@ -197,19 +202,22 @@
               <td class="tariff-selection__cell-option">Смайлики</td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Смайлики</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26" aria-label="Функция не включена в тариф">
+                <span class="visually-hidden">Функция не включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Смайлики</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Смайлики</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
@@ -218,33 +226,36 @@
               <td class="tariff-selection__cell-option">Комментарии</td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Комментарии</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26" aria-label="Функция не включена в тариф">
+                <span class="visually-hidden">Функция не включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Комментарии</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26" aria-label="Функция не включена в тариф">
+                <span class="visually-hidden">Функция не включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--off" width="27" height="26">
                   <use xlink:href="img/sprite.svg#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff-selection__cell-option">
                 <span class="tariff-selection__cell-hidden">Комментарии</span>
-                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21" aria-label="Функция включена в тариф">
+                <span class="visually-hidden">Функция включена в тариф</span>
+                <svg class="tariff-selection__icon tariff-selection__icon--on" width="30" height="21">
                   <use xlink:href="img/sprite.svg#icon-yes"></use>
                 </svg>
               </td>
             </tr>
           </table>
-          <div class="tariff-selection__bullets slider__bullets">
+          <div class="price__bullets slider__bullets">
             <button class="slider__button" type="button" aria-label="Кнопка переключения на первый слайд">
-              <span class="slider__bullet" aria-label="Первый переключатель"></span>
+              <span class="slider__bullet"></span>
             </button>
             <button class="slider__button" type="button" aria-label="Кнопка переключения на второй слайд">
-              <span class="slider__bullet slider__bullet--active" aria-label="Второй переключатель"></span>
+              <span class="slider__bullet slider__bullet--active"></span>
             </button>
             <button class="slider__button" type="button" aria-label="Кнопка переключения на третий слайд">
-              <span class="slider__bullet" aria-label="Третий переключатель"></span>
+              <span class="slider__bullet"></span>
             </button>
           </div>
         </div>
@@ -285,12 +296,14 @@
     </main>
     <footer class="footer footer--hidden page__footer">
       <div class="footer__wrapper wrapper">
-          <svg class="footer__logo footer__logo--glasses" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+        <a class="footer__logo-link" aria-label="Логотип мобильного приложения Pink">
+          <svg class="footer__logo footer__logo--glasses" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue"></use>
           </svg>
-          <svg class="footer__logo footer__logo--element-decore" width="146" height="40" aria-label="Мобильная и планшетная версия логотипа приложения Pink">
+          <svg class="footer__logo footer__logo--element-decore" width="146" height="40">
             <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
           </svg>
+        </a>
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#" aria-label="Мы в твиттере">

@@ -1,5 +1,5 @@
 .buttons {
-  @include desktop() {
+  @media ($desktop) {
     display: flex;
     justify-content: space-between;
   }
@@ -9,11 +9,11 @@
   width: 280px;
   padding: 15px 20px;
 
+  font: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
-  letter-spacing: 0.9px;
 
   background-color: transparent;
   border-radius: 35px;
@@ -42,7 +42,7 @@
       background-color: $submit-action-background-color;
     }
 
-    @include tablet() {
+    @media ($tablet) {
       margin-bottom: 25px;
     }
   }
@@ -66,11 +66,11 @@
     }
   }
 
-  @include tablet() {
+  @media ($tablet) {
     width: 260px;
   }
 
-  @include desktop() {
+  @media ($desktop) {
     width: 184px;
     margin: 0;
   }

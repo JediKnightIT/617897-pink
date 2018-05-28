@@ -68,36 +68,33 @@
   background-color: rgba($header-icon-action-color, 0.3%);
 }
 
-.hamburger-menu--opened.header {
+.hamburger-menu--opened.header,
+.hamburger-menu--nojs.header {
   background-position: center 259px;
 
-  @include tablet() {
+  @media ($tablet) {
     background-position: center 255px;
   }
 
-  @include desktop() {
-    background-position: center 11px;
+  @media ($desktop) {
+    background-position: center top;
   }
 }
 
 .hamburger-menu--opened .main-nav__wrapper {
-  @include desktop-max() {
+  @media ($desktop-max) {
     background-color: $nav-background-color;
   }
 }
 
 .hamburger-menu--closed .main-nav__list {
-  @include desktop-max() {
+  @media ($desktop-max) {
     display: none;
   }
 }
 
-.hamburger-menu--nojs.header {
-  background-position: center 259px;
-}
-
 .hamburger-menu--nojs .main-nav__wrapper {
-  @include desktop-max() {
+  @media ($desktop-max) {
     background-color: $nav-background-color;
   }
 }
@@ -107,7 +104,7 @@
 }
 
 .hamburger-menu--nojs .main-nav__list {
-  @include desktop-max() {
+  @media ($desktop-max) {
     display: block;
   }
 }
